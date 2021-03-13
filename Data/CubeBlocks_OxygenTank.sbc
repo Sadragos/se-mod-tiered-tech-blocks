@@ -1,0 +1,1089 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <CubeBlocks>
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>LargeOxygenTank</SubtypeId>
+            </Id>
+            <DisplayName>Large Oxygen Tank</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\HydrogenTank.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <Public>true</Public>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Large\HydrogenTank.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="160"/>
+                <Component Subtype="LargeTube" Count="80"/>
+                <Component Subtype="SmallTube" Count="60"/>
+                <Component Subtype="Computer" Count="8"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="SteelPlate" Count="120"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Top" StartX="0" StartY="1" EndX="3" EndY="2"/>
+                <MountPoint Side="Top" StartX="1" StartY="0" EndX="2" EndY="1"/>
+                <MountPoint Side="Top" StartX="1" StartY="2" EndX="2" EndY="3"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="3" EndY="2" Default="true"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="0" EndX="2" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="2" EndX="2" EndY="3"/>
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Right" StartX="1" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Front" StartX="1" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Back" StartX="1" StartY="0" EndX="2" EndY="3"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenTank_Construction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenTank_Construction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenTank_Construction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>LargeOxygenTank</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>5000000</Capacity>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>50</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+            <DestroySound>WepLrgWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>SmallLargeOxygenTank</SubtypeId>
+            </Id>
+            <DisplayName>Large Oxygen Tank</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\HydrogenTank.dds</Icon>
+            <Description>Description_HydrogenTank</Description>
+            <CubeSize>Small</CubeSize>
+            <Public>true</Public>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="5" z="5"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Small\HydrogenTank.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="60"/>
+                <Component Subtype="LargeTube" Count="40"/>
+                <Component Subtype="SmallTube" Count="60"/>
+                <Component Subtype="Computer" Count="8"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="SteelPlate" Count="20"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Top" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0"/>
+                <MountPoint Side="Top" StartX="2.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+                <MountPoint Side="Top" StartX="2.0" StartY="4.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Top" StartX="0.0" StartY="2.0" EndX="1.0" EndY="3.0"/>
+                <MountPoint Side="Top" StartX="4.0" StartY="2.0" EndX="5.0" EndY="3.0"/>
+                <MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0" Default="true"/>
+                <MountPoint Side="Bottom" StartX="2.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+                <MountPoint Side="Bottom" StartX="2.0" StartY="4.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Bottom" StartX="0.0" StartY="2.0" EndX="1.0" EndY="3.0"/>
+                <MountPoint Side="Bottom" StartX="4.0" StartY="2.0" EndX="5.0" EndY="3.0"/>
+                <MountPoint Side="Front" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Front" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Front" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Back" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Back" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Back" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Left" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Left" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Left" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Right" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Right" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\HydrogenTank_Construction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\HydrogenTank_Construction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\HydrogenTank_Construction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>LargeOxygenTank</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>185000</Capacity>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>30</BuildTimeSeconds>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+        </Definition>
+
+        <!--        Tier 2-->
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>OxygenTankDefault2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Oxygen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\OxygenTank2x.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="2" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Large\OxygenStorage.mwm</Model>
+            <Components>
+                <Component Subtype="Tech2x" Count="8"/>
+                <Component Subtype="SteelPlate" Count="90"/>
+                <Component Subtype="LargeTube" Count="60"/>
+                <Component Subtype="SmallTube" Count="90"/>
+                <Component Subtype="Computer" Count="12"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="SteelPlate" Count="30"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9"/>
+                <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" Default="true"/>
+                <MountPoint Side="Front" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.3"/>
+                <MountPoint Side="Front" StartX="0.1" StartY="0.9" EndX="0.9" EndY="1.1"/>
+                <MountPoint Side="Front" StartX="0.1" StartY="1.7" EndX="0.9" EndY="1.9"/>
+                <MountPoint Side="Back" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.3"/>
+                <MountPoint Side="Back" StartX="0.1" StartY="0.9" EndX="0.9" EndY="1.1"/>
+                <MountPoint Side="Back" StartX="0.1" StartY="1.7" EndX="0.9" EndY="1.9"/>
+                <MountPoint Side="Left" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.3"/>
+                <MountPoint Side="Left" StartX="0.1" StartY="0.9" EndX="0.9" EndY="1.1"/>
+                <MountPoint Side="Left" StartX="0.1" StartY="1.7" EndX="0.9" EndY="1.9"/>
+                <MountPoint Side="Right" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.3"/>
+                <MountPoint Side="Right" StartX="0.1" StartY="0.9" EndX="0.9" EndY="1.1"/>
+                <MountPoint Side="Right" StartX="0.1" StartY="1.7" EndX="0.9" EndY="1.9"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\OxygenStorageConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\OxygenStorageConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\OxygenStorageConstruction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>OxygenTank2x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>740000</Capacity>
+            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>48</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>LargeOxygenTank2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Large Oxygen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\HydrogenTank2x.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <Public>true</Public>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Large\HydrogenTank.mwm</Model>
+            <Components>
+                <Component Subtype="Tech2x" Count="38"/>
+                <Component Subtype="SteelPlate" Count="240"/>
+                <Component Subtype="LargeTube" Count="120"/>
+                <Component Subtype="SmallTube" Count="90"/>
+                <Component Subtype="Computer" Count="12"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="SteelPlate" Count="180"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Top" StartX="0" StartY="1" EndX="3" EndY="2"/>
+                <MountPoint Side="Top" StartX="1" StartY="0" EndX="2" EndY="1"/>
+                <MountPoint Side="Top" StartX="1" StartY="2" EndX="2" EndY="3"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="3" EndY="2" Default="true"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="0" EndX="2" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="2" EndX="2" EndY="3"/>
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Right" StartX="1" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Front" StartX="1" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Back" StartX="1" StartY="0" EndX="2" EndY="3"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenTank_Construction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenTank_Construction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenTank_Construction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>LargeOxygenTank2x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>10000000</Capacity>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>75</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+            <DestroySound>WepLrgWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>OxygenTankSmall2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Oxygen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\OxygenTankSmall2x.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Small\OxygenStorage.mwm</Model>
+            <Components>
+                <Component Subtype="Tech2x" Count="4"/>
+                <Component Subtype="SteelPlate" Count="15"/>
+                <Component Subtype="LargeTube" Count="12"/>
+                <Component Subtype="SmallTube" Count="15"/>
+                <Component Subtype="Computer" Count="12"/>
+                <Component Subtype="Construction" Count="15"/>
+                <Component Subtype="SteelPlate" Count="9"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="3"/>
+                <MountPoint Side="Left" StartX="0" StartY="1" EndX="3" EndY="2"/>
+                <MountPoint Side="Right" StartX="0" StartY="1" EndX="3" EndY="2"/>
+                <MountPoint Side="Top" StartX="0" StartY="0.6" EndX="1.1" EndY="1.3"/>
+                <MountPoint Side="Top" StartX="1.9" StartY="0.6" EndX="3" EndY="1.3"/>
+                <MountPoint Side="Top" StartX="0" StartY="2.4" EndX="3" EndY="3"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="1.7" EndX="1.1" EndY="2.4"/>
+                <MountPoint Side="Bottom" StartX="1.9" StartY="1.7" EndX="3" EndY="2.4"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="0.6"/>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="3"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\OxygenStorageConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\OxygenStorageConstruction_2.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>OxygenTank2x</BlockPairName>
+            <Center x="1" y="1" z="1"/>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>21</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <Capacity>80000</Capacity>
+            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>SmallLargeOxygenTank2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Large Oxygen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\HydrogenTank2x.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <CubeSize>Small</CubeSize>
+            <Public>true</Public>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="5" z="5"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Small\HydrogenTank.mwm</Model>
+            <Components>
+                <Component Subtype="Tech2x" Count="8"/>
+                <Component Subtype="SteelPlate" Count="90"/>
+                <Component Subtype="LargeTube" Count="60"/>
+                <Component Subtype="SmallTube" Count="90"/>
+                <Component Subtype="Computer" Count="12"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="SteelPlate" Count="30"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Top" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0"/>
+                <MountPoint Side="Top" StartX="2.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+                <MountPoint Side="Top" StartX="2.0" StartY="4.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Top" StartX="0.0" StartY="2.0" EndX="1.0" EndY="3.0"/>
+                <MountPoint Side="Top" StartX="4.0" StartY="2.0" EndX="5.0" EndY="3.0"/>
+                <MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0" Default="true"/>
+                <MountPoint Side="Bottom" StartX="2.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+                <MountPoint Side="Bottom" StartX="2.0" StartY="4.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Bottom" StartX="0.0" StartY="2.0" EndX="1.0" EndY="3.0"/>
+                <MountPoint Side="Bottom" StartX="4.0" StartY="2.0" EndX="5.0" EndY="3.0"/>
+                <MountPoint Side="Front" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Front" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Front" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Back" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Back" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Back" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Left" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Left" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Left" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Right" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Right" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\HydrogenTank_Construction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\HydrogenTank_Construction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\HydrogenTank_Construction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>LargeOxygenTank2x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>370000</Capacity>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>45</BuildTimeSeconds>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+        </Definition>
+
+        <!--        Tier 4-->
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>OxygenTankDefault4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Oxygen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\OxygenTank4x.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="2" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Large\OxygenStorage.mwm</Model>
+            <Components>
+                <Component Subtype="Tech4x" Count="8"/>
+                <Component Subtype="SteelPlate" Count="135"/>
+                <Component Subtype="LargeTube" Count="90"/>
+                <Component Subtype="SmallTube" Count="135"/>
+                <Component Subtype="Computer" Count="18"/>
+                <Component Subtype="Construction" Count="90"/>
+                <Component Subtype="SteelPlate" Count="45"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9"/>
+                <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" Default="true"/>
+                <MountPoint Side="Front" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.3"/>
+                <MountPoint Side="Front" StartX="0.1" StartY="0.9" EndX="0.9" EndY="1.1"/>
+                <MountPoint Side="Front" StartX="0.1" StartY="1.7" EndX="0.9" EndY="1.9"/>
+                <MountPoint Side="Back" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.3"/>
+                <MountPoint Side="Back" StartX="0.1" StartY="0.9" EndX="0.9" EndY="1.1"/>
+                <MountPoint Side="Back" StartX="0.1" StartY="1.7" EndX="0.9" EndY="1.9"/>
+                <MountPoint Side="Left" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.3"/>
+                <MountPoint Side="Left" StartX="0.1" StartY="0.9" EndX="0.9" EndY="1.1"/>
+                <MountPoint Side="Left" StartX="0.1" StartY="1.7" EndX="0.9" EndY="1.9"/>
+                <MountPoint Side="Right" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.3"/>
+                <MountPoint Side="Right" StartX="0.1" StartY="0.9" EndX="0.9" EndY="1.1"/>
+                <MountPoint Side="Right" StartX="0.1" StartY="1.7" EndX="0.9" EndY="1.9"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\OxygenStorageConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\OxygenStorageConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\OxygenStorageConstruction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>OxygenTank4x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>1480000</Capacity>
+            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>72</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>SmallLargeOxygenTank4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Large Oxygen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\HydrogenTank4x.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <Public>true</Public>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Large\HydrogenTank.mwm</Model>
+            <Components>
+                <Component Subtype="Tech4x" Count="38"/>
+                <Component Subtype="SteelPlate" Count="360"/>
+                <Component Subtype="LargeTube" Count="180"/>
+                <Component Subtype="SmallTube" Count="135"/>
+                <Component Subtype="Computer" Count="18"/>
+                <Component Subtype="Construction" Count="90"/>
+                <Component Subtype="SteelPlate" Count="270"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Top" StartX="0" StartY="1" EndX="3" EndY="2"/>
+                <MountPoint Side="Top" StartX="1" StartY="0" EndX="2" EndY="1"/>
+                <MountPoint Side="Top" StartX="1" StartY="2" EndX="2" EndY="3"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="3" EndY="2" Default="true"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="0" EndX="2" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="2" EndX="2" EndY="3"/>
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Right" StartX="1" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Front" StartX="1" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Back" StartX="1" StartY="0" EndX="2" EndY="3"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenTank_Construction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenTank_Construction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenTank_Construction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>LargeOxygenTank4x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>20000000</Capacity>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>113</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+            <DestroySound>WepLrgWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>OxygenTankSmall4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Large Oxygen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\OxygenTankSmall4x.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Small\OxygenStorage.mwm</Model>
+            <Components>
+                <Component Subtype="Tech4x" Count="4"/>
+                <Component Subtype="SteelPlate" Count="23"/>
+                <Component Subtype="LargeTube" Count="18"/>
+                <Component Subtype="SmallTube" Count="23"/>
+                <Component Subtype="Computer" Count="18"/>
+                <Component Subtype="Construction" Count="23"/>
+                <Component Subtype="SteelPlate" Count="14"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="3"/>
+                <MountPoint Side="Left" StartX="0" StartY="1" EndX="3" EndY="2"/>
+                <MountPoint Side="Right" StartX="0" StartY="1" EndX="3" EndY="2"/>
+                <MountPoint Side="Top" StartX="0" StartY="0.6" EndX="1.1" EndY="1.3"/>
+                <MountPoint Side="Top" StartX="1.9" StartY="0.6" EndX="3" EndY="1.3"/>
+                <MountPoint Side="Top" StartX="0" StartY="2.4" EndX="3" EndY="3"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="1.7" EndX="1.1" EndY="2.4"/>
+                <MountPoint Side="Bottom" StartX="1.9" StartY="1.7" EndX="3" EndY="2.4"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="0.6"/>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="3"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\OxygenStorageConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\OxygenStorageConstruction_2.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>OxygenTank4x</BlockPairName>
+            <Center x="1" y="1" z="1"/>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>32</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <Capacity>160000</Capacity>
+            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>LargeOxygenTank4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Oxygen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\HydrogenTank4x.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <CubeSize>Small</CubeSize>
+            <Public>true</Public>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="5" z="5"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Small\HydrogenTank.mwm</Model>
+            <Components>
+                <Component Subtype="Tech4x" Count="8"/>
+                <Component Subtype="SteelPlate" Count="135"/>
+                <Component Subtype="LargeTube" Count="90"/>
+                <Component Subtype="SmallTube" Count="135"/>
+                <Component Subtype="Computer" Count="18"/>
+                <Component Subtype="Construction" Count="90"/>
+                <Component Subtype="SteelPlate" Count="45"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Top" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0"/>
+                <MountPoint Side="Top" StartX="2.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+                <MountPoint Side="Top" StartX="2.0" StartY="4.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Top" StartX="0.0" StartY="2.0" EndX="1.0" EndY="3.0"/>
+                <MountPoint Side="Top" StartX="4.0" StartY="2.0" EndX="5.0" EndY="3.0"/>
+                <MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0" Default="true"/>
+                <MountPoint Side="Bottom" StartX="2.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+                <MountPoint Side="Bottom" StartX="2.0" StartY="4.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Bottom" StartX="0.0" StartY="2.0" EndX="1.0" EndY="3.0"/>
+                <MountPoint Side="Bottom" StartX="4.0" StartY="2.0" EndX="5.0" EndY="3.0"/>
+                <MountPoint Side="Front" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Front" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Front" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Back" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Back" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Back" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Left" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Left" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Left" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Right" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Right" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\HydrogenTank_Construction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\HydrogenTank_Construction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\HydrogenTank_Construction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>LargeOxygenTank4x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>740000</Capacity>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>68</BuildTimeSeconds>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+        </Definition>
+
+        <!--        Tier 8-->
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>OxygenTankDefault8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Oxygen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\OxygenTank8x.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="2" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Large\OxygenStorage.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="8"/>
+                <Component Subtype="SteelPlate" Count="203"/>
+                <Component Subtype="LargeTube" Count="135"/>
+                <Component Subtype="SmallTube" Count="203"/>
+                <Component Subtype="Computer" Count="27"/>
+                <Component Subtype="Construction" Count="135"/>
+                <Component Subtype="SteelPlate" Count="68"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9"/>
+                <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" Default="true"/>
+                <MountPoint Side="Front" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.3"/>
+                <MountPoint Side="Front" StartX="0.1" StartY="0.9" EndX="0.9" EndY="1.1"/>
+                <MountPoint Side="Front" StartX="0.1" StartY="1.7" EndX="0.9" EndY="1.9"/>
+                <MountPoint Side="Back" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.3"/>
+                <MountPoint Side="Back" StartX="0.1" StartY="0.9" EndX="0.9" EndY="1.1"/>
+                <MountPoint Side="Back" StartX="0.1" StartY="1.7" EndX="0.9" EndY="1.9"/>
+                <MountPoint Side="Left" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.3"/>
+                <MountPoint Side="Left" StartX="0.1" StartY="0.9" EndX="0.9" EndY="1.1"/>
+                <MountPoint Side="Left" StartX="0.1" StartY="1.7" EndX="0.9" EndY="1.9"/>
+                <MountPoint Side="Right" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.3"/>
+                <MountPoint Side="Right" StartX="0.1" StartY="0.9" EndX="0.9" EndY="1.1"/>
+                <MountPoint Side="Right" StartX="0.1" StartY="1.7" EndX="0.9" EndY="1.9"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\OxygenStorageConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\OxygenStorageConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\OxygenStorageConstruction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>OxygenTank8x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>2960000</Capacity>
+            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>108</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>LargeOxygenTank8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Large Oxygen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\HydrogenTank8x.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <Public>true</Public>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Large\HydrogenTank.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="38"/>
+                <Component Subtype="SteelPlate" Count="540"/>
+                <Component Subtype="LargeTube" Count="270"/>
+                <Component Subtype="SmallTube" Count="203"/>
+                <Component Subtype="Computer" Count="27"/>
+                <Component Subtype="Construction" Count="135"/>
+                <Component Subtype="SteelPlate" Count="405"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Top" StartX="0" StartY="1" EndX="3" EndY="2"/>
+                <MountPoint Side="Top" StartX="1" StartY="0" EndX="2" EndY="1"/>
+                <MountPoint Side="Top" StartX="1" StartY="2" EndX="2" EndY="3"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="3" EndY="2" Default="true"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="0" EndX="2" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="2" EndX="2" EndY="3"/>
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Right" StartX="1" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Front" StartX="1" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Back" StartX="1" StartY="0" EndX="2" EndY="3"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenTank_Construction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenTank_Construction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenTank_Construction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>LargeOxygenTank8x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>40000000</Capacity>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>169</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+            <DestroySound>WepLrgWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>OxygenTankSmall8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Oxygen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\OxygenTankSmall8x.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Small\OxygenStorage.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="4"/>
+                <Component Subtype="SteelPlate" Count="34"/>
+                <Component Subtype="LargeTube" Count="27"/>
+                <Component Subtype="SmallTube" Count="34"/>
+                <Component Subtype="Computer" Count="27"/>
+                <Component Subtype="Construction" Count="34"/>
+                <Component Subtype="SteelPlate" Count="21"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="3"/>
+                <MountPoint Side="Left" StartX="0" StartY="1" EndX="3" EndY="2"/>
+                <MountPoint Side="Right" StartX="0" StartY="1" EndX="3" EndY="2"/>
+                <MountPoint Side="Top" StartX="0" StartY="0.6" EndX="1.1" EndY="1.3"/>
+                <MountPoint Side="Top" StartX="1.9" StartY="0.6" EndX="3" EndY="1.3"/>
+                <MountPoint Side="Top" StartX="0" StartY="2.4" EndX="3" EndY="3"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="1.7" EndX="1.1" EndY="2.4"/>
+                <MountPoint Side="Bottom" StartX="1.9" StartY="1.7" EndX="3" EndY="2.4"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="0.6"/>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="3"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\OxygenStorageConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\OxygenStorageConstruction_2.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>OxygenTank8x</BlockPairName>
+            <Center x="1" y="1" z="1"/>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>48</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <Capacity>320000</Capacity>
+            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>SmallLargeOxygenTank8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Large Oxygen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\HydrogenTank8x.dds</Icon>
+            <Description>Description_OxygenTank</Description>
+            <CubeSize>Small</CubeSize>
+            <Public>true</Public>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="5" z="5"/>
+            <ModelOffset x="0" y="0" z="0"/>
+            <Model>Models\Cubes\Small\HydrogenTank.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="8"/>
+                <Component Subtype="SteelPlate" Count="203"/>
+                <Component Subtype="LargeTube" Count="135"/>
+                <Component Subtype="SmallTube" Count="203"/>
+                <Component Subtype="Computer" Count="27"/>
+                <Component Subtype="Construction" Count="135"/>
+                <Component Subtype="SteelPlate" Count="68"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0"/>
+            <MountPoints>
+                <MountPoint Side="Top" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0"/>
+                <MountPoint Side="Top" StartX="2.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+                <MountPoint Side="Top" StartX="2.0" StartY="4.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Top" StartX="0.0" StartY="2.0" EndX="1.0" EndY="3.0"/>
+                <MountPoint Side="Top" StartX="4.0" StartY="2.0" EndX="5.0" EndY="3.0"/>
+                <MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0" Default="true"/>
+                <MountPoint Side="Bottom" StartX="2.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+                <MountPoint Side="Bottom" StartX="2.0" StartY="4.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Bottom" StartX="0.0" StartY="2.0" EndX="1.0" EndY="3.0"/>
+                <MountPoint Side="Bottom" StartX="4.0" StartY="2.0" EndX="5.0" EndY="3.0"/>
+                <MountPoint Side="Front" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Front" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Front" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Back" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Back" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Back" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Left" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Left" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Left" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+                <MountPoint Side="Right" StartX="1.0" StartY="2.0" EndX="4.0" EndY="3.0"/>
+                <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
+                <MountPoint Side="Right" StartX="2.0" StartY="3.0" EndX="3.0" EndY="5.0"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\HydrogenTank_Construction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\HydrogenTank_Construction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\HydrogenTank_Construction_3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>LargeOxygenTank8x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>1480000</Capacity>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>OxygenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>102</BuildTimeSeconds>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+        </Definition>
+    </CubeBlocks>
+</Definitions>

@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<Definitions>
+    <BlueprintClasses>
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>Tech2xComponents</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Components</DisplayName>
+            <Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
+            <HighlightIcon>Textures\component_focus.dds</HighlightIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+        </Class>
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>Tech4xComponents</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Components</DisplayName>
+            <Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
+            <HighlightIcon>Textures\component_focus.dds</HighlightIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+        </Class>
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>Tech8xComponents</SubtypeId>
+            </Id>
+            <DisplayName>Elite Components</DisplayName>
+            <Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
+            <HighlightIcon>Textures\component_focus.dds</HighlightIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+        </Class>
+
+
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>StoneIncinerator</SubtypeId>
+            </Id>
+            <DisplayName>Stone only</DisplayName>
+            <Icon>Textures\GUI\Icons\buttons\large_block.dds</Icon>
+            <HighlightIcon>Textures\large_block_focus.dds</HighlightIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+            <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+        </Class>
+
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>TechAdmin</SubtypeId>
+            </Id>
+            <DisplayName>Tiered Admin Components</DisplayName>
+            <Icon>Textures\GUI\Icons\buttons\large_block.dds</Icon>
+            <Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
+            <HighlightIcon>Textures\component_focus.dds</HighlightIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+        </Class>
+
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>BasicComponents2</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_BlueprintClass_BasicComponents</DisplayName>
+            <Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
+            <HighlightIcon>Textures\component_focus.dds</HighlightIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+        </Class>
+
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>BasicAmmo</SubtypeId>
+            </Id>
+            <DisplayName>Basic Ammo</DisplayName>
+            <Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
+            <HighlightIcon>Textures\component_focus.dds</HighlightIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+        </Class>
+
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>OreToIngotT1</SubtypeId>
+            </Id>
+            <DisplayName>Survival Refinery</DisplayName>
+            <Description>Slow Survival Refinery for basic Ores</Description>
+            <Icon>Textures\GUI\Icons\ingot\ingot_class.dds</Icon>
+            <HighlightIcon>Textures\GUI\Icons\ingot\ingot_class.dds</HighlightIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+            <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+        </Class>
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>OreToIngotT2</SubtypeId>
+            </Id>
+            <DisplayName>Survival Refinery</DisplayName>
+            <Description>Slow Survival Refinery for coomon Ores</Description>
+            <Icon>Textures\GUI\Icons\ingot\ingot_class.dds</Icon>
+            <HighlightIcon>Textures\GUI\Icons\ingot\ingot_class.dds</HighlightIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+            <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+        </Class>
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>OreToIngotT3</SubtypeId>
+            </Id>
+            <DisplayName>Survival Refinery</DisplayName>
+            <Description>Slow Survival Refinery for all Ores</Description>
+            <Icon>Textures\GUI\Icons\ingot\ingot_class.dds</Icon>
+            <HighlightIcon>Textures\GUI\Icons\ingot\ingot_class.dds</HighlightIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+            <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+        </Class>
+
+    </BlueprintClasses>
+
+    <BlueprintClassEntries>
+        <Entry Class="StoneIncinerator" BlueprintSubtypeId="StoneOreToIngotIncinerate" />
+
+        <Entry Class="TechAdmin" BlueprintSubtypeId="Tech2x" />
+        <Entry Class="TechAdmin" BlueprintSubtypeId="Tech4x" />
+        <Entry Class="TechAdmin" BlueprintSubtypeId="Tech8x" />
+
+        <Entry Class="BasicAmmo" BlueprintSubtypeId="NATO_5p56x45mmMagazine" />
+        <Entry Class="BasicAmmo" BlueprintSubtypeId="NATO_25x184mmMagazine" />
+
+        <Entry Class="BasicComponents2" BlueprintSubtypeId="SolarCell" />
+        <Entry Class="BasicComponents2" BlueprintSubtypeId="SteelPlate" />
+        <Entry Class="BasicComponents2" BlueprintSubtypeId="Display" />
+        <Entry Class="BasicComponents2" BlueprintSubtypeId="InteriorPlate" />
+        <Entry Class="BasicComponents2" BlueprintSubtypeId="MotorComponent" />
+        <Entry Class="BasicComponents2" BlueprintSubtypeId="GirderComponent" />
+        <Entry Class="BasicComponents2" BlueprintSubtypeId="ComputerComponent" />
+        <Entry Class="BasicComponents2" BlueprintSubtypeId="ConstructionComponent" />
+
+        <Entry Class="OreToIngotT1" BlueprintSubtypeId="StoneOreToIngotBasic" />
+        <Entry Class="OreToIngotT1" BlueprintSubtypeId="IronOreToIngotCraft" />
+        <Entry Class="OreToIngotT1" BlueprintSubtypeId="NickelOreToIngotCraft" />
+        <Entry Class="OreToIngotT1" BlueprintSubtypeId="SiliconOreToIngotCraft" />
+
+        <Entry Class="OreToIngotT2" BlueprintSubtypeId="StoneOreToIngotBasic" />
+        <Entry Class="OreToIngotT2" BlueprintSubtypeId="IronOreToIngotCraft" />
+        <Entry Class="OreToIngotT2" BlueprintSubtypeId="NickelOreToIngotCraft" />
+        <Entry Class="OreToIngotT2" BlueprintSubtypeId="SiliconOreToIngotCraft" />
+        <Entry Class="OreToIngotT2" BlueprintSubtypeId="CobaltOreToIngotCraft" />
+        <Entry Class="OreToIngotT2" BlueprintSubtypeId="MagnesiumOreToIngotCraft" />
+
+        <Entry Class="OreToIngotT3" BlueprintSubtypeId="StoneOreToIngotBasic" />
+        <Entry Class="OreToIngotT3" BlueprintSubtypeId="IronOreToIngotCraft" />
+        <Entry Class="OreToIngotT3" BlueprintSubtypeId="NickelOreToIngotCraft" />
+        <Entry Class="OreToIngotT3" BlueprintSubtypeId="SiliconOreToIngotCraft" />
+        <Entry Class="OreToIngotT3" BlueprintSubtypeId="CobaltOreToIngotCraft" />
+        <Entry Class="OreToIngotT3" BlueprintSubtypeId="MagnesiumOreToIngotCraft" />
+        <Entry Class="OreToIngotT3" BlueprintSubtypeId="SilverOreToIngotCraft" />
+        <Entry Class="OreToIngotT3" BlueprintSubtypeId="GoldOreToIngotCraft" />
+        <Entry Class="OreToIngotT3" BlueprintSubtypeId="PlatinumOreToIngotCraft" />
+        <Entry Class="OreToIngotT3" BlueprintSubtypeId="UraniumOreToIngotCraft" />
+    </BlueprintClassEntries>
+
+
+</Definitions>

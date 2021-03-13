@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+<!--        Tier 2-->
+        <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+            <Id>
+                <TypeId>CargoContainer</TypeId>
+                <SubtypeId>SmallBlockMediumContainer2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Medium Quantum Container</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\container_medium2x.dds</Icon>
+            <Description>Description_MediumCargoContainer</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\CargoContainerMedium.mwm</Model>
+            <Components>
+                <Component Subtype="Tech2x" Count="4"/>
+                <Component Subtype="InteriorPlate" Count="30"/>
+                <Component Subtype="Construction" Count="15"/>
+                <Component Subtype="Computer" Count="6"/>
+                <Component Subtype="Motor" Count="6"/>
+                <Component Subtype="Display" Count="2"/>
+                <Component Subtype="InteriorPlate" Count="15"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="3" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\CargoContainerMediumConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\CargoContainerMediumConstruction_2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>MediumCargoContainer2x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>21</BuildTimeSeconds>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>10</PCU>
+            <IsAirTight>true</IsAirTight>
+            <InventorySize>
+                <X>3</X>
+                <Y>1.5</Y>
+                <Z>1.5</Z>
+            </InventorySize>
+
+        </Definition>
+
+<!--        Tier 4-->
+        <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+            <Id>
+                <TypeId>CargoContainer</TypeId>
+                <SubtypeId>SmallBlockMediumContainer4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Medium Quantum Container</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\container_medium4x.dds</Icon>
+            <Description>Description_MediumCargoContainer</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\CargoContainerMedium.mwm</Model>
+            <Components>
+                <Component Subtype="Tech4x" Count="4"/>
+                <Component Subtype="InteriorPlate" Count="45"/>
+                <Component Subtype="Construction" Count="23"/>
+                <Component Subtype="Computer" Count="9"/>
+                <Component Subtype="Motor" Count="9"/>
+                <Component Subtype="Display" Count="3"/>
+                <Component Subtype="InteriorPlate" Count="23"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="3" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\CargoContainerMediumConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\CargoContainerMediumConstruction_2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>MediumCargoContainer4x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>32</BuildTimeSeconds>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>10</PCU>
+            <IsAirTight>true</IsAirTight>
+            <InventorySize>
+                <X>6</X>
+                <Y>1.5</Y>
+                <Z>1.5</Z>
+            </InventorySize>
+
+        </Definition>
+
+<!--        Tier 8-->
+        <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+            <Id>
+                <TypeId>CargoContainer</TypeId>
+                <SubtypeId>SmallBlockMediumContainer8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Medium Quantum Container</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\container_medium8x.dds</Icon>
+            <Description>Description_MediumCargoContainer</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\CargoContainerMedium.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="4"/>
+                <Component Subtype="InteriorPlate" Count="68"/>
+                <Component Subtype="Construction" Count="34"/>
+                <Component Subtype="Computer" Count="14"/>
+                <Component Subtype="Motor" Count="14"/>
+                <Component Subtype="Display" Count="4"/>
+                <Component Subtype="InteriorPlate" Count="34"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="3" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="3" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\CargoContainerMediumConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\CargoContainerMediumConstruction_2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>MediumCargoContainer8x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>48</BuildTimeSeconds>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>10</PCU>
+            <IsAirTight>true</IsAirTight>
+            <InventorySize>
+                <X>12</X>
+                <Y>1.5</Y>
+                <Z>1.5</Z>
+            </InventorySize>
+
+        </Definition>
+
+    </CubeBlocks>
+</Definitions>

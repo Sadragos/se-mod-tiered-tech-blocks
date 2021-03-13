@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78441755-F0CC-4005-AA58-C736864591E1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Tiered_Tech_Blocks</RootNamespace>
+    <AssemblyName>Tiered Tech Blocks</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Data\Scripts\TieredTechBlocks\UpgradeHandler.cs" />
+    <None Include="App.config" />
+    <None Include="Data\BlockCategories.sbc" />
+    <None Include="Data\BlockVariantGroups.sbc" />
+    <None Include="Data\BlueprintClasses.sbc" />
+    <None Include="Data\Blueprints.sbc" />
+    <None Include="Data\Components.sbc" />
+    <None Include="Data\CubeBlocks_Assembler.sbc" />
+    <None Include="Data\CubeBlocks_AtmosphericThruster.sbc" />
+    <None Include="Data\CubeBlocks_AtmosphericThrusterSciFi.sbc" />
+    <None Include="Data\CubeBlocks_Battery.sbc" />
+    <None Include="Data\CubeBlocks_Beacon.sbc" />
+    <None Include="Data\CubeBlocks_CargoContainerLarge.sbc" />
+    <None Include="Data\CubeBlocks_CargoContainerMedium.sbc" />
+    <None Include="Data\CubeBlocks_CargoContainerSmall.sbc" />
+    <None Include="Data\CubeBlocks_Detector.sbc" />
+    <None Include="Data\CubeBlocks_Drill.sbc" />
+    <None Include="Data\CubeBlocks_Grinder.sbc" />
+    <None Include="Data\CubeBlocks_Gyroscope.sbc" />
+    <None Include="Data\CubeBlocks_HydrogenEngine.sbc" />
+    <None Include="Data\CubeBlocks_HydrogenTank.sbc" />
+    <None Include="Data\CubeBlocks_HydrogenThruster.sbc" />
+    <None Include="Data\CubeBlocks_IonThruster.sbc" />
+    <None Include="Data\CubeBlocks_IonThrusterSciFi.sbc" />
+    <None Include="Data\CubeBlocks_JumpDrive.sbc" />
+    <None Include="Data\CubeBlocks_OxygenFarm.sbc" />
+    <None Include="Data\CubeBlocks_OxygenGenerator.sbc" />
+    <None Include="Data\CubeBlocks_OxygenTank.sbc" />
+    <None Include="Data\CubeBlocks_Reactor.sbc" />
+    <None Include="Data\CubeBlocks_Refinery.sbc" />
+    <None Include="Data\CubeBlocks_SafeZone.sbc" />
+    <None Include="Data\CubeBlocks_SolarPanel.sbc" />
+    <None Include="Data\CubeBlocks_Spotlight.sbc" />
+    <None Include="Data\CubeBlocks_StoneIncinerator.sbc" />
+    <None Include="Data\CubeBlocks_SurvivalKit.sbc" />
+    <None Include="Data\CubeBlocks_Welder.sbc" />
+    <None Include="Data\CubeBlocks_WindTurbine.sbc" />
+    <None Include="Data\EntityContainers.sbc" />
+    <None Include="Data\FactionTypes_Economy.sbc" />
+    <None Include="Data\ResearchBlocks.sbc" />
+    <Compile Include="Data\Scripts\TieredTechBlocks\CargoUpdater.cs" />
+    <None Include="modinfo.sbmi" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="metadata.mod" />
+    <Content Include="Textures\assembler2x.dds" />
+    <Content Include="Textures\assembler4x.dds" />
+    <Content Include="Textures\assembler8x.dds" />
+    <Content Include="Textures\AtmosphericThrusterLarge2x.dds" />
+    <Content Include="Textures\AtmosphericThrusterLarge4x.dds" />
+    <Content Include="Textures\AtmosphericThrusterLarge8x.dds" />
+    <Content Include="Textures\AtmosphericThrusterLargeLarge2x.dds" />
+    <Content Include="Textures\AtmosphericThrusterLargeLarge4x.dds" />
+    <Content Include="Textures\AtmosphericThrusterLargeLarge8x.dds" />
+    <Content Include="Textures\AtmosphericThrusterSmall2x.dds" />
+    <Content Include="Textures\AtmosphericThrusterSmall4x.dds" />
+    <Content Include="Textures\AtmosphericThrusterSmall8x.dds" />
+    <Content Include="Textures\Battery1x12x.dds" />
+    <Content Include="Textures\Battery1x14x.dds" />
+    <Content Include="Textures\Battery1x18x.dds" />
+    <Content Include="Textures\battery2x.dds" />
+    <Content Include="Textures\battery4x.dds" />
+    <Content Include="Textures\battery8x.dds" />
+    <Content Include="Textures\beacon2x.dds" />
+    <Content Include="Textures\beacon4x.dds" />
+    <Content Include="Textures\beacon8x.dds" />
+    <Content Include="Textures\component_focus.dds" />
+    <Content Include="Textures\container2x.dds" />
+    <Content Include="Textures\container4x.dds" />
+    <Content Include="Textures\container8x.dds" />
+    <Content Include="Textures\container_large2x.dds" />
+    <Content Include="Textures\container_large4x.dds" />
+    <Content Include="Textures\container_large8x.dds" />
+    <Content Include="Textures\container_medium2x.dds" />
+    <Content Include="Textures\container_medium4x.dds" />
+    <Content Include="Textures\container_medium8x.dds" />
+    <Content Include="Textures\detector2x.dds" />
+    <Content Include="Textures\detector4x.dds" />
+    <Content Include="Textures\detector8x.dds" />
+    <Content Include="Textures\drill2x.dds" />
+    <Content Include="Textures\drill4x.dds" />
+    <Content Include="Textures\drill8x.dds" />
+    <Content Include="Textures\Grinder2x.dds" />
+    <Content Include="Textures\Grinder4x.dds" />
+    <Content Include="Textures\Grinder8x.dds" />
+    <Content Include="Textures\gyro2x.dds" />
+    <Content Include="Textures\gyro4x.dds" />
+    <Content Include="Textures\gyro8x.dds" />
+    <Content Include="Textures\HydrogenEngineLarge2x.dds" />
+    <Content Include="Textures\HydrogenEngineLarge4x.dds" />
+    <Content Include="Textures\HydrogenEngineLarge8x.dds" />
+    <Content Include="Textures\HydrogenEngineSmall2x.dds" />
+    <Content Include="Textures\HydrogenEngineSmall4x.dds" />
+    <Content Include="Textures\HydrogenEngineSmall8x.dds" />
+    <Content Include="Textures\HydrogenTank2x.dds" />
+    <Content Include="Textures\HydrogenTank4x.dds" />
+    <Content Include="Textures\HydrogenTank8x.dds" />
+    <Content Include="Textures\HydrogenThrusterLarge2x.dds" />
+    <Content Include="Textures\HydrogenThrusterLarge4x.dds" />
+    <Content Include="Textures\HydrogenThrusterLarge8x.dds" />
+    <Content Include="Textures\HydrogenThrusterSmall2x.dds" />
+    <Content Include="Textures\HydrogenThrusterSmall4x.dds" />
+    <Content Include="Textures\HydrogenThrusterSmall8x.dds" />
+    <Content Include="Textures\JumpDrive2x.dds" />
+    <Content Include="Textures\JumpDrive4x.dds" />
+    <Content Include="Textures\JumpDrive8x.dds" />
+    <Content Include="Textures\LargeHydrogenTankSmall2x.DDS" />
+    <Content Include="Textures\LargeHydrogenTankSmall4x.DDS" />
+    <Content Include="Textures\LargeHydrogenTankSmall8x.DDS" />
+    <Content Include="Textures\Large_AtmosphericThrusterLarge_SciFi2x.dds" />
+    <Content Include="Textures\Large_AtmosphericThrusterLarge_SciFi4x.dds" />
+    <Content Include="Textures\Large_AtmosphericThrusterLarge_SciFi8x.dds" />
+    <Content Include="Textures\Large_AtmosphericThrusterSmall_SciFi2x.dds" />
+    <Content Include="Textures\Large_AtmosphericThrusterSmall_SciFi4x.dds" />
+    <Content Include="Textures\Large_AtmosphericThrusterSmall_SciFi8x.dds" />
+    <Content Include="Textures\large_block_focus.dds" />
+    <Content Include="Textures\Large_IonThrusterLarge_SciFi2x.dds" />
+    <Content Include="Textures\Large_IonThrusterLarge_SciFi4x.dds" />
+    <Content Include="Textures\Large_IonThrusterLarge_SciFi8x.dds" />
+    <Content Include="Textures\Large_IonThrusterSmall_SciFi2x.dds" />
+    <Content Include="Textures\Large_IonThrusterSmall_SciFi4x.dds" />
+    <Content Include="Textures\Large_IonThrusterSmall_SciFi8x.dds" />
+    <Content Include="Textures\light2x.dds" />
+    <Content Include="Textures\light4x.dds" />
+    <Content Include="Textures\light8x.dds" />
+    <Content Include="Textures\nuclear_reactor2x.dds" />
+    <Content Include="Textures\nuclear_reactor4x.dds" />
+    <Content Include="Textures\nuclear_reactor8x.dds" />
+    <Content Include="Textures\nuclear_reactor_large2x.dds" />
+    <Content Include="Textures\nuclear_reactor_large4x.dds" />
+    <Content Include="Textures\nuclear_reactor_large8x.dds" />
+    <Content Include="Textures\OxygenGenerator2x.dds" />
+    <Content Include="Textures\OxygenGenerator4x.dds" />
+    <Content Include="Textures\OxygenGenerator8x.dds" />
+    <Content Include="Textures\OxygenGeneratorSmall2x.dds" />
+    <Content Include="Textures\OxygenGeneratorSmall4x.dds" />
+    <Content Include="Textures\OxygenGeneratorSmall8x.dds" />
+    <Content Include="Textures\OxygenTank2x.dds" />
+    <Content Include="Textures\OxygenTank4x.dds" />
+    <Content Include="Textures\OxygenTank8x.dds" />
+    <Content Include="Textures\OxygenTankSmall2x.dds" />
+    <Content Include="Textures\OxygenTankSmall4x.dds" />
+    <Content Include="Textures\OxygenTankSmall8x.dds" />
+    <Content Include="Textures\refinery2x.dds" />
+    <Content Include="Textures\refinery4x.dds" />
+    <Content Include="Textures\refinery8x.dds" />
+    <Content Include="Textures\SafeZoneBlock2x.dds" />
+    <Content Include="Textures\SafeZoneBlock4x.dds" />
+    <Content Include="Textures\SafeZoneBlock8x.dds" />
+    <Content Include="Textures\SmallHydrogenTankSmall2x.DDS" />
+    <Content Include="Textures\SmallHydrogenTankSmall4x.DDS" />
+    <Content Include="Textures\SmallHydrogenTankSmall8x.DDS" />
+    <Content Include="Textures\Small_AtmosphericThrusterLarge_SciFi2x.dds" />
+    <Content Include="Textures\Small_AtmosphericThrusterLarge_SciFi4x.dds" />
+    <Content Include="Textures\Small_AtmosphericThrusterLarge_SciFi8x.dds" />
+    <Content Include="Textures\Small_AtmosphericThrusterSmall_SciFi2x.dds" />
+    <Content Include="Textures\Small_AtmosphericThrusterSmall_SciFi4x.dds" />
+    <Content Include="Textures\Small_AtmosphericThrusterSmall_SciFi8x.dds" />
+    <Content Include="Textures\Small_IonThrusterLarge_SciFi2x.dds" />
+    <Content Include="Textures\Small_IonThrusterLarge_SciFi4x.dds" />
+    <Content Include="Textures\Small_IonThrusterLarge_SciFi8x.dds" />
+    <Content Include="Textures\Small_IonThrusterSmall_SciFi2x.dds" />
+    <Content Include="Textures\Small_IonThrusterSmall_SciFi4x.dds" />
+    <Content Include="Textures\Small_IonThrusterSmall_SciFi8x.dds" />
+    <Content Include="Textures\SolarHydroponics2x.dds" />
+    <Content Include="Textures\SolarHydroponics4x.dds" />
+    <Content Include="Textures\SolarHydroponics8x.dds" />
+    <Content Include="Textures\SolarPanel2x.dds" />
+    <Content Include="Textures\SolarPanel4x.dds" />
+    <Content Include="Textures\SolarPanel8x.dds" />
+    <Content Include="Textures\StoneIncinerator.dds" />
+    <Content Include="Textures\SurvivalKitLarge2x.dds" />
+    <Content Include="Textures\SurvivalKitLarge4x.dds" />
+    <Content Include="Textures\SurvivalKitLarge8x.dds" />
+    <Content Include="Textures\SurvivalKitSmall2x.dds" />
+    <Content Include="Textures\SurvivalKitSmall4x.dds" />
+    <Content Include="Textures\SurvivalKitSmall8x.dds" />
+    <Content Include="Textures\tech2x.dds" />
+    <Content Include="Textures\tech4x.dds" />
+    <Content Include="Textures\tech8x.dds" />
+    <Content Include="Textures\techadmin.dds" />
+    <Content Include="Textures\thrust2x.dds" />
+    <Content Include="Textures\thrust4x.dds" />
+    <Content Include="Textures\thrust8x.dds" />
+    <Content Include="Textures\thrust_large2x.dds" />
+    <Content Include="Textures\thrust_large4x.dds" />
+    <Content Include="Textures\thrust_large8x.dds" />
+    <Content Include="Textures\TrashCan.dds" />
+    <Content Include="Textures\Welder2x.dds" />
+    <Content Include="Textures\Welder4x.dds" />
+    <Content Include="Textures\Welder8x.dds" />
+    <Content Include="Textures\WindTurbine2x.dds" />
+    <Content Include="Textures\WindTurbine4x.dds" />
+    <Content Include="Textures\WindTurbine8x.dds" />
+    <Content Include="thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ProtoBuf.Net">
+      <HintPath>..\..\Libraries\ProtoBuf.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoBuf.Net.Core">
+      <HintPath>..\..\Libraries\ProtoBuf.Net.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Common">
+      <HintPath>..\..\Libraries\Sandbox.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Game">
+      <HintPath>..\..\Libraries\Sandbox.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Game.XmlSerializers">
+      <HintPath>..\..\Libraries\Sandbox.Game.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Graphics">
+      <HintPath>..\..\Libraries\Sandbox.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.RenderDirect">
+      <HintPath>..\..\Libraries\Sandbox.RenderDirect.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceEngineers.Game">
+      <HintPath>..\..\Libraries\SpaceEngineers.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceEngineers.ObjectBuilders">
+      <HintPath>..\..\Libraries\SpaceEngineers.ObjectBuilders.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceEngineers.ObjectBuilders.XmlSerializers">
+      <HintPath>..\..\Libraries\SpaceEngineers.ObjectBuilders.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="VRage">
+      <HintPath>..\..\Libraries\VRage.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Ansel">
+      <HintPath>..\..\Libraries\VRage.Ansel.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Audio">
+      <HintPath>..\..\Libraries\VRage.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Game">
+      <HintPath>..\..\Libraries\VRage.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Game.XmlSerializers">
+      <HintPath>..\..\Libraries\VRage.Game.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Input">
+      <HintPath>..\..\Libraries\VRage.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Library">
+      <HintPath>..\..\Libraries\VRage.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Math">
+      <HintPath>..\..\Libraries\VRage.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Math.XmlSerializers">
+      <HintPath>..\..\Libraries\VRage.Math.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Mod.Io">
+      <HintPath>..\..\Libraries\VRage.Mod.Io.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.NativeAftermath">
+      <HintPath>..\..\Libraries\VRage.NativeAftermath.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.NativeWrapper">
+      <HintPath>..\..\Libraries\VRage.NativeWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Network">
+      <HintPath>..\..\Libraries\VRage.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Platform.Windows">
+      <HintPath>..\..\Libraries\VRage.Platform.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Render">
+      <HintPath>..\..\Libraries\VRage.Render.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Render11">
+      <HintPath>..\..\Libraries\VRage.Render11.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Scripting">
+      <HintPath>..\..\Libraries\VRage.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Steam">
+      <HintPath>..\..\Libraries\VRage.Steam.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.UserInterface">
+      <HintPath>..\..\Libraries\VRage.UserInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.XmlSerializers">
+      <HintPath>..\..\Libraries\VRage.XmlSerializers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Scripts\TieredTechBlocks\Config.cs" />
+    <Compile Include="Data\Scripts\TieredTechBlocks\MoreLoot.cs" />
+    <Compile Include="Data\Scripts\TieredTechBlocks\MyConfig.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

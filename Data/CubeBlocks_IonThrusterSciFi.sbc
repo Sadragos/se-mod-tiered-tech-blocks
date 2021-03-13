@@ -1,0 +1,1167 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <CubeBlocks>
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>SmallBlockSmallThrustSciFi2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Sci-Fi Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\Small_IonThrusterSmall_SciFi2x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\IonThrusterSmall_SciFi.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech2x" Count="3"/>
+                <Component Subtype="SteelPlate" Count="2"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="LargeTube" Count="2"/>
+                <Component Subtype="Thrust" Count="2"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="SteelPlate" Count="2"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\IonThrusterSmall_SciFi_Construction1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\IonThrusterSmall_SciFi_Construction2.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>SmallThrustSciFi2x</BlockPairName>
+            <Center x="0" y="0" z="1" />
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>15</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>28800</ForceMagnitude>
+            <MaxPowerConsumption>0.35</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.25</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
+            <FlameDamage>0.1</FlameDamage>
+            <FlameLengthScale>1.4</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>SciFiEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>SmallGridSmallThruster</FlameFlare>
+            <FlameVisibilityDistance>200</FlameVisibilityDistance>
+            <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+            <PrimarySound>SmShipSmJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>SparksOfTheFuture</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>SmallBlockLargeThrustSciFi2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Sci-Fi Large Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\Small_IonThrusterLarge_SciFi2x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="4" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\IonThrusterLarge_SciFi.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech2x" Count="7"/>
+                <Component Subtype="SteelPlate" Count="2"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="LargeTube" Count="8"/>
+                <Component Subtype="Thrust" Count="18"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="SteelPlate" Count="6"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\IonThrusterLarge_SciFi_Construction1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\IonThrusterLarge_SciFi_Construction2.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>LargeThrustSciFi2x</BlockPairName>
+            <Center x="1" y="0" z="2" />
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>30</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>345600</ForceMagnitude>
+            <MaxPowerConsumption>4.2</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.25</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+            <FlameDamage>0.2</FlameDamage>
+            <FlameLengthScale>1.15</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>SciFiEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>SmallGridLargeThruster</FlameFlare>
+            <FlameVisibilityDistance>300</FlameVisibilityDistance>
+            <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+            <PrimarySound>SmShipLrgJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>SparksOfTheFuture</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>LargeBlockSmallThrustSciFi2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Sci-Fi Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\large_IonThrusterSmall_SciFi2x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\IonThrusterSmall_SciFi.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech2x" Count="10"/>
+                <Component Subtype="SteelPlate" Count="23"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="LargeTube" Count="12"/>
+                <Component Subtype="Thrust" Count="120"/>
+                <Component Subtype="Construction" Count="30"/>
+                <Component Subtype="SteelPlate" Count="15"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction3.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>SmallThrustSciFi2x</BlockPairName>
+            <Center x="0" y="0" z="1" />
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>60</BuildTimeSeconds>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>691200</ForceMagnitude>
+            <MaxPowerConsumption>5.8800</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.25</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.61</FlameDamageLengthScale>
+            <FlameLengthScale>1.5</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>SciFiEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>LargeGridSmallThruster</FlameFlare>
+            <FlameVisibilityDistance>500</FlameVisibilityDistance>
+            <FlameGlareQuerySize>1</FlameGlareQuerySize>
+            <PrimarySound>LrgShipSmJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>SparksOfTheFuture</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>LargeBlockLargeThrustSciFi2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Sci-Fi Large Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\large_IonThrusterLarge_SciFi2x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="4" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\IonThrusterLarge_SciFi.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech2x" Count="50"/>
+                <Component Subtype="SteelPlate" Count="150"/>
+                <Component Subtype="Construction" Count="105"/>
+                <Component Subtype="LargeTube" Count="60"/>
+                <Component Subtype="Thrust" Count="1440"/>
+                <Component Subtype="Construction" Count="45"/>
+                <Component Subtype="SteelPlate" Count="75"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.2" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction1.mwm" />
+                <Model BuildPercentUpperBound="0.4" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction2.mwm" />
+                <Model BuildPercentUpperBound="0.6" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction3.mwm" />
+                <Model BuildPercentUpperBound="0.8" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction4.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction5.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>LargeThrustSciFi2x</BlockPairName>
+            <Center x="1" y="0" z="2" />
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>135</BuildTimeSeconds>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>8640000</ForceMagnitude>
+            <MaxPowerConsumption>58.8000</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.25</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.8</FlameDamageLengthScale>
+            <FlameLengthScale>1.15</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>SciFiEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>LargeGridLargeThruster</FlameFlare>
+            <FlameVisibilityDistance>700</FlameVisibilityDistance>
+            <FlameGlareQuerySize>1.5</FlameGlareQuerySize>
+            <PrimarySound>LrgShipLrgJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>SparksOfTheFuture</DLC>
+        </Definition>
+
+
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>SmallBlockSmallThrustSciFi4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Sci-Fi Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\Small_IonThrusterSmall_SciFi4x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\IonThrusterSmall_SciFi.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech4x" Count="3"/>
+                <Component Subtype="SteelPlate" Count="3"/>
+                <Component Subtype="Construction" Count="3"/>
+                <Component Subtype="LargeTube" Count="3"/>
+                <Component Subtype="Thrust" Count="3"/>
+                <Component Subtype="Construction" Count="3"/>
+                <Component Subtype="SteelPlate" Count="3"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\IonThrusterSmall_SciFi_Construction1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\IonThrusterSmall_SciFi_Construction2.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>SmallThrustSciFi4x</BlockPairName>
+            <Center x="0" y="0" z="1" />
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>23</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>57600</ForceMagnitude>
+            <MaxPowerConsumption>0.6125</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
+            <FlameDamage>0.1</FlameDamage>
+            <FlameLengthScale>1.4</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>SciFiEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>SmallGridSmallThruster</FlameFlare>
+            <FlameVisibilityDistance>200</FlameVisibilityDistance>
+            <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+            <PrimarySound>SmShipSmJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>SparksOfTheFuture</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>SmallBlockLargeThrustSciFi4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Sci-Fi Large Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\Small_IonThrusterLarge_SciFi4x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="4" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\IonThrusterLarge_SciFi.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech4x" Count="7"/>
+                <Component Subtype="SteelPlate" Count="3"/>
+                <Component Subtype="Construction" Count="3"/>
+                <Component Subtype="LargeTube" Count="12"/>
+                <Component Subtype="Thrust" Count="27"/>
+                <Component Subtype="Construction" Count="3"/>
+                <Component Subtype="SteelPlate" Count="9"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\IonThrusterLarge_SciFi_Construction1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\IonThrusterLarge_SciFi_Construction2.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>LargeThrustSciFi4x</BlockPairName>
+            <Center x="1" y="0" z="2" />
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>45</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>691200</ForceMagnitude>
+            <MaxPowerConsumption>7.35</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+            <FlameDamage>0.2</FlameDamage>
+            <FlameLengthScale>1.15</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>SciFiEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>SmallGridLargeThruster</FlameFlare>
+            <FlameVisibilityDistance>300</FlameVisibilityDistance>
+            <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+            <PrimarySound>SmShipLrgJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>SparksOfTheFuture</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>LargeBlockSmallThrustSciFi4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Sci-Fi Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\large_IonThrusterSmall_SciFi4x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\IonThrusterSmall_SciFi.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech4x" Count="10"/>
+                <Component Subtype="SteelPlate" Count="34"/>
+                <Component Subtype="Construction" Count="90"/>
+                <Component Subtype="LargeTube" Count="18"/>
+                <Component Subtype="Thrust" Count="180"/>
+                <Component Subtype="Construction" Count="45"/>
+                <Component Subtype="SteelPlate" Count="23"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction3.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>SmallThrustSciFi4x</BlockPairName>
+            <Center x="0" y="0" z="1" />
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>90</BuildTimeSeconds>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>1382400</ForceMagnitude>
+            <MaxPowerConsumption>10.2900</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.61</FlameDamageLengthScale>
+            <FlameLengthScale>1.5</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>SciFiEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>LargeGridSmallThruster</FlameFlare>
+            <FlameVisibilityDistance>500</FlameVisibilityDistance>
+            <FlameGlareQuerySize>1</FlameGlareQuerySize>
+            <PrimarySound>LrgShipSmJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>SparksOfTheFuture</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>LargeBlockLargeThrustSciFi4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Sci-Fi Large Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\large_IonThrusterLarge_SciFi4x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="4" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\IonThrusterLarge_SciFi.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech4x" Count="50"/>
+                <Component Subtype="SteelPlate" Count="225"/>
+                <Component Subtype="Construction" Count="158"/>
+                <Component Subtype="LargeTube" Count="90"/>
+                <Component Subtype="Thrust" Count="2160"/>
+                <Component Subtype="Construction" Count="68"/>
+                <Component Subtype="SteelPlate" Count="113"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.2" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction1.mwm" />
+                <Model BuildPercentUpperBound="0.4" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction2.mwm" />
+                <Model BuildPercentUpperBound="0.6" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction3.mwm" />
+                <Model BuildPercentUpperBound="0.8" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction4.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction5.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>LargeThrustSciFi4x</BlockPairName>
+            <Center x="1" y="0" z="2" />
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>203</BuildTimeSeconds>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>17280000</ForceMagnitude>
+            <MaxPowerConsumption>102.9000</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.8</FlameDamageLengthScale>
+            <FlameLengthScale>1.15</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>SciFiEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>LargeGridLargeThruster</FlameFlare>
+            <FlameVisibilityDistance>700</FlameVisibilityDistance>
+            <FlameGlareQuerySize>1.5</FlameGlareQuerySize>
+            <PrimarySound>LrgShipLrgJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>SparksOfTheFuture</DLC>
+        </Definition>
+
+
+
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>SmallBlockSmallThrustSciFi8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Sci-Fi Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\Small_IonThrusterSmall_SciFi8x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\IonThrusterSmall_SciFi.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech8x" Count="3"/>
+                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="LargeTube" Count="4"/>
+                <Component Subtype="Thrust" Count="4"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="SteelPlate" Count="4"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\IonThrusterSmall_SciFi_Construction1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\IonThrusterSmall_SciFi_Construction2.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>SmallThrustSciFi8x</BlockPairName>
+            <Center x="0" y="0" z="1" />
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>34</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>115200</ForceMagnitude>
+            <MaxPowerConsumption>1.0719</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.35</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
+            <FlameDamage>0.1</FlameDamage>
+            <FlameLengthScale>1.4</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>SciFiEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>SmallGridSmallThruster</FlameFlare>
+            <FlameVisibilityDistance>200</FlameVisibilityDistance>
+            <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+            <PrimarySound>SmShipSmJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>SparksOfTheFuture</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>SmallBlockLargeThrustSciFi8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Sci-Fi Large Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\Small_IonThrusterLarge_SciFi8x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="4" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\IonThrusterLarge_SciFi.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech8x" Count="7"/>
+                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="LargeTube" Count="17"/>
+                <Component Subtype="Thrust" Count="41"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="SteelPlate" Count="14"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\IonThrusterLarge_SciFi_Construction1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\IonThrusterLarge_SciFi_Construction2.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>LargeThrustSciFi8x</BlockPairName>
+            <Center x="1" y="0" z="2" />
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>68</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>1382400</ForceMagnitude>
+            <MaxPowerConsumption>12.8625</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.35</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+            <FlameDamage>0.2</FlameDamage>
+            <FlameLengthScale>1.15</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>SciFiEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>SmallGridLargeThruster</FlameFlare>
+            <FlameVisibilityDistance>300</FlameVisibilityDistance>
+            <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+            <PrimarySound>SmShipLrgJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>SparksOfTheFuture</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>LargeBlockSmallThrustSciFi8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Sci-Fi Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\large_IonThrusterSmall_SciFi8x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\IonThrusterSmall_SciFi.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech8x" Count="10"/>
+                <Component Subtype="SteelPlate" Count="51"/>
+                <Component Subtype="Construction" Count="135"/>
+                <Component Subtype="LargeTube" Count="27"/>
+                <Component Subtype="Thrust" Count="270"/>
+                <Component Subtype="Construction" Count="68"/>
+                <Component Subtype="SteelPlate" Count="34"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction3.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>SmallThrustSciFi8x</BlockPairName>
+            <Center x="0" y="0" z="1" />
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>135</BuildTimeSeconds>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>2764800</ForceMagnitude>
+            <MaxPowerConsumption>18.0075</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.35</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.61</FlameDamageLengthScale>
+            <FlameLengthScale>1.5</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>SciFiEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>LargeGridSmallThruster</FlameFlare>
+            <FlameVisibilityDistance>500</FlameVisibilityDistance>
+            <FlameGlareQuerySize>1</FlameGlareQuerySize>
+            <PrimarySound>LrgShipSmJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>SparksOfTheFuture</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>LargeBlockLargeThrustSciFi8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Sci-Fi Large Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\large_IonThrusterLarge_SciFi8x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="4" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\IonThrusterLarge_SciFi.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech8x" Count="50"/>
+                <Component Subtype="SteelPlate" Count="338"/>
+                <Component Subtype="Construction" Count="237"/>
+                <Component Subtype="LargeTube" Count="135"/>
+                <Component Subtype="Thrust" Count="3240"/>
+                <Component Subtype="Construction" Count="102"/>
+                <Component Subtype="SteelPlate" Count="169"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.2" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction1.mwm" />
+                <Model BuildPercentUpperBound="0.4" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction2.mwm" />
+                <Model BuildPercentUpperBound="0.6" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction3.mwm" />
+                <Model BuildPercentUpperBound="0.8" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction4.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction5.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>LargeThrustSciFi8x</BlockPairName>
+            <Center x="1" y="0" z="2" />
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>304</BuildTimeSeconds>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>34560000</ForceMagnitude>
+            <MaxPowerConsumption>180.0750</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.35</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.8</FlameDamageLengthScale>
+            <FlameLengthScale>1.15</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>SciFiEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>LargeGridLargeThruster</FlameFlare>
+            <FlameVisibilityDistance>700</FlameVisibilityDistance>
+            <FlameGlareQuerySize>1.5</FlameGlareQuerySize>
+            <PrimarySound>LrgShipLrgJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>SparksOfTheFuture</DLC>
+        </Definition>
+    </CubeBlocks>
+</Definitions>
