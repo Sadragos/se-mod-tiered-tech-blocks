@@ -8,7 +8,7 @@
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockSmallHydrogenThrust2x</SubtypeId>
             </Id>
-            <DisplayName>Enhanced Hydrogen Thruster</DisplayName>
+            <DisplayName>Enhanced Small Hydrogen Thruster</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\HydrogenThrusterSmall2x.dds</Icon>
             <Description>Description_HydrogenThrust</Description>
@@ -212,7 +212,7 @@
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockSmallHydrogenThrust2x</SubtypeId>
             </Id>
-            <DisplayName>Enhanced Hydrogen Thruster</DisplayName>
+            <DisplayName>Enhanced Small Hydrogen Thruster</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\HydrogenThrusterSmall2x.dds</Icon>
             <Description>Description_HydrogenThrust</Description>
@@ -418,7 +418,7 @@
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockSmallHydrogenThrust4x</SubtypeId>
             </Id>
-            <DisplayName>Proficient Hydrogen Thruster</DisplayName>
+            <DisplayName>Proficient Small Hydrogen Thruster</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\HydrogenThrusterSmall4x.dds</Icon>
             <Description>Description_HydrogenThrust</Description>
@@ -622,7 +622,7 @@
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockSmallHydrogenThrust4x</SubtypeId>
             </Id>
-            <DisplayName>Proficient Hydrogen Thruster</DisplayName>
+            <DisplayName>Proficient Small Hydrogen Thruster</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\HydrogenThrusterSmall4x.dds</Icon>
             <Description>Description_HydrogenThrust</Description>
@@ -828,7 +828,7 @@
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockSmallHydrogenThrust8x</SubtypeId>
             </Id>
-            <DisplayName>Elite Hydrogen Thruster</DisplayName>
+            <DisplayName>Elite Small Hydrogen Thruster</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\HydrogenThrusterSmall8x.dds</Icon>
             <Description>Description_HydrogenThrust</Description>
@@ -1032,7 +1032,7 @@
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockSmallHydrogenThrust8x</SubtypeId>
             </Id>
-            <DisplayName>Elite Hydrogen Thruster</DisplayName>
+            <DisplayName>Elite Small Hydrogen Thruster</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\HydrogenThrusterSmall8x.dds</Icon>
             <Description>Description_HydrogenThrust</Description>
