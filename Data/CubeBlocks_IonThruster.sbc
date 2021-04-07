@@ -106,7 +106,7 @@
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockLargeThrust2x</SubtypeId>
             </Id>
-            <DisplayName>Enhanced Ion Thruster</DisplayName>
+            <DisplayName>Enhanced Large Ion Thruster</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\thrust_large2x.dds</Icon>
             <Description>Description_IonThrust</Description>
@@ -301,7 +301,7 @@
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockLargeThrust2x</SubtypeId>
             </Id>
-            <DisplayName>Enhanced Ion Thruster</DisplayName>
+            <DisplayName>Enhanced Large Ion Thruster</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\thrust_large2x.dds</Icon>
             <Description>Description_IonThrust</Description>
@@ -500,7 +500,7 @@
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockLargeThrust4x</SubtypeId>
             </Id>
-            <DisplayName>Proficient Ion Thruster</DisplayName>
+            <DisplayName>Proficient Large Ion Thruster</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\thrust_large4x.dds</Icon>
             <Description>Description_IonThrust</Description>
@@ -695,7 +695,7 @@
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockLargeThrust4x</SubtypeId>
             </Id>
-            <DisplayName>Proficient Ion Thruster</DisplayName>
+            <DisplayName>Proficient Large Ion Thruster</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\thrust_large4x.dds</Icon>
             <Description>Description_IonThrust</Description>
@@ -894,7 +894,7 @@
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockLargeThrust8x</SubtypeId>
             </Id>
-            <DisplayName>Elite Ion Thruster</DisplayName>
+            <DisplayName>Elite Large Ion Thruster</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\thrust_large8x.dds</Icon>
             <Description>Description_IonThrust</Description>
@@ -1089,7 +1089,7 @@
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockLargeThrust8x</SubtypeId>
             </Id>
-            <DisplayName>Elite Ion Thruster</DisplayName>
+            <DisplayName>Elite Large Ion Thruster</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\thrust_large8x.dds</Icon>
             <Description>Description_IonThrust</Description>
