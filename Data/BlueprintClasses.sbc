@@ -71,17 +71,6 @@
         <Class>
             <Id>
                 <TypeId>BlueprintClassDefinition</TypeId>
-                <SubtypeId>BasicAmmo</SubtypeId>
-            </Id>
-            <DisplayName>Basic Ammo</DisplayName>
-            <Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
-            <HighlightIcon>Textures\component_focus.dds</HighlightIcon>
-            <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
-        </Class>
-
-        <Class>
-            <Id>
-                <TypeId>BlueprintClassDefinition</TypeId>
                 <SubtypeId>OreToIngotT1</SubtypeId>
             </Id>
             <DisplayName>Survival Refinery</DisplayName>
@@ -124,9 +113,6 @@
         <Entry Class="TechAdmin" BlueprintSubtypeId="Tech2x" />
         <Entry Class="TechAdmin" BlueprintSubtypeId="Tech4x" />
         <Entry Class="TechAdmin" BlueprintSubtypeId="Tech8x" />
-
-        <Entry Class="BasicAmmo" BlueprintSubtypeId="NATO_5p56x45mmMagazine" />
-        <Entry Class="BasicAmmo" BlueprintSubtypeId="NATO_25x184mmMagazine" />
 
         <Entry Class="BasicComponents2" BlueprintSubtypeId="SolarCell" />
         <Entry Class="BasicComponents2" BlueprintSubtypeId="SteelPlate" />

@@ -51,8 +51,8 @@
       </ScreenAreas>
       <BlueprintClasses>
         <Class>Tools</Class>
-        <Class>BasicAmmo</Class>
         <Class>BasicComponents2</Class>
+        <Class>Consumables</Class>
         <Class>OreToIngotT1</Class>
       </BlueprintClasses>
       <AssemblySpeed>0.5</AssemblySpeed>
@@ -123,8 +123,8 @@
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
       <BlueprintClasses>
         <Class>Tools</Class>
-        <Class>BasicAmmo</Class>
         <Class>BasicComponents2</Class>
+        <Class>Consumables</Class>
         <Class>OreToIngotT1</Class>
       </BlueprintClasses>
       <AssemblySpeed>0.5</AssemblySpeed>
@@ -204,8 +204,8 @@
       </ScreenAreas>
       <BlueprintClasses>
         <Class>Tools</Class>
-        <Class>BasicAmmo</Class>
         <Class>SimpleComponents</Class>
+        <Class>Consumables</Class>
         <Class>OreToIngotT2</Class>
       </BlueprintClasses>
       <AssemblySpeed>0.7</AssemblySpeed>
@@ -276,8 +276,8 @@
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
       <BlueprintClasses>
         <Class>Tools</Class>
-        <Class>BasicAmmo</Class>
         <Class>SimpleComponents</Class>
+        <Class>Consumables</Class>
         <Class>OreToIngotT2</Class>
       </BlueprintClasses>
       <AssemblySpeed>0.7</AssemblySpeed>
@@ -356,8 +356,8 @@
       </ScreenAreas>
       <BlueprintClasses>
         <Class>EliteTools</Class>
-        <Class>Ammo</Class>
         <Class>Components</Class>
+        <Class>EliteConsumables</Class>
         <Class>OreToIngotT3</Class>
       </BlueprintClasses>
       <AssemblySpeed>1</AssemblySpeed>
@@ -428,8 +428,8 @@
       <ResourceSinkGroup>Factory</ResourceSinkGroup>
       <BlueprintClasses>
         <Class>EliteTools</Class>
-        <Class>Ammo</Class>
         <Class>Components</Class>
+        <Class>EliteConsumables</Class>
         <Class>OreToIngotT3</Class>
       </BlueprintClasses>
       <AssemblySpeed>1</AssemblySpeed>
