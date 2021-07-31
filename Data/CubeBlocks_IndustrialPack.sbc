@@ -1,0 +1,2263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+        <!-- Tier 1 -->
+
+        <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+            <Id>
+                <TypeId>CargoContainer</TypeId>
+                <SubtypeId>LargeBlockLargeIndustrialContainer2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Large I. Cargo Container</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\CargoContainer2x.dds</Icon>
+            <Description>Description_LargeCargoContainer</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\CargoContainer.mwm</Model>
+            <Components>
+                <Component Subtype="Tech2x" Count="45"/>
+                <Component Subtype="InteriorPlate" Count="450"/>
+                <Component Subtype="Construction" Count="90"/>
+                <Component Subtype="MetalGrid" Count="36"/>
+                <Component Subtype="SmallTube" Count="90"/>
+                <Component Subtype="Motor" Count="30"/>
+                <Component Subtype="Display" Count="2"/>
+                <Component Subtype="Computer" Count="12"/>
+                <Component Subtype="Construction" Count="30"/>
+                <Component Subtype="InteriorPlate" Count="90"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Right" StartX="0.2" StartY="0.55" EndX="0.3" EndY="0.85" />
+                <MountPoint Side="Right" StartX="0.2" StartY="2.15" EndX="0.3" EndY="2.45" />
+                <MountPoint Side="Right" StartX="2.7" StartY="0.55" EndX="2.8" EndY="0.85" />
+                <MountPoint Side="Right" StartX="2.7" StartY="2.15" EndX="2.8" EndY="2.45" />
+                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Left" StartX="0.2" StartY="0.55" EndX="0.3" EndY="0.85" />
+                <MountPoint Side="Left" StartX="0.2" StartY="2.15" EndX="0.3" EndY="2.45" />
+                <MountPoint Side="Left" StartX="2.7" StartY="0.55" EndX="2.8" EndY="0.85" />
+                <MountPoint Side="Left" StartX="2.7" StartY="2.15" EndX="2.8" EndY="2.45" />
+                <MountPoint Side="Top" StartX="0.5" StartY="0.2" EndX="0.8" EndY="0.3" />
+                <MountPoint Side="Top" StartX="2.2" StartY="0.2" EndX="2.5" EndY="0.3" />
+                <MountPoint Side="Top" StartX="0.5" StartY="2.7" EndX="0.8" EndY="2.8" />
+                <MountPoint Side="Top" StartX="2.2" StartY="2.7" EndX="2.5" EndY="2.8" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0.2" EndX="0.8" EndY="0.3" Default="true" />
+                <MountPoint Side="Bottom" StartX="2.2" StartY="0.2" EndX="2.5" EndY="0.3" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="2.7" EndX="0.8" EndY="2.8" />
+                <MountPoint Side="Bottom" StartX="2.2" StartY="2.7" EndX="2.5" EndY="2.8" />
+                <MountPoint Side="Front" StartX="1.15" StartY="1.15" EndX="1.85" EndY="1.85" />
+                <MountPoint Side="Front" StartX="0.2" StartY="0.5" EndX="0.5" EndY="2.5" />
+                <MountPoint Side="Front" StartX="0.5" StartY="0.2" EndX="0.8" EndY="2.8" />
+                <MountPoint Side="Front" StartX="2.5" StartY="0.5" EndX="2.8" EndY="2.5" />
+                <MountPoint Side="Front" StartX="2.2" StartY="0.2" EndX="2.5" EndY="2.8" />
+                <MountPoint Side="Back" StartX="1.15" StartY="1.15" EndX="1.85" EndY="1.85" />
+                <MountPoint Side="Back" StartX="0.2" StartY="0.5" EndX="0.5" EndY="2.5" />
+                <MountPoint Side="Back" StartX="0.5" StartY="0.2" EndX="0.8" EndY="2.8" />
+                <MountPoint Side="Back" StartX="2.5" StartY="0.5" EndX="2.8" EndY="2.5" />
+                <MountPoint Side="Back" StartX="2.2" StartY="0.2" EndX="2.5" EndY="2.8" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\CargoContainerConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\CargoContainerConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\CargoContainerConstruction_3.mwm" />
+            </BuildProgressModels>
+            <InventorySize>
+              <X>15</X>
+              <Y>7.5</Y>
+              <Z>7.5</Z>
+            </InventorySize>
+            <BlockPairName>LargeCargoContainerIndustrial2x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>68</BuildTimeSeconds>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>10</PCU>
+            <DLC>HeavyIndustry</DLC>
+        </Definition>
+        
+        
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>LargeHydrogenTankIndustrial2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced I. Hydrogen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\HydrogenTankIndustrial2x.dds</Icon>
+            <Description>Description_HydrogenTank</Description>
+            <Public>true</Public>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\HydrogenTankIndustrial.mwm</Model>
+            <Components>
+                <Component Subtype="Tech2x" Count="38"/>
+                <Component Subtype="SteelPlate" Count="240"/>
+                <Component Subtype="LargeTube" Count="120"/>
+                <Component Subtype="SmallTube" Count="90"/>
+                <Component Subtype="Computer" Count="12"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="SteelPlate" Count="180"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Top" StartX="1.1" StartY="1.1" EndX="1.9" EndY="1.9" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0.3" EndX="3" EndY="2.7" Default="true" />
+                <MountPoint Side="Bottom" StartX="0.3" StartY="0" EndX="2.7" EndY="0.3" />
+                <MountPoint Side="Bottom" StartX="0.3" StartY="2.7" EndX="2.7" EndY="3" />
+                <MountPoint Side="Left" StartX="1.45" StartY="1.45" EndX="1.55" EndY="1.55" />
+                <MountPoint Side="Left" StartX="0.6" StartY="0" EndX="2.4" EndY="0.2" />
+                <MountPoint Side="Right" StartX="1.45" StartY="1.45" EndX="1.55" EndY="1.55" />
+                <MountPoint Side="Right" StartX="0.6" StartY="0" EndX="2.4" EndY="0.2" />
+                <MountPoint Side="Front" StartX="1.45" StartY="1.45" EndX="1.55" EndY="1.55" />
+                <MountPoint Side="Front" StartX="0.6" StartY="0" EndX="2.4" EndY="0.2" />
+                <MountPoint Side="Back" StartX="1.45" StartY="1.45" EndX="1.55" EndY="1.55" />
+                <MountPoint Side="Back" StartX="0.6" StartY="0" EndX="2.4" EndY="0.2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenTankIndustrialConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenTankIndustrialConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenTankIndustrialConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>HydrogenTankIndustrial2x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>30000000</Capacity>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Hydrogen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>HydrogenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>75</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+            <DestroySound>WepLrgWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>300</unsignedInt>
+                <unsignedInt>600</unsignedInt>
+            </TieredUpdateTimes>
+            <IsAirTight>false</IsAirTight>
+            <DLC>HeavyIndustry</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+            <Id>
+                <TypeId>Assembler</TypeId>
+                <SubtypeId>LargeAssemblerIndustrial2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Industrial Assembler</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\AdvancedAssemblerIndustrial2x.dds</Icon>
+            <Description>Description_Assembler</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="2" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\AdvancedAssemblerIndustrial.mwm</Model>
+            <Components>
+                <Component Subtype="Tech2x" Count="30"/>
+                <Component Subtype="SteelPlate" Count="180"/>
+                <Component Subtype="Construction" Count="120"/>
+                <Component Subtype="Motor" Count="30"/>
+                <Component Subtype="Display" Count="15"/>
+                <Component Subtype="MetalGrid" Count="15"/>
+                <Component Subtype="Computer" Count="240"/>
+                <Component Subtype="SteelPlate" Count="30"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1.1" />
+                <MountPoint Side="Front" StartX="0" StartY="1.1" EndX="1" EndY="2" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1.1" />
+                <MountPoint Side="Back" StartX="0" StartY="1.1" EndX="0.1" EndY="2" />
+                <MountPoint Side="Back" StartX="0.9" StartY="1.1" EndX="1" EndY="2" />
+                <MountPoint Side="Back" StartX="0.1" StartY="1.9" EndX="0.9" EndY="2" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="2" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="2" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Left" StartX="0" StartY="1" EndX="0.1" EndY="2" />
+                <MountPoint Side="Left" StartX="1.9" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Left" StartX="0.1" StartY="1.9" EndX="1.9" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\AdvancedAssemblerIndustrialConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\AdvancedAssemblerIndustrialConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\AdvancedAssemblerIndustrialConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>AssemblerIndustrial2x</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>120</BuildTimeSeconds>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>6</InventoryMaxVolume>
+            <AssemblySpeed>2</AssemblySpeed>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>1.12</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>LargeBlocks</Class>
+                <Class>SmallBlocks</Class>
+                <Class>Components</Class>
+                <Class>EliteTools</Class>
+                <Class>BuildPlanner</Class>
+                <Class>EliteConsumables</Class>
+            </BlueprintClasses>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <PrimarySound>BlockAssembler</PrimarySound>
+            <ActionSound>BlockAssemblerProcess</ActionSound>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <PCU>40</PCU>
+            <MirroringZ>Y</MirroringZ>
+            <MirroringY>Z</MirroringY>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
+            <DLC>HeavyIndustry</DLC>
+        </Definition>
+        
+        <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+            <Id>
+                <TypeId>Refinery</TypeId>
+                <SubtypeId>LargeRefineryIndustrial2x</SubtypeId>
+            </Id>
+            <DisplayName>Enhanced Industrial Refinery</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\AdvancedRefinery2x.dds</Icon>
+            <Description>Description_Refinery</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="2" y="4" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\AdvancedRefinery.mwm</Model>
+            <Components>
+                <Component Subtype="Tech2x" Count="30"/>
+                <Component Subtype="SteelPlate" Count="1650"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="LargeTube" Count="30"/>
+                <Component Subtype="Motor" Count="24"/>
+                <Component Subtype="MetalGrid" Count="30"/>
+                <Component Subtype="Computer" Count="30"/>
+                <Component Subtype="SteelPlate" Count="150"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <Center x="1" y="0" z="1" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="4" />
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="2" EndY="2" Default="true" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="1.5" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Top" StartX="0.8" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="0.8" EndY="0.1" />
+                <MountPoint Side="Top" StartX="0.1" StartY="1" EndX="1.9" EndY="1.7" />
+                <MountPoint Side="Top" StartX="0.4" StartY="1.7" EndX="1.7" EndY="1.9" />
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="2.1" />
+                <MountPoint Side="Left" StartX="0.4" StartY="3" EndX="2" EndY="3.9" />
+                <MountPoint Side="Left" StartX="1.8" StartY="2.1" EndX="2" EndY="3" />
+                <MountPoint Side="Left" StartX="0.2" StartY="0" EndX="1" EndY="0.7" />
+                <MountPoint Side="Left" StartX="0.2" StartY="1.1" EndX="0.8" EndY="1.4" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.4" EndY="1.1" />
+                <MountPoint Side="Right" StartX="1.4" StartY="0" EndX="2" EndY="0.5" />
+                <MountPoint Side="Right" StartX="0" StartY="1.1" EndX="0.4" EndY="3.3" />
+                <MountPoint Side="Right" StartX="0" StartY="3.3" EndX="1.7" EndY="3.9" />
+                <MountPoint Side="Right" StartX="0.4" StartY="2" EndX="2" EndY="2.1" />
+                <MountPoint Side="Front" StartX="1.2" StartY="0" EndX="1.8" EndY="0.7" />
+                <MountPoint Side="Front" StartX="1.2" StartY="1.1" EndX="1.8" EndY="1.4" />
+                <MountPoint Side="Front" StartX="0" StartY="2" EndX="1" EndY="2.1" />
+                <MountPoint Side="Front" StartX="0.3" StartY="3.3" EndX="1.6" EndY="3.9" />
+                <MountPoint Side="Front" StartX="0.8" StartY="3" EndX="1.6" EndY="3.3" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.5" EndY="0.1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\AdvancedRefinery_Construction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\AdvancedRefinery_Construction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\AdvancedRefinery_Construction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>RefineryIndustrial2x</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>135</BuildTimeSeconds>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>11.2500</InventoryMaxVolume>
+            <InventorySize>
+                <X>2.5</X>
+                <Y>2.5</Y>
+                <Z>2.5</Z>
+            </InventorySize>
+
+            <InventoryFillFactorMin>0.3</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.6</InventoryFillFactorMax>
+            
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>0.9800</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>Ingots</Class>
+            </BlueprintClasses>
+          <RefineSpeed>2.2750</RefineSpeed>
+          <MaterialEfficiency>1.05</MaterialEfficiency>
+          <OreAmountPerPullRequest>20000</OreAmountPerPullRequest>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <Center x="1" y="0" z="0" />
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <PrimarySound>BlockRafinery</PrimarySound>
+            <ActionSound>BlockRafineryProcess</ActionSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>90</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
+            <DLC>HeavyIndustry</DLC>
+        </Definition>
+
+    
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockLargeHydrogenThrustIndustrial2x</SubtypeId>
+      </Id>
+      <DisplayName>Enhanced Large I. Hydrogen Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+      <Icon>Textures\HydrogenThrusterIndustrialLarge2x.dds</Icon>
+      <Description>Description_HydrogenThrust</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\HydrogenThrusterIndustrialLarge.mwm</Model>
+      <ThrusterType>Hydrogen</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+                <Component Subtype="Tech2x" Count="7"/>
+        <Component Subtype="SteelPlate" Count="30"/>
+        <Component Subtype="Construction" Count="30"/>
+        <Component Subtype="MetalGrid" Count="33"/>
+        <Component Subtype="LargeTube" Count="15"/>
+        <Component Subtype="Construction" Count="15"/>
+        <Component Subtype="SteelPlate" Count="15"/>
+      </Components>
+      <CriticalComponent Subtype="LargeTube" Index="0" />
+      <Center x="1" y="1" z="3" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0.3" StartY="0" EndX="2.7" EndY="0.6" />
+        <MountPoint Side="Right" StartX="0" StartY="0.3" EndX="0.6" EndY="2.7" />
+        <MountPoint Side="Back" StartX="0.05" StartY="0.05" EndX="2.95" EndY="2.95" Default="true" />
+        <MountPoint Side="Left" StartX="3.4" StartY="0.3" EndX="4" EndY="2.7" />
+        <MountPoint Side="Bottom" StartX="0.3" StartY="3.4" EndX="2.7" EndY="4" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\HydrogenThrusterIndustrialLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\HydrogenThrusterIndustrialLargeConstruction_2.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>LargeHydrogenThrustIndustrial2x</BlockPairName>
+      <MirroringX>Z</MirroringX>
+      <MirroringZ>X</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <FuelConverter>
+        <FuelId>
+          <TypeId>GasProperties</TypeId>
+          <SubtypeId>Hydrogen</SubtypeId>
+        </FuelId>
+        <Efficiency>1</Efficiency>
+      </FuelConverter>
+      <MaxPowerConsumption>1.05</MaxPowerConsumption>
+      <MinPowerConsumption>0.000000001</MinPowerConsumption>
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>960000</ForceMagnitude>
+      <SlowdownFactor>1</SlowdownFactor>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameLengthScale>1.15</FlameLengthScale>
+      <FlameIdleColor>
+        <X>1</X>
+        <Y>0.85</Y>
+        <Z>0.3</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>1</X>
+        <Y>0.75</Y>
+        <Z>0.2</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>LargeGridLargeThruster</FlameFlare>
+      <FlameVisibilityDistance>700</FlameVisibilityDistance>
+      <FlameGlareQuerySize>1.5</FlameGlareQuerySize>
+      <PrimarySound>SmShipLrgJetHydrogen</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+        <TieredUpdateTimes>
+            <unsignedInt>100</unsignedInt>
+            <unsignedInt>3600</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+        <DLC>HeavyIndustry</DLC>
+    </Definition>
+        
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockSmallHydrogenThrustIndustrial2x</SubtypeId>
+      </Id>
+      <DisplayName>Enhanced Large I. Hydrogen Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+      <Icon>Textures\HydrogenThrusterIndustrialSmall2x.dds</Icon>
+      <Description>Description_HydrogenThrust</Description>
+      <CubeSize>Small</CubeSize>
+        <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\HydrogenThrusterIndustrialSmall.mwm</Model>
+      <ThrusterType>Hydrogen</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+                <Component Subtype="Tech2x" Count="3"/>
+        <Component Subtype="SteelPlate" Count="3"/>
+        <Component Subtype="Construction" Count="15"/>
+        <Component Subtype="MetalGrid" Count="6"/>
+        <Component Subtype="LargeTube" Count="3"/>
+        <Component Subtype="Construction" Count="8"/>
+        <Component Subtype="SteelPlate" Count="8"/>
+      </Components>
+      <CriticalComponent Subtype="LargeTube" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\HydrogenThrusterIndustrialSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\HydrogenThrusterIndustrialSmallConstruction_2.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>HydrogenThrustIndustrial2x</BlockPairName>
+      <Center x="0" y="0" z="0" />
+      <MirroringZ>X</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>196800</ForceMagnitude>
+      <FuelConverter>
+        <FuelId>
+          <TypeId>GasProperties</TypeId>
+          <SubtypeId>Hydrogen</SubtypeId>
+        </FuelId>
+        <Efficiency>1</Efficiency>
+      </FuelConverter>
+      <MaxPowerConsumption>0.2188</MaxPowerConsumption>
+      <MinPowerConsumption>0.000000001</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+      <FlameDamageLengthScale>0.34</FlameDamageLengthScale>
+      <FlameLengthScale>1.5</FlameLengthScale>
+      <FlameIdleColor>
+        <X>1</X>
+        <Y>0.85</Y>
+        <Z>0.3</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>1</X>
+        <Y>0.75</Y>
+        <Z>0.2</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>LargeGridSmallThruster</FlameFlare>
+      <FlameVisibilityDistance>500</FlameVisibilityDistance>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>SmShipSmJetHydrogen</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <Public>true</Public>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <IsAirTight>false</IsAirTight>
+        <TieredUpdateTimes>
+            <unsignedInt>100</unsignedInt>
+            <unsignedInt>3600</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+        <DLC>HeavyIndustry</DLC>
+    </Definition>
+
+      <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+        <Id>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>LargeBlockLargeHydrogenThrustIndustrial2x</SubtypeId>
+        </Id>
+        <DisplayName>Enhanced Large I. Thruster</DisplayName>
+        <GuiVisible>false</GuiVisible>
+        <Icon>Textures\HydrogenThrusterIndustrialLarge2x.dds</Icon>
+        <Description>Description_HydrogenThrust</Description>
+        <CubeSize>Large</CubeSize>
+        <BlockTopology>TriangleMesh</BlockTopology>
+        <Size x="3" y="3" z="4" />
+        <ModelOffset x="0" y="0" z="0" />
+        <Model>Models\Cubes\Large\HydrogenThrusterIndustrialLarge.mwm</Model>
+        <ThrusterType>Hydrogen</ThrusterType>
+        <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+        <Components>
+          <Component Subtype="Tech2x" Count="50"/>
+          <Component Subtype="SteelPlate" Count="150"/>
+          <Component Subtype="Construction" Count="225"/>
+          <Component Subtype="MetalGrid" Count="375"/>
+          <Component Subtype="LargeTube" Count="60"/>
+          <Component Subtype="Construction" Count="45"/>
+          <Component Subtype="SteelPlate" Count="75"/>
+        </Components>
+        <CriticalComponent Subtype="LargeTube" Index="0" />
+        <Center x="1" y="1" z="3" />
+        <MountPoints>
+          <MountPoint Side="Top" StartX="0.3" StartY="0" EndX="2.7" EndY="0.6" />
+          <MountPoint Side="Right" StartX="0" StartY="0.3" EndX="0.6" EndY="2.7" />
+          <MountPoint Side="Back" StartX="0.05" StartY="0.05" EndX="2.95" EndY="2.95" Default="true" />
+          <MountPoint Side="Left" StartX="3.4" StartY="0.3" EndX="4" EndY="2.7" />
+          <MountPoint Side="Bottom" StartX="0.3" StartY="3.4" EndX="2.7" EndY="4" />
+        </MountPoints>
+        <BuildProgressModels>
+          <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenThrusterIndustrialLargeConstruction_1.mwm" />
+          <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenThrusterIndustrialLargeConstruction_2.mwm" />
+          <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenThrusterIndustrialLargeConstruction_3.mwm" />
+        </BuildProgressModels>
+        <VoxelPlacement>
+          <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+          <StaticMode>
+            <PlacementMode>Volumetric</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+          </StaticMode>
+          <DynamicMode>
+            <PlacementMode>Volumetric</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+          </DynamicMode>
+        </VoxelPlacement>
+        <BlockPairName>LargeHydrogenThrustIndustrial2x</BlockPairName>
+        <MirroringX>Z</MirroringX>
+        <MirroringZ>X</MirroringZ>
+        <EdgeType>Light</EdgeType>
+        <BuildTimeSeconds>135</BuildTimeSeconds>
+        <FuelConverter>
+          <FuelId>
+            <TypeId>GasProperties</TypeId>
+            <SubtypeId>Hydrogen</SubtypeId>
+          </FuelId>
+          <Efficiency>1</Efficiency>
+        </FuelConverter>
+        <MaxPowerConsumption>13.1250</MaxPowerConsumption>
+        <MinPowerConsumption>0.000000001</MinPowerConsumption>
+        <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+        <ForceMagnitude>14400000</ForceMagnitude>
+        <SlowdownFactor>1</SlowdownFactor>
+        <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+        <FlameLengthScale>1.15</FlameLengthScale>
+        <FlameIdleColor>
+          <X>1</X>
+          <Y>0.85</Y>
+          <Z>0.3</Z>
+          <W>0.75</W>
+        </FlameIdleColor>
+        <FlameFullColor>
+          <X>1</X>
+          <Y>0.75</Y>
+          <Z>0.2</Z>
+          <W>0.75</W>
+        </FlameFullColor>
+        <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+        <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+        <FlameFlare>LargeGridLargeThruster</FlameFlare>
+        <FlameVisibilityDistance>700</FlameVisibilityDistance>
+        <FlameGlareQuerySize>1.5</FlameGlareQuerySize>
+        <PrimarySound>LrgShipLrgJetHydrogen</PrimarySound>
+        <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+        <DamagedSound>ParticleWeapExpl</DamagedSound>
+        <Public>true</Public>
+        <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+        <DestroySound>WepSmallWarheadExpl</DestroySound>
+        <PCU>15</PCU>
+        <TieredUpdateTimes>
+          <unsignedInt>100</unsignedInt>
+          <unsignedInt>3600</unsignedInt>
+          <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+        <DLC>HeavyIndustry</DLC>
+      </Definition>
+
+      <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+        <Id>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>LargeBlockSmallHydrogenThrustIndustrial2x</SubtypeId>
+        </Id>
+        <DisplayName>Enhanced I. Thruster</DisplayName>
+        <GuiVisible>false</GuiVisible>
+        <Icon>Textures\HydrogenThrusterIndustrialSmall2x.dds</Icon>
+        <Description>Description_HydrogenThrust</Description>
+        <CubeSize>Large</CubeSize>
+        <GuiVisible>false</GuiVisible>
+        <BlockTopology>TriangleMesh</BlockTopology>
+        <Size x="1" y="1" z="1" />
+        <ModelOffset x="0" y="0" z="0" />
+        <Model>Models\Cubes\Large\HydrogenThrusterIndustrialSmall.mwm</Model>
+        <ThrusterType>Hydrogen</ThrusterType>
+        <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+        <Components>
+          <Component Subtype="Tech2x" Count="10"/>
+          <Component Subtype="SteelPlate" Count="23"/>
+          <Component Subtype="Construction" Count="60"/>
+          <Component Subtype="MetalGrid" Count="60"/>
+          <Component Subtype="LargeTube" Count="12"/>
+          <Component Subtype="Construction" Count="30"/>
+          <Component Subtype="SteelPlate" Count="15"/>
+        </Components>
+        <CriticalComponent Subtype="LargeTube" Index="0" />
+        <MountPoints>
+          <MountPoint Side="Back" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" Default="true" />
+        </MountPoints>
+        <BuildProgressModels>
+          <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenThrusterIndustrialSmallConstruction_1.mwm" />
+          <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenThrusterIndustrialSmallConstruction_2.mwm" />
+          <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenThrusterIndustrialSmallConstruction_3.mwm" />
+        </BuildProgressModels>
+        <VoxelPlacement>
+          <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+          <StaticMode>
+            <PlacementMode>Volumetric</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+          </StaticMode>
+          <DynamicMode>
+            <PlacementMode>Volumetric</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+          </DynamicMode>
+        </VoxelPlacement>
+        <BlockPairName>HydrogenThrustIndustrial2x</BlockPairName>
+        <Center x="0" y="0" z="0" />
+        <MirroringZ>X</MirroringZ>
+        <EdgeType>Light</EdgeType>
+        <BuildTimeSeconds>60</BuildTimeSeconds>
+        <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+        <ForceMagnitude>2160000</ForceMagnitude>
+        <SlowdownFactor>1</SlowdownFactor>
+        <FuelConverter>
+          <FuelId>
+            <TypeId>GasProperties</TypeId>
+            <SubtypeId>Hydrogen</SubtypeId>
+          </FuelId>
+          <Efficiency>1</Efficiency>
+        </FuelConverter>
+        <MaxPowerConsumption>2.1875</MaxPowerConsumption>
+        <MinPowerConsumption>0.000000001</MinPowerConsumption>
+        <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+        <FlameLengthScale>1.15</FlameLengthScale>
+        <FlameIdleColor>
+          <X>1</X>
+          <Y>0.85</Y>
+          <Z>0.3</Z>
+          <W>0.75</W>
+        </FlameIdleColor>
+        <FlameFullColor>
+          <X>1</X>
+          <Y>0.75</Y>
+          <Z>0.2</Z>
+          <W>0.75</W>
+        </FlameFullColor>
+        <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+        <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+        <FlameFlare>LargeGridSmallThruster</FlameFlare>
+        <FlameVisibilityDistance>500</FlameVisibilityDistance>
+        <FlameGlareQuerySize>1</FlameGlareQuerySize>
+        <PrimarySound>LrgShipSmJetHydrogen</PrimarySound>
+        <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+        <DamagedSound>ParticleWeapExpl</DamagedSound>
+        <Public>true</Public>
+        <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+        <DestroySound>WepSmallWarheadExpl</DestroySound>
+        <PCU>15</PCU>
+        <IsAirTight>false</IsAirTight>
+        <TieredUpdateTimes>
+          <unsignedInt>100</unsignedInt>
+          <unsignedInt>3600</unsignedInt>
+          <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+        <DLC>HeavyIndustry</DLC>
+      </Definition>
+    
+       
+   <!-- Tier 2 -->
+   <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+            <Id>
+                <TypeId>CargoContainer</TypeId>
+                <SubtypeId>LargeBlockLargeIndustrialContainer4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Large I. Cargo Container</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\CargoContainer4x.dds</Icon>
+            <Description>Description_LargeCargoContainer</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\CargoContainer.mwm</Model>
+            <Components>
+                <Component Subtype="Tech4x" Count="45"/>
+                <Component Subtype="InteriorPlate" Count="675"/>
+                <Component Subtype="Construction" Count="135"/>
+                <Component Subtype="MetalGrid" Count="54"/>
+                <Component Subtype="SmallTube" Count="135"/>
+                <Component Subtype="Motor" Count="45"/>
+                <Component Subtype="Display" Count="3"/>
+                <Component Subtype="Computer" Count="18"/>
+                <Component Subtype="Construction" Count="45"/>
+                <Component Subtype="InteriorPlate" Count="135"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Right" StartX="0.2" StartY="0.55" EndX="0.3" EndY="0.85" />
+                <MountPoint Side="Right" StartX="0.2" StartY="2.15" EndX="0.3" EndY="2.45" />
+                <MountPoint Side="Right" StartX="2.7" StartY="0.55" EndX="2.8" EndY="0.85" />
+                <MountPoint Side="Right" StartX="2.7" StartY="2.15" EndX="2.8" EndY="2.45" />
+                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Left" StartX="0.2" StartY="0.55" EndX="0.3" EndY="0.85" />
+                <MountPoint Side="Left" StartX="0.2" StartY="2.15" EndX="0.3" EndY="2.45" />
+                <MountPoint Side="Left" StartX="2.7" StartY="0.55" EndX="2.8" EndY="0.85" />
+                <MountPoint Side="Left" StartX="2.7" StartY="2.15" EndX="2.8" EndY="2.45" />
+                <MountPoint Side="Top" StartX="0.5" StartY="0.2" EndX="0.8" EndY="0.3" />
+                <MountPoint Side="Top" StartX="2.2" StartY="0.2" EndX="2.5" EndY="0.3" />
+                <MountPoint Side="Top" StartX="0.5" StartY="2.7" EndX="0.8" EndY="2.8" />
+                <MountPoint Side="Top" StartX="2.2" StartY="2.7" EndX="2.5" EndY="2.8" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0.2" EndX="0.8" EndY="0.3" Default="true" />
+                <MountPoint Side="Bottom" StartX="2.2" StartY="0.2" EndX="2.5" EndY="0.3" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="2.7" EndX="0.8" EndY="2.8" />
+                <MountPoint Side="Bottom" StartX="2.2" StartY="2.7" EndX="2.5" EndY="2.8" />
+                <MountPoint Side="Front" StartX="1.15" StartY="1.15" EndX="1.85" EndY="1.85" />
+                <MountPoint Side="Front" StartX="0.2" StartY="0.5" EndX="0.5" EndY="2.5" />
+                <MountPoint Side="Front" StartX="0.5" StartY="0.2" EndX="0.8" EndY="2.8" />
+                <MountPoint Side="Front" StartX="2.5" StartY="0.5" EndX="2.8" EndY="2.5" />
+                <MountPoint Side="Front" StartX="2.2" StartY="0.2" EndX="2.5" EndY="2.8" />
+                <MountPoint Side="Back" StartX="1.15" StartY="1.15" EndX="1.85" EndY="1.85" />
+                <MountPoint Side="Back" StartX="0.2" StartY="0.5" EndX="0.5" EndY="2.5" />
+                <MountPoint Side="Back" StartX="0.5" StartY="0.2" EndX="0.8" EndY="2.8" />
+                <MountPoint Side="Back" StartX="2.5" StartY="0.5" EndX="2.8" EndY="2.5" />
+                <MountPoint Side="Back" StartX="2.2" StartY="0.2" EndX="2.5" EndY="2.8" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\CargoContainerConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\CargoContainerConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\CargoContainerConstruction_3.mwm" />
+            </BuildProgressModels>
+             <InventorySize>
+               <X>30</X>
+               <Y>7.5</Y>
+               <Z>7.5</Z>
+             </InventorySize>
+            <BlockPairName>LargeCargoContainerIndustrial4x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>102</BuildTimeSeconds>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>10</PCU>
+            <DLC>HeavyIndustry</DLC>
+        </Definition>
+        
+        
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>LargeHydrogenTankIndustrial4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient I. Hydrogen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\HydrogenTankIndustrial4x.dds</Icon>
+            <Description>Description_HydrogenTank</Description>
+            <Public>true</Public>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\HydrogenTankIndustrial.mwm</Model>
+            <Components>
+                <Component Subtype="Tech4x" Count="38"/>
+                <Component Subtype="SteelPlate" Count="360"/>
+                <Component Subtype="LargeTube" Count="180"/>
+                <Component Subtype="SmallTube" Count="135"/>
+                <Component Subtype="Computer" Count="18"/>
+                <Component Subtype="Construction" Count="90"/>
+                <Component Subtype="SteelPlate" Count="270"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Top" StartX="1.1" StartY="1.1" EndX="1.9" EndY="1.9" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0.3" EndX="3" EndY="2.7" Default="true" />
+                <MountPoint Side="Bottom" StartX="0.3" StartY="0" EndX="2.7" EndY="0.3" />
+                <MountPoint Side="Bottom" StartX="0.3" StartY="2.7" EndX="2.7" EndY="3" />
+                <MountPoint Side="Left" StartX="1.45" StartY="1.45" EndX="1.55" EndY="1.55" />
+                <MountPoint Side="Left" StartX="0.6" StartY="0" EndX="2.4" EndY="0.2" />
+                <MountPoint Side="Right" StartX="1.45" StartY="1.45" EndX="1.55" EndY="1.55" />
+                <MountPoint Side="Right" StartX="0.6" StartY="0" EndX="2.4" EndY="0.2" />
+                <MountPoint Side="Front" StartX="1.45" StartY="1.45" EndX="1.55" EndY="1.55" />
+                <MountPoint Side="Front" StartX="0.6" StartY="0" EndX="2.4" EndY="0.2" />
+                <MountPoint Side="Back" StartX="1.45" StartY="1.45" EndX="1.55" EndY="1.55" />
+                <MountPoint Side="Back" StartX="0.6" StartY="0" EndX="2.4" EndY="0.2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenTankIndustrialConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenTankIndustrialConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenTankIndustrialConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>HydrogenTankIndustrial4x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>60000000</Capacity>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Hydrogen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>HydrogenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>113</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+            <DestroySound>WepLrgWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>300</unsignedInt>
+                <unsignedInt>600</unsignedInt>
+            </TieredUpdateTimes>
+            <IsAirTight>false</IsAirTight>
+            <DLC>HeavyIndustry</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+            <Id>
+                <TypeId>Assembler</TypeId>
+                <SubtypeId>LargeAssemblerIndustrial4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Industrial Assembler</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\AdvancedAssemblerIndustrial4x.dds</Icon>
+            <Description>Description_Assembler</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="2" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\AdvancedAssemblerIndustrial.mwm</Model>
+            <Components>
+                <Component Subtype="Tech4x" Count="30"/>
+                <Component Subtype="SteelPlate" Count="270"/>
+                <Component Subtype="Construction" Count="180"/>
+                <Component Subtype="Motor" Count="45"/>
+                <Component Subtype="Display" Count="23"/>
+                <Component Subtype="MetalGrid" Count="23"/>
+                <Component Subtype="Computer" Count="360"/>
+                <Component Subtype="SteelPlate" Count="45"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1.1" />
+                <MountPoint Side="Front" StartX="0" StartY="1.1" EndX="1" EndY="2" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1.1" />
+                <MountPoint Side="Back" StartX="0" StartY="1.1" EndX="0.1" EndY="2" />
+                <MountPoint Side="Back" StartX="0.9" StartY="1.1" EndX="1" EndY="2" />
+                <MountPoint Side="Back" StartX="0.1" StartY="1.9" EndX="0.9" EndY="2" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="2" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="2" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Left" StartX="0" StartY="1" EndX="0.1" EndY="2" />
+                <MountPoint Side="Left" StartX="1.9" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Left" StartX="0.1" StartY="1.9" EndX="1.9" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\AdvancedAssemblerIndustrialConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\AdvancedAssemblerIndustrialConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\AdvancedAssemblerIndustrialConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>AssemblerIndustrial4x</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>180</BuildTimeSeconds>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>7.5</InventoryMaxVolume>
+          <AssemblySpeed>4</AssemblySpeed>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>2.24</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>LargeBlocks</Class>
+                <Class>SmallBlocks</Class>
+                <Class>Components</Class>
+                <Class>EliteTools</Class>
+                <Class>BuildPlanner</Class>
+                <Class>EliteConsumables</Class>
+            </BlueprintClasses>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <PrimarySound>BlockAssembler</PrimarySound>
+            <ActionSound>BlockAssemblerProcess</ActionSound>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <PCU>40</PCU>
+            <MirroringZ>Y</MirroringZ>
+            <MirroringY>Z</MirroringY>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
+            <DLC>HeavyIndustry</DLC>
+        </Definition>
+        
+        <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+            <Id>
+                <TypeId>Refinery</TypeId>
+                <SubtypeId>LargeRefineryIndustrial4x</SubtypeId>
+            </Id>
+            <DisplayName>Proficient Industrial Refinery</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\AdvancedRefinery4x.dds</Icon>
+            <Description>Description_Refinery</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="2" y="4" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\AdvancedRefinery.mwm</Model>
+            <Components>
+                <Component Subtype="Tech4x" Count="30"/>
+                <Component Subtype="SteelPlate" Count="2475"/>
+                <Component Subtype="Construction" Count="90"/>
+                <Component Subtype="LargeTube" Count="45"/>
+                <Component Subtype="Motor" Count="36"/>
+                <Component Subtype="MetalGrid" Count="45"/>
+                <Component Subtype="Computer" Count="45"/>
+                <Component Subtype="SteelPlate" Count="225"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <Center x="1" y="0" z="1" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="4" />
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="2" EndY="2" Default="true" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="1.5" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Top" StartX="0.8" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="0.8" EndY="0.1" />
+                <MountPoint Side="Top" StartX="0.1" StartY="1" EndX="1.9" EndY="1.7" />
+                <MountPoint Side="Top" StartX="0.4" StartY="1.7" EndX="1.7" EndY="1.9" />
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="2.1" />
+                <MountPoint Side="Left" StartX="0.4" StartY="3" EndX="2" EndY="3.9" />
+                <MountPoint Side="Left" StartX="1.8" StartY="2.1" EndX="2" EndY="3" />
+                <MountPoint Side="Left" StartX="0.2" StartY="0" EndX="1" EndY="0.7" />
+                <MountPoint Side="Left" StartX="0.2" StartY="1.1" EndX="0.8" EndY="1.4" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.4" EndY="1.1" />
+                <MountPoint Side="Right" StartX="1.4" StartY="0" EndX="2" EndY="0.5" />
+                <MountPoint Side="Right" StartX="0" StartY="1.1" EndX="0.4" EndY="3.3" />
+                <MountPoint Side="Right" StartX="0" StartY="3.3" EndX="1.7" EndY="3.9" />
+                <MountPoint Side="Right" StartX="0.4" StartY="2" EndX="2" EndY="2.1" />
+                <MountPoint Side="Front" StartX="1.2" StartY="0" EndX="1.8" EndY="0.7" />
+                <MountPoint Side="Front" StartX="1.2" StartY="1.1" EndX="1.8" EndY="1.4" />
+                <MountPoint Side="Front" StartX="0" StartY="2" EndX="1" EndY="2.1" />
+                <MountPoint Side="Front" StartX="0.3" StartY="3.3" EndX="1.6" EndY="3.9" />
+                <MountPoint Side="Front" StartX="0.8" StartY="3" EndX="1.6" EndY="3.3" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.5" EndY="0.1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\AdvancedRefinery_Construction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\AdvancedRefinery_Construction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\AdvancedRefinery_Construction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>RefineryIndustrial4x</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>203</BuildTimeSeconds>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>14.0625</InventoryMaxVolume>
+            <InventorySize>
+                <X>2.5</X>
+                <Y>2.5</Y>
+                <Z>2.5</Z>
+            </InventorySize>
+
+            <InventoryFillFactorMin>0.3</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.6</InventoryFillFactorMax>
+            
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>1.7150</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>Ingots</Class>
+            </BlueprintClasses>
+          <RefineSpeed>3.9813</RefineSpeed>
+          <MaterialEfficiency>1.1</MaterialEfficiency>
+          <OreAmountPerPullRequest>40000</OreAmountPerPullRequest>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <Center x="1" y="0" z="0" />
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <PrimarySound>BlockRafinery</PrimarySound>
+            <ActionSound>BlockRafineryProcess</ActionSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>90</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
+            <DLC>HeavyIndustry</DLC>
+        </Definition>
+
+    
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockLargeHydrogenThrustIndustrial4x</SubtypeId>
+      </Id>
+      <DisplayName>Proficient Large I. Hydrogen Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+      <Icon>Textures\HydrogenThrusterIndustrialLarge4x.dds</Icon>
+      <Description>Description_HydrogenThrust</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\HydrogenThrusterIndustrialLarge.mwm</Model>
+      <ThrusterType>Hydrogen</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+                <Component Subtype="Tech4x" Count="7"/>
+        <Component Subtype="SteelPlate" Count="45"/>
+        <Component Subtype="Construction" Count="45"/>
+        <Component Subtype="MetalGrid" Count="50"/>
+        <Component Subtype="LargeTube" Count="23"/>
+        <Component Subtype="Construction" Count="23"/>
+        <Component Subtype="SteelPlate" Count="23"/>
+      </Components>
+      <CriticalComponent Subtype="LargeTube" Index="0" />
+      <Center x="1" y="1" z="3" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0.3" StartY="0" EndX="2.7" EndY="0.6" />
+        <MountPoint Side="Right" StartX="0" StartY="0.3" EndX="0.6" EndY="2.7" />
+        <MountPoint Side="Back" StartX="0.05" StartY="0.05" EndX="2.95" EndY="2.95" Default="true" />
+        <MountPoint Side="Left" StartX="3.4" StartY="0.3" EndX="4" EndY="2.7" />
+        <MountPoint Side="Bottom" StartX="0.3" StartY="3.4" EndX="2.7" EndY="4" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\HydrogenThrusterIndustrialLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\HydrogenThrusterIndustrialLargeConstruction_2.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>LargeHydrogenThrustIndustrial4x</BlockPairName>
+      <MirroringX>Z</MirroringX>
+      <MirroringZ>X</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+      <FuelConverter>
+        <FuelId>
+          <TypeId>GasProperties</TypeId>
+          <SubtypeId>Hydrogen</SubtypeId>
+        </FuelId>
+        <Efficiency>1</Efficiency>
+      </FuelConverter>
+      <MaxPowerConsumption>1.8375</MaxPowerConsumption>
+      <MinPowerConsumption>0.000000001</MinPowerConsumption>
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>1920000</ForceMagnitude>
+      <SlowdownFactor>1</SlowdownFactor>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameLengthScale>1.15</FlameLengthScale>
+      <FlameIdleColor>
+        <X>1</X>
+        <Y>0.85</Y>
+        <Z>0.3</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>1</X>
+        <Y>0.75</Y>
+        <Z>0.2</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>LargeGridLargeThruster</FlameFlare>
+      <FlameVisibilityDistance>700</FlameVisibilityDistance>
+      <FlameGlareQuerySize>1.5</FlameGlareQuerySize>
+      <PrimarySound>SmShipLrgJetHydrogen</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+        <TieredUpdateTimes>
+            <unsignedInt>100</unsignedInt>
+            <unsignedInt>3600</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+        <DLC>HeavyIndustry</DLC>
+    </Definition>
+        
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockSmallHydrogenThrustIndustrial4x</SubtypeId>
+      </Id>
+      <DisplayName>Proficient Large I. Hydrogen Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+      <Icon>Textures\HydrogenThrusterIndustrialSmall4x.dds</Icon>
+      <Description>Description_HydrogenThrust</Description>
+      <CubeSize>Small</CubeSize>
+        <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\HydrogenThrusterIndustrialSmall.mwm</Model>
+      <ThrusterType>Hydrogen</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+                <Component Subtype="Tech4x" Count="3"/>
+        <Component Subtype="SteelPlate" Count="5"/>
+        <Component Subtype="Construction" Count="23"/>
+        <Component Subtype="MetalGrid" Count="9"/>
+        <Component Subtype="LargeTube" Count="5"/>
+        <Component Subtype="Construction" Count="12"/>
+        <Component Subtype="SteelPlate" Count="12"/>
+      </Components>
+      <CriticalComponent Subtype="LargeTube" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\HydrogenThrusterIndustrialSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\HydrogenThrusterIndustrialSmallConstruction_2.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>HydrogenThrustIndustrial4x</BlockPairName>
+      <Center x="0" y="0" z="0" />
+      <MirroringZ>X</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>23</BuildTimeSeconds>
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>393600</ForceMagnitude>
+      <FuelConverter>
+        <FuelId>
+          <TypeId>GasProperties</TypeId>
+          <SubtypeId>Hydrogen</SubtypeId>
+        </FuelId>
+        <Efficiency>1</Efficiency>
+      </FuelConverter>
+      <MaxPowerConsumption>0.3828</MaxPowerConsumption>
+      <MinPowerConsumption>0.000000001</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+      <FlameDamageLengthScale>0.34</FlameDamageLengthScale>
+      <FlameLengthScale>1.5</FlameLengthScale>
+      <FlameIdleColor>
+        <X>1</X>
+        <Y>0.85</Y>
+        <Z>0.3</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>1</X>
+        <Y>0.75</Y>
+        <Z>0.2</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>LargeGridSmallThruster</FlameFlare>
+      <FlameVisibilityDistance>500</FlameVisibilityDistance>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>SmShipSmJetHydrogen</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <Public>true</Public>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <IsAirTight>false</IsAirTight>
+        <TieredUpdateTimes>
+            <unsignedInt>100</unsignedInt>
+            <unsignedInt>3600</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+        <DLC>HeavyIndustry</DLC>
+    </Definition>
+
+
+      <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+        <Id>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>LargeBlockLargeHydrogenThrustIndustrial4x</SubtypeId>
+        </Id>
+        <DisplayName>Proficient Large I. Thruster</DisplayName>
+        <GuiVisible>false</GuiVisible>
+        <Icon>Textures\HydrogenThrusterIndustrialLarge4x.dds</Icon>
+        <Description>Description_HydrogenThrust</Description>
+        <CubeSize>Large</CubeSize>
+        <BlockTopology>TriangleMesh</BlockTopology>
+        <Size x="3" y="3" z="4" />
+        <ModelOffset x="0" y="0" z="0" />
+        <Model>Models\Cubes\Large\HydrogenThrusterIndustrialLarge.mwm</Model>
+        <ThrusterType>Hydrogen</ThrusterType>
+        <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+        <Components>
+          <Component Subtype="Tech4x" Count="50"/>
+          <Component Subtype="SteelPlate" Count="225"/>
+          <Component Subtype="Construction" Count="338"/>
+          <Component Subtype="MetalGrid" Count="563"/>
+          <Component Subtype="LargeTube" Count="90"/>
+          <Component Subtype="Construction" Count="68"/>
+          <Component Subtype="SteelPlate" Count="113"/>
+        </Components>
+        <CriticalComponent Subtype="LargeTube" Index="0" />
+        <Center x="1" y="1" z="3" />
+        <MountPoints>
+          <MountPoint Side="Top" StartX="0.3" StartY="0" EndX="2.7" EndY="0.6" />
+          <MountPoint Side="Right" StartX="0" StartY="0.3" EndX="0.6" EndY="2.7" />
+          <MountPoint Side="Back" StartX="0.05" StartY="0.05" EndX="2.95" EndY="2.95" Default="true" />
+          <MountPoint Side="Left" StartX="3.4" StartY="0.3" EndX="4" EndY="2.7" />
+          <MountPoint Side="Bottom" StartX="0.3" StartY="3.4" EndX="2.7" EndY="4" />
+        </MountPoints>
+        <BuildProgressModels>
+          <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenThrusterIndustrialLargeConstruction_1.mwm" />
+          <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenThrusterIndustrialLargeConstruction_2.mwm" />
+          <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenThrusterIndustrialLargeConstruction_3.mwm" />
+        </BuildProgressModels>
+        <VoxelPlacement>
+          <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+          <StaticMode>
+            <PlacementMode>Volumetric</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+          </StaticMode>
+          <DynamicMode>
+            <PlacementMode>Volumetric</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+          </DynamicMode>
+        </VoxelPlacement>
+        <BlockPairName>LargeHydrogenThrustIndustrial4x</BlockPairName>
+        <MirroringX>Z</MirroringX>
+        <MirroringZ>X</MirroringZ>
+        <EdgeType>Light</EdgeType>
+        <BuildTimeSeconds>203</BuildTimeSeconds>
+        <FuelConverter>
+          <FuelId>
+            <TypeId>GasProperties</TypeId>
+            <SubtypeId>Hydrogen</SubtypeId>
+          </FuelId>
+          <Efficiency>1</Efficiency>
+        </FuelConverter>
+        <MaxPowerConsumption>22.9688</MaxPowerConsumption>
+        <MinPowerConsumption>0.000000001</MinPowerConsumption>
+        <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+        <ForceMagnitude>28800000</ForceMagnitude>
+        <SlowdownFactor>1</SlowdownFactor>
+        <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+        <FlameLengthScale>1.15</FlameLengthScale>
+        <FlameIdleColor>
+          <X>1</X>
+          <Y>0.85</Y>
+          <Z>0.3</Z>
+          <W>0.75</W>
+        </FlameIdleColor>
+        <FlameFullColor>
+          <X>1</X>
+          <Y>0.75</Y>
+          <Z>0.2</Z>
+          <W>0.75</W>
+        </FlameFullColor>
+        <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+        <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+        <FlameFlare>LargeGridLargeThruster</FlameFlare>
+        <FlameVisibilityDistance>700</FlameVisibilityDistance>
+        <FlameGlareQuerySize>1.5</FlameGlareQuerySize>
+        <PrimarySound>LrgShipLrgJetHydrogen</PrimarySound>
+        <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+        <DamagedSound>ParticleWeapExpl</DamagedSound>
+        <Public>true</Public>
+        <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+        <DestroySound>WepSmallWarheadExpl</DestroySound>
+        <PCU>15</PCU>
+        <TieredUpdateTimes>
+          <unsignedInt>100</unsignedInt>
+          <unsignedInt>3600</unsignedInt>
+          <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+        <DLC>HeavyIndustry</DLC>
+      </Definition>
+
+      <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+        <Id>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>LargeBlockSmallHydrogenThrustIndustrial4x</SubtypeId>
+        </Id>
+        <DisplayName>Proficient I. Thruster</DisplayName>
+        <GuiVisible>false</GuiVisible>
+        <Icon>Textures\HydrogenThrusterIndustrialSmall4x.dds</Icon>
+        <Description>Description_HydrogenThrust</Description>
+        <CubeSize>Large</CubeSize>
+        <GuiVisible>false</GuiVisible>
+        <BlockTopology>TriangleMesh</BlockTopology>
+        <Size x="1" y="1" z="1" />
+        <ModelOffset x="0" y="0" z="0" />
+        <Model>Models\Cubes\Large\HydrogenThrusterIndustrialSmall.mwm</Model>
+        <ThrusterType>Hydrogen</ThrusterType>
+        <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+        <Components>
+          <Component Subtype="Tech4x" Count="10"/>
+          <Component Subtype="SteelPlate" Count="34"/>
+          <Component Subtype="Construction" Count="90"/>
+          <Component Subtype="MetalGrid" Count="90"/>
+          <Component Subtype="LargeTube" Count="18"/>
+          <Component Subtype="Construction" Count="45"/>
+          <Component Subtype="SteelPlate" Count="23"/>
+        </Components>
+        <CriticalComponent Subtype="LargeTube" Index="0" />
+        <MountPoints>
+          <MountPoint Side="Back" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" Default="true" />
+        </MountPoints>
+        <BuildProgressModels>
+          <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenThrusterIndustrialSmallConstruction_1.mwm" />
+          <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenThrusterIndustrialSmallConstruction_2.mwm" />
+          <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenThrusterIndustrialSmallConstruction_3.mwm" />
+        </BuildProgressModels>
+        <VoxelPlacement>
+          <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+          <StaticMode>
+            <PlacementMode>Volumetric</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+          </StaticMode>
+          <DynamicMode>
+            <PlacementMode>Volumetric</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+          </DynamicMode>
+        </VoxelPlacement>
+        <BlockPairName>HydrogenThrustIndustrial4x</BlockPairName>
+        <Center x="0" y="0" z="0" />
+        <MirroringZ>X</MirroringZ>
+        <EdgeType>Light</EdgeType>
+        <BuildTimeSeconds>90</BuildTimeSeconds>
+        <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+        <ForceMagnitude>4320000</ForceMagnitude>
+        <SlowdownFactor>1</SlowdownFactor>
+        <FuelConverter>
+          <FuelId>
+            <TypeId>GasProperties</TypeId>
+            <SubtypeId>Hydrogen</SubtypeId>
+          </FuelId>
+          <Efficiency>1</Efficiency>
+        </FuelConverter>
+        <MaxPowerConsumption>3.8281</MaxPowerConsumption>
+        <MinPowerConsumption>0.000000001</MinPowerConsumption>
+        <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+        <FlameLengthScale>1.15</FlameLengthScale>
+        <FlameIdleColor>
+          <X>1</X>
+          <Y>0.85</Y>
+          <Z>0.3</Z>
+          <W>0.75</W>
+        </FlameIdleColor>
+        <FlameFullColor>
+          <X>1</X>
+          <Y>0.75</Y>
+          <Z>0.2</Z>
+          <W>0.75</W>
+        </FlameFullColor>
+        <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+        <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+        <FlameFlare>LargeGridSmallThruster</FlameFlare>
+        <FlameVisibilityDistance>500</FlameVisibilityDistance>
+        <FlameGlareQuerySize>1</FlameGlareQuerySize>
+        <PrimarySound>LrgShipSmJetHydrogen</PrimarySound>
+        <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+        <DamagedSound>ParticleWeapExpl</DamagedSound>
+        <Public>true</Public>
+        <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+        <DestroySound>WepSmallWarheadExpl</DestroySound>
+        <PCU>15</PCU>
+        <IsAirTight>false</IsAirTight>
+        <TieredUpdateTimes>
+          <unsignedInt>100</unsignedInt>
+          <unsignedInt>3600</unsignedInt>
+          <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+        <DLC>HeavyIndustry</DLC>
+      </Definition>
+	
+	
+	
+	
+	<!-- Tier 3 -->
+	<Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+            <Id>
+                <TypeId>CargoContainer</TypeId>
+                <SubtypeId>LargeBlockLargeIndustrialContainer8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Large I. Cargo Container</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\CargoContainer8x.dds</Icon>
+            <Description>Description_LargeCargoContainer</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\CargoContainer.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="45"/>
+                <Component Subtype="InteriorPlate" Count="1013"/>
+                <Component Subtype="Construction" Count="203"/>
+                <Component Subtype="MetalGrid" Count="81"/>
+                <Component Subtype="SmallTube" Count="203"/>
+                <Component Subtype="Motor" Count="68"/>
+                <Component Subtype="Display" Count="4"/>
+                <Component Subtype="Computer" Count="27"/>
+                <Component Subtype="Construction" Count="68"/>
+                <Component Subtype="InteriorPlate" Count="203"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Right" StartX="0.2" StartY="0.55" EndX="0.3" EndY="0.85" />
+                <MountPoint Side="Right" StartX="0.2" StartY="2.15" EndX="0.3" EndY="2.45" />
+                <MountPoint Side="Right" StartX="2.7" StartY="0.55" EndX="2.8" EndY="0.85" />
+                <MountPoint Side="Right" StartX="2.7" StartY="2.15" EndX="2.8" EndY="2.45" />
+                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Left" StartX="0.2" StartY="0.55" EndX="0.3" EndY="0.85" />
+                <MountPoint Side="Left" StartX="0.2" StartY="2.15" EndX="0.3" EndY="2.45" />
+                <MountPoint Side="Left" StartX="2.7" StartY="0.55" EndX="2.8" EndY="0.85" />
+                <MountPoint Side="Left" StartX="2.7" StartY="2.15" EndX="2.8" EndY="2.45" />
+                <MountPoint Side="Top" StartX="0.5" StartY="0.2" EndX="0.8" EndY="0.3" />
+                <MountPoint Side="Top" StartX="2.2" StartY="0.2" EndX="2.5" EndY="0.3" />
+                <MountPoint Side="Top" StartX="0.5" StartY="2.7" EndX="0.8" EndY="2.8" />
+                <MountPoint Side="Top" StartX="2.2" StartY="2.7" EndX="2.5" EndY="2.8" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0.2" EndX="0.8" EndY="0.3" Default="true" />
+                <MountPoint Side="Bottom" StartX="2.2" StartY="0.2" EndX="2.5" EndY="0.3" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="2.7" EndX="0.8" EndY="2.8" />
+                <MountPoint Side="Bottom" StartX="2.2" StartY="2.7" EndX="2.5" EndY="2.8" />
+                <MountPoint Side="Front" StartX="1.15" StartY="1.15" EndX="1.85" EndY="1.85" />
+                <MountPoint Side="Front" StartX="0.2" StartY="0.5" EndX="0.5" EndY="2.5" />
+                <MountPoint Side="Front" StartX="0.5" StartY="0.2" EndX="0.8" EndY="2.8" />
+                <MountPoint Side="Front" StartX="2.5" StartY="0.5" EndX="2.8" EndY="2.5" />
+                <MountPoint Side="Front" StartX="2.2" StartY="0.2" EndX="2.5" EndY="2.8" />
+                <MountPoint Side="Back" StartX="1.15" StartY="1.15" EndX="1.85" EndY="1.85" />
+                <MountPoint Side="Back" StartX="0.2" StartY="0.5" EndX="0.5" EndY="2.5" />
+                <MountPoint Side="Back" StartX="0.5" StartY="0.2" EndX="0.8" EndY="2.8" />
+                <MountPoint Side="Back" StartX="2.5" StartY="0.5" EndX="2.8" EndY="2.5" />
+                <MountPoint Side="Back" StartX="2.2" StartY="0.2" EndX="2.5" EndY="2.8" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\CargoContainerConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\CargoContainerConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\CargoContainerConstruction_3.mwm" />
+            </BuildProgressModels>
+            <InventorySize>
+              <X>60</X>
+              <Y>7.5</Y>
+              <Z>7.5</Z>
+            </InventorySize>
+            <BlockPairName>LargeCargoContainerIndustrial8x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>152</BuildTimeSeconds>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>10</PCU>
+            <DLC>HeavyIndustry</DLC>
+        </Definition>
+        
+        
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+            <Id>
+                <TypeId>OxygenTank</TypeId>
+                <SubtypeId>LargeHydrogenTankIndustrial8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite I. Hydrogen Tank</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\HydrogenTankIndustrial8x.dds</Icon>
+            <Description>Description_HydrogenTank</Description>
+            <Public>true</Public>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\HydrogenTankIndustrial.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="38"/>
+                <Component Subtype="SteelPlate" Count="540"/>
+                <Component Subtype="LargeTube" Count="270"/>
+                <Component Subtype="SmallTube" Count="203"/>
+                <Component Subtype="Computer" Count="27"/>
+                <Component Subtype="Construction" Count="135"/>
+                <Component Subtype="SteelPlate" Count="405"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Top" StartX="1.1" StartY="1.1" EndX="1.9" EndY="1.9" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0.3" EndX="3" EndY="2.7" Default="true" />
+                <MountPoint Side="Bottom" StartX="0.3" StartY="0" EndX="2.7" EndY="0.3" />
+                <MountPoint Side="Bottom" StartX="0.3" StartY="2.7" EndX="2.7" EndY="3" />
+                <MountPoint Side="Left" StartX="1.45" StartY="1.45" EndX="1.55" EndY="1.55" />
+                <MountPoint Side="Left" StartX="0.6" StartY="0" EndX="2.4" EndY="0.2" />
+                <MountPoint Side="Right" StartX="1.45" StartY="1.45" EndX="1.55" EndY="1.55" />
+                <MountPoint Side="Right" StartX="0.6" StartY="0" EndX="2.4" EndY="0.2" />
+                <MountPoint Side="Front" StartX="1.45" StartY="1.45" EndX="1.55" EndY="1.55" />
+                <MountPoint Side="Front" StartX="0.6" StartY="0" EndX="2.4" EndY="0.2" />
+                <MountPoint Side="Back" StartX="1.45" StartY="1.45" EndX="1.55" EndY="1.55" />
+                <MountPoint Side="Back" StartX="0.6" StartY="0" EndX="2.4" EndY="0.2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenTankIndustrialConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenTankIndustrialConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenTankIndustrialConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>HydrogenTankIndustrial8x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>120000000</Capacity>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Hydrogen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>HydrogenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>169</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+            <DestroySound>WepLrgWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>100</unsignedInt>
+                <unsignedInt>300</unsignedInt>
+                <unsignedInt>600</unsignedInt>
+            </TieredUpdateTimes>
+            <IsAirTight>false</IsAirTight>
+            <DLC>HeavyIndustry</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+            <Id>
+                <TypeId>Assembler</TypeId>
+                <SubtypeId>LargeAssemblerIndustrial8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Industrial Assembler</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\AdvancedAssemblerIndustrial8x.dds</Icon>
+            <Description>Description_Assembler</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="2" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\AdvancedAssemblerIndustrial.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="30"/>
+                <Component Subtype="SteelPlate" Count="405"/>
+                <Component Subtype="Construction" Count="270"/>
+                <Component Subtype="Motor" Count="68"/>
+                <Component Subtype="Display" Count="34"/>
+                <Component Subtype="MetalGrid" Count="34"/>
+                <Component Subtype="Computer" Count="540"/>
+                <Component Subtype="SteelPlate" Count="68"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1.1" />
+                <MountPoint Side="Front" StartX="0" StartY="1.1" EndX="1" EndY="2" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1.1" />
+                <MountPoint Side="Back" StartX="0" StartY="1.1" EndX="0.1" EndY="2" />
+                <MountPoint Side="Back" StartX="0.9" StartY="1.1" EndX="1" EndY="2" />
+                <MountPoint Side="Back" StartX="0.1" StartY="1.9" EndX="0.9" EndY="2" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="2" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="2" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Left" StartX="0" StartY="1" EndX="0.1" EndY="2" />
+                <MountPoint Side="Left" StartX="1.9" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Left" StartX="0.1" StartY="1.9" EndX="1.9" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\AdvancedAssemblerIndustrialConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\AdvancedAssemblerIndustrialConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\AdvancedAssemblerIndustrialConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>AssemblerIndustrial8x</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>270</BuildTimeSeconds>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>9.375</InventoryMaxVolume>
+          <AssemblySpeed>8</AssemblySpeed>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>4.48</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>LargeBlocks</Class>
+                <Class>SmallBlocks</Class>
+                <Class>Components</Class>
+                <Class>EliteTools</Class>
+                <Class>BuildPlanner</Class>
+                <Class>EliteConsumables</Class>
+            </BlueprintClasses>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <PrimarySound>BlockAssembler</PrimarySound>
+            <ActionSound>BlockAssemblerProcess</ActionSound>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <PCU>40</PCU>
+            <MirroringZ>Y</MirroringZ>
+            <MirroringY>Z</MirroringY>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
+            <DLC>HeavyIndustry</DLC>
+        </Definition>
+        
+        <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+            <Id>
+                <TypeId>Refinery</TypeId>
+                <SubtypeId>LargeRefineryIndustrial8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Industrial Refinery</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\AdvancedRefinery8x.dds</Icon>
+            <Description>Description_Refinery</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="2" y="4" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\AdvancedRefinery.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="30"/>
+                <Component Subtype="SteelPlate" Count="3713"/>
+                <Component Subtype="Construction" Count="135"/>
+                <Component Subtype="LargeTube" Count="68"/>
+                <Component Subtype="Motor" Count="54"/>
+                <Component Subtype="MetalGrid" Count="68"/>
+                <Component Subtype="Computer" Count="68"/>
+                <Component Subtype="SteelPlate" Count="338"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <Center x="1" y="0" z="1" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="4" />
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="2" EndY="2" Default="true" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="1.5" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Top" StartX="0.8" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="0.8" EndY="0.1" />
+                <MountPoint Side="Top" StartX="0.1" StartY="1" EndX="1.9" EndY="1.7" />
+                <MountPoint Side="Top" StartX="0.4" StartY="1.7" EndX="1.7" EndY="1.9" />
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="2.1" />
+                <MountPoint Side="Left" StartX="0.4" StartY="3" EndX="2" EndY="3.9" />
+                <MountPoint Side="Left" StartX="1.8" StartY="2.1" EndX="2" EndY="3" />
+                <MountPoint Side="Left" StartX="0.2" StartY="0" EndX="1" EndY="0.7" />
+                <MountPoint Side="Left" StartX="0.2" StartY="1.1" EndX="0.8" EndY="1.4" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.4" EndY="1.1" />
+                <MountPoint Side="Right" StartX="1.4" StartY="0" EndX="2" EndY="0.5" />
+                <MountPoint Side="Right" StartX="0" StartY="1.1" EndX="0.4" EndY="3.3" />
+                <MountPoint Side="Right" StartX="0" StartY="3.3" EndX="1.7" EndY="3.9" />
+                <MountPoint Side="Right" StartX="0.4" StartY="2" EndX="2" EndY="2.1" />
+                <MountPoint Side="Front" StartX="1.2" StartY="0" EndX="1.8" EndY="0.7" />
+                <MountPoint Side="Front" StartX="1.2" StartY="1.1" EndX="1.8" EndY="1.4" />
+                <MountPoint Side="Front" StartX="0" StartY="2" EndX="1" EndY="2.1" />
+                <MountPoint Side="Front" StartX="0.3" StartY="3.3" EndX="1.6" EndY="3.9" />
+                <MountPoint Side="Front" StartX="0.8" StartY="3" EndX="1.6" EndY="3.3" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.5" EndY="0.1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\AdvancedRefinery_Construction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\AdvancedRefinery_Construction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\AdvancedRefinery_Construction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>RefineryIndustrial8x</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>304</BuildTimeSeconds>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>17.5781</InventoryMaxVolume>
+            <InventorySize>
+                <X>2.5</X>
+                <Y>2.5</Y>
+                <Z>2.5</Z>
+            </InventorySize>
+
+            <InventoryFillFactorMin>0.3</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.6</InventoryFillFactorMax>
+            
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>3.0013</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>Ingots</Class>
+            </BlueprintClasses>
+          <RefineSpeed>6.9672</RefineSpeed>
+          <MaterialEfficiency>1.2</MaterialEfficiency>
+          <OreAmountPerPullRequest>80000</OreAmountPerPullRequest>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <Center x="1" y="0" z="0" />
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <PrimarySound>BlockRafinery</PrimarySound>
+            <ActionSound>BlockRafineryProcess</ActionSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>90</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
+            <DLC>HeavyIndustry</DLC>
+        </Definition>
+
+    
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockLargeHydrogenThrustIndustrial8x</SubtypeId>
+      </Id>
+      <DisplayName>Elite Large I. Hydrogen Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+      <Icon>Textures\HydrogenThrusterIndustrialLarge8x.dds</Icon>
+      <Description>Description_HydrogenThrust</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\HydrogenThrusterIndustrialLarge.mwm</Model>
+      <ThrusterType>Hydrogen</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+                <Component Subtype="Tech8x" Count="7"/>
+        <Component Subtype="SteelPlate" Count="68"/>
+        <Component Subtype="Construction" Count="68"/>
+        <Component Subtype="MetalGrid" Count="75"/>
+        <Component Subtype="LargeTube" Count="34"/>
+        <Component Subtype="Construction" Count="34"/>
+        <Component Subtype="SteelPlate" Count="34"/>
+      </Components>
+      <CriticalComponent Subtype="LargeTube" Index="0" />
+      <Center x="1" y="1" z="3" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0.3" StartY="0" EndX="2.7" EndY="0.6" />
+        <MountPoint Side="Right" StartX="0" StartY="0.3" EndX="0.6" EndY="2.7" />
+        <MountPoint Side="Back" StartX="0.05" StartY="0.05" EndX="2.95" EndY="2.95" Default="true" />
+        <MountPoint Side="Left" StartX="3.4" StartY="0.3" EndX="4" EndY="2.7" />
+        <MountPoint Side="Bottom" StartX="0.3" StartY="3.4" EndX="2.7" EndY="4" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\HydrogenThrusterIndustrialLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\HydrogenThrusterIndustrialLargeConstruction_2.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>LargeHydrogenThrustIndustrial8x</BlockPairName>
+      <MirroringX>Z</MirroringX>
+      <MirroringZ>X</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>68</BuildTimeSeconds>
+      <FuelConverter>
+        <FuelId>
+          <TypeId>GasProperties</TypeId>
+          <SubtypeId>Hydrogen</SubtypeId>
+        </FuelId>
+        <Efficiency>1</Efficiency>
+      </FuelConverter>
+      <MaxPowerConsumption>3.2156</MaxPowerConsumption>
+      <MinPowerConsumption>0.000000001</MinPowerConsumption>
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>3840000</ForceMagnitude>
+      <SlowdownFactor>1</SlowdownFactor>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameLengthScale>1.15</FlameLengthScale>
+      <FlameIdleColor>
+        <X>1</X>
+        <Y>0.85</Y>
+        <Z>0.3</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>1</X>
+        <Y>0.75</Y>
+        <Z>0.2</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>LargeGridLargeThruster</FlameFlare>
+      <FlameVisibilityDistance>700</FlameVisibilityDistance>
+      <FlameGlareQuerySize>1.5</FlameGlareQuerySize>
+      <PrimarySound>SmShipLrgJetHydrogen</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+        <TieredUpdateTimes>
+            <unsignedInt>100</unsignedInt>
+            <unsignedInt>3600</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+        <DLC>HeavyIndustry</DLC>
+    </Definition>
+        
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockSmallHydrogenThrustIndustrial8x</SubtypeId>
+      </Id>
+      <DisplayName>Elite Large I. Hydrogen Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+      <Icon>Textures\HydrogenThrusterIndustrialSmall8x.dds</Icon>
+      <Description>Description_HydrogenThrust</Description>
+      <CubeSize>Small</CubeSize>
+        <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\HydrogenThrusterIndustrialSmall.mwm</Model>
+      <ThrusterType>Hydrogen</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+                <Component Subtype="Tech8x" Count="3"/>
+        <Component Subtype="SteelPlate" Count="7"/>
+        <Component Subtype="Construction" Count="34"/>
+        <Component Subtype="MetalGrid" Count="14"/>
+        <Component Subtype="LargeTube" Count="7"/>
+        <Component Subtype="Construction" Count="17"/>
+        <Component Subtype="SteelPlate" Count="17"/>
+      </Components>
+      <CriticalComponent Subtype="LargeTube" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\HydrogenThrusterIndustrialSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\HydrogenThrusterIndustrialSmallConstruction_2.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>HydrogenThrustIndustrial8x</BlockPairName>
+      <Center x="0" y="0" z="0" />
+      <MirroringZ>X</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>34</BuildTimeSeconds>
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>787200</ForceMagnitude>
+      <FuelConverter>
+        <FuelId>
+          <TypeId>GasProperties</TypeId>
+          <SubtypeId>Hydrogen</SubtypeId>
+        </FuelId>
+        <Efficiency>1</Efficiency>
+      </FuelConverter>
+      <MaxPowerConsumption>0.6699</MaxPowerConsumption>
+      <MinPowerConsumption>0.000000001</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+      <FlameDamageLengthScale>0.34</FlameDamageLengthScale>
+      <FlameLengthScale>1.5</FlameLengthScale>
+      <FlameIdleColor>
+        <X>1</X>
+        <Y>0.85</Y>
+        <Z>0.3</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>1</X>
+        <Y>0.75</Y>
+        <Z>0.2</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>LargeGridSmallThruster</FlameFlare>
+      <FlameVisibilityDistance>500</FlameVisibilityDistance>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>SmShipSmJetHydrogen</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <Public>true</Public>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <IsAirTight>false</IsAirTight>
+        <TieredUpdateTimes>
+            <unsignedInt>100</unsignedInt>
+            <unsignedInt>3600</unsignedInt>
+            <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+        <DLC>HeavyIndustry</DLC>
+    </Definition>
+
+      <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+        <Id>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>LargeBlockLargeHydrogenThrustIndustrial8x</SubtypeId>
+        </Id>
+        <DisplayName>Elite Large I. Thruster</DisplayName>
+        <GuiVisible>false</GuiVisible>
+        <Icon>Textures\HydrogenThrusterIndustrialLarge8x.dds</Icon>
+        <Description>Description_HydrogenThrust</Description>
+        <CubeSize>Large</CubeSize>
+        <BlockTopology>TriangleMesh</BlockTopology>
+        <Size x="3" y="3" z="4" />
+        <ModelOffset x="0" y="0" z="0" />
+        <Model>Models\Cubes\Large\HydrogenThrusterIndustrialLarge.mwm</Model>
+        <ThrusterType>Hydrogen</ThrusterType>
+        <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+        <Components>
+          <Component Subtype="Tech8x" Count="50"/>
+          <Component Subtype="SteelPlate" Count="338"/>
+          <Component Subtype="Construction" Count="507"/>
+          <Component Subtype="MetalGrid" Count="844"/>
+          <Component Subtype="LargeTube" Count="135"/>
+          <Component Subtype="Construction" Count="102"/>
+          <Component Subtype="SteelPlate" Count="169"/>
+        </Components>
+        <CriticalComponent Subtype="LargeTube" Index="0" />
+        <Center x="1" y="1" z="3" />
+        <MountPoints>
+          <MountPoint Side="Top" StartX="0.3" StartY="0" EndX="2.7" EndY="0.6" />
+          <MountPoint Side="Right" StartX="0" StartY="0.3" EndX="0.6" EndY="2.7" />
+          <MountPoint Side="Back" StartX="0.05" StartY="0.05" EndX="2.95" EndY="2.95" Default="true" />
+          <MountPoint Side="Left" StartX="3.4" StartY="0.3" EndX="4" EndY="2.7" />
+          <MountPoint Side="Bottom" StartX="0.3" StartY="3.4" EndX="2.7" EndY="4" />
+        </MountPoints>
+        <BuildProgressModels>
+          <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenThrusterIndustrialLargeConstruction_1.mwm" />
+          <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenThrusterIndustrialLargeConstruction_2.mwm" />
+          <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenThrusterIndustrialLargeConstruction_3.mwm" />
+        </BuildProgressModels>
+        <VoxelPlacement>
+          <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+          <StaticMode>
+            <PlacementMode>Volumetric</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+          </StaticMode>
+          <DynamicMode>
+            <PlacementMode>Volumetric</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+          </DynamicMode>
+        </VoxelPlacement>
+        <BlockPairName>LargeHydrogenThrustIndustrial8x</BlockPairName>
+        <MirroringX>Z</MirroringX>
+        <MirroringZ>X</MirroringZ>
+        <EdgeType>Light</EdgeType>
+        <BuildTimeSeconds>304</BuildTimeSeconds>
+        <FuelConverter>
+          <FuelId>
+            <TypeId>GasProperties</TypeId>
+            <SubtypeId>Hydrogen</SubtypeId>
+          </FuelId>
+          <Efficiency>1</Efficiency>
+        </FuelConverter>
+        <MaxPowerConsumption>40.1953</MaxPowerConsumption>
+        <MinPowerConsumption>0.000000001</MinPowerConsumption>
+        <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+        <ForceMagnitude>57600000</ForceMagnitude>
+        <SlowdownFactor>1</SlowdownFactor>
+        <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+        <FlameLengthScale>1.15</FlameLengthScale>
+        <FlameIdleColor>
+          <X>1</X>
+          <Y>0.85</Y>
+          <Z>0.3</Z>
+          <W>0.75</W>
+        </FlameIdleColor>
+        <FlameFullColor>
+          <X>1</X>
+          <Y>0.75</Y>
+          <Z>0.2</Z>
+          <W>0.75</W>
+        </FlameFullColor>
+        <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+        <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+        <FlameFlare>LargeGridLargeThruster</FlameFlare>
+        <FlameVisibilityDistance>700</FlameVisibilityDistance>
+        <FlameGlareQuerySize>1.5</FlameGlareQuerySize>
+        <PrimarySound>LrgShipLrgJetHydrogen</PrimarySound>
+        <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+        <DamagedSound>ParticleWeapExpl</DamagedSound>
+        <Public>true</Public>
+        <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+        <DestroySound>WepSmallWarheadExpl</DestroySound>
+        <PCU>15</PCU>
+        <TieredUpdateTimes>
+          <unsignedInt>100</unsignedInt>
+          <unsignedInt>3600</unsignedInt>
+          <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+        <DLC>HeavyIndustry</DLC>
+      </Definition>
+
+      <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+        <Id>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>LargeBlockSmallHydrogenThrustIndustrial8x</SubtypeId>
+        </Id>
+        <DisplayName>Elite I. Thruster</DisplayName>
+        <GuiVisible>false</GuiVisible>
+        <Icon>Textures\HydrogenThrusterIndustrialSmall8x.dds</Icon>
+        <Description>Description_HydrogenThrust</Description>
+        <CubeSize>Large</CubeSize>
+        <GuiVisible>false</GuiVisible>
+        <BlockTopology>TriangleMesh</BlockTopology>
+        <Size x="1" y="1" z="1" />
+        <ModelOffset x="0" y="0" z="0" />
+        <Model>Models\Cubes\Large\HydrogenThrusterIndustrialSmall.mwm</Model>
+        <ThrusterType>Hydrogen</ThrusterType>
+        <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+        <Components>
+          <Component Subtype="Tech8x" Count="10"/>
+          <Component Subtype="SteelPlate" Count="51"/>
+          <Component Subtype="Construction" Count="135"/>
+          <Component Subtype="MetalGrid" Count="135"/>
+          <Component Subtype="LargeTube" Count="27"/>
+          <Component Subtype="Construction" Count="68"/>
+          <Component Subtype="SteelPlate" Count="34"/>
+        </Components>
+        <CriticalComponent Subtype="LargeTube" Index="0" />
+        <MountPoints>
+          <MountPoint Side="Back" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" Default="true" />
+        </MountPoints>
+        <BuildProgressModels>
+          <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenThrusterIndustrialSmallConstruction_1.mwm" />
+          <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenThrusterIndustrialSmallConstruction_2.mwm" />
+          <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenThrusterIndustrialSmallConstruction_3.mwm" />
+        </BuildProgressModels>
+        <VoxelPlacement>
+          <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+          <StaticMode>
+            <PlacementMode>Volumetric</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+          </StaticMode>
+          <DynamicMode>
+            <PlacementMode>Volumetric</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+          </DynamicMode>
+        </VoxelPlacement>
+        <BlockPairName>HydrogenThrustIndustrial8x</BlockPairName>
+        <Center x="0" y="0" z="0" />
+        <MirroringZ>X</MirroringZ>
+        <EdgeType>Light</EdgeType>
+        <BuildTimeSeconds>135</BuildTimeSeconds>
+        <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+        <ForceMagnitude>8640000</ForceMagnitude>
+        <SlowdownFactor>1</SlowdownFactor>
+        <FuelConverter>
+          <FuelId>
+            <TypeId>GasProperties</TypeId>
+            <SubtypeId>Hydrogen</SubtypeId>
+          </FuelId>
+          <Efficiency>1</Efficiency>
+        </FuelConverter>
+        <MaxPowerConsumption>6.6992</MaxPowerConsumption>
+        <MinPowerConsumption>0.000000001</MinPowerConsumption>
+        <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+        <FlameLengthScale>1.15</FlameLengthScale>
+        <FlameIdleColor>
+          <X>1</X>
+          <Y>0.85</Y>
+          <Z>0.3</Z>
+          <W>0.75</W>
+        </FlameIdleColor>
+        <FlameFullColor>
+          <X>1</X>
+          <Y>0.75</Y>
+          <Z>0.2</Z>
+          <W>0.75</W>
+        </FlameFullColor>
+        <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+        <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+        <FlameFlare>LargeGridSmallThruster</FlameFlare>
+        <FlameVisibilityDistance>500</FlameVisibilityDistance>
+        <FlameGlareQuerySize>1</FlameGlareQuerySize>
+        <PrimarySound>LrgShipSmJetHydrogen</PrimarySound>
+        <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+        <DamagedSound>ParticleWeapExpl</DamagedSound>
+        <Public>true</Public>
+        <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+        <DestroySound>WepSmallWarheadExpl</DestroySound>
+        <PCU>15</PCU>
+        <IsAirTight>false</IsAirTight>
+        <TieredUpdateTimes>
+          <unsignedInt>100</unsignedInt>
+          <unsignedInt>3600</unsignedInt>
+          <unsignedInt>0</unsignedInt>
+        </TieredUpdateTimes>
+        <DLC>HeavyIndustry</DLC>
+      </Definition>
+    </CubeBlocks>
+</Definitions>

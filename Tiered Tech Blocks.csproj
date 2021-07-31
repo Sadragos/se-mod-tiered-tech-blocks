@@ -35,6 +35,7 @@
   <ItemGroup>
     <Compile Include="Data\Scripts\TieredTechBlocks\UpgradeHandler.cs" />
     <None Include="App.config" />
+    <None Include="CubeBlocks_IndustrialPack.sbc" />
     <None Include="Data\BlockCategories.sbc" />
     <None Include="Data\BlockVariantGroups.sbc" />
     <None Include="Data\BlueprintClasses.sbc" />
@@ -55,6 +56,7 @@
     <None Include="Data\CubeBlocks_HydrogenEngine.sbc" />
     <None Include="Data\CubeBlocks_HydrogenTank.sbc" />
     <None Include="Data\CubeBlocks_HydrogenThruster.sbc" />
+    <None Include="Data\CubeBlocks_IndustrialPack.sbc" />
     <None Include="Data\CubeBlocks_IonThruster.sbc" />
     <None Include="Data\CubeBlocks_IonThrusterSciFi.sbc" />
     <None Include="Data\CubeBlocks_JumpDrive.sbc" />
@@ -78,6 +80,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="metadata.mod" />
+    <Content Include="Textures\AdvancedAssemblerIndustrial2x.dds" />
+    <Content Include="Textures\AdvancedAssemblerIndustrial4x.dds" />
+    <Content Include="Textures\AdvancedAssemblerIndustrial8x.dds" />
+    <Content Include="Textures\AdvancedRefinery2x.dds" />
+    <Content Include="Textures\AdvancedRefinery4x.DDS" />
+    <Content Include="Textures\AdvancedRefinery8x.dds" />
     <Content Include="Textures\assembler2x.dds" />
     <Content Include="Textures\assembler4x.dds" />
     <Content Include="Textures\assembler8x.dds" />
@@ -99,6 +107,9 @@
     <Content Include="Textures\beacon2x.dds" />
     <Content Include="Textures\beacon4x.dds" />
     <Content Include="Textures\beacon8x.dds" />
+    <Content Include="Textures\CargoContainer2x.dds" />
+    <Content Include="Textures\CargoContainer4x.dds" />
+    <Content Include="Textures\CargoContainer8x.DDS" />
     <Content Include="Textures\component_focus.dds" />
     <Content Include="Textures\container2x.dds" />
     <Content Include="Textures\container4x.dds" />
@@ -130,6 +141,15 @@
     <Content Include="Textures\HydrogenTank2x.dds" />
     <Content Include="Textures\HydrogenTank4x.dds" />
     <Content Include="Textures\HydrogenTank8x.dds" />
+    <Content Include="Textures\HydrogenTankIndustrial2x.dds" />
+    <Content Include="Textures\HydrogenTankIndustrial4x.dds" />
+    <Content Include="Textures\HydrogenTankIndustrial8x.DDS" />
+    <Content Include="Textures\HydrogenThrusterIndustrialLarge2x.dds" />
+    <Content Include="Textures\HydrogenThrusterIndustrialLarge4x.dds" />
+    <Content Include="Textures\HydrogenThrusterIndustrialLarge8x.dds" />
+    <Content Include="Textures\HydrogenThrusterIndustrialSmall2x.dds" />
+    <Content Include="Textures\HydrogenThrusterIndustrialSmall4x.dds" />
+    <Content Include="Textures\HydrogenThrusterIndustrialSmall8x.dds" />
     <Content Include="Textures\HydrogenThrusterLarge2x.dds" />
     <Content Include="Textures\HydrogenThrusterLarge4x.dds" />
     <Content Include="Textures\HydrogenThrusterLarge8x.dds" />
@@ -139,9 +159,9 @@
     <Content Include="Textures\JumpDrive2x.dds" />
     <Content Include="Textures\JumpDrive4x.dds" />
     <Content Include="Textures\JumpDrive8x.dds" />
-    <Content Include="Textures\LargeHydrogenTankSmall2x.DDS" />
-    <Content Include="Textures\LargeHydrogenTankSmall4x.DDS" />
-    <Content Include="Textures\LargeHydrogenTankSmall8x.DDS" />
+    <Content Include="Textures\LargeHydrogenTankSmall2x.dds" />
+    <Content Include="Textures\LargeHydrogenTankSmall4x.dds" />
+    <Content Include="Textures\LargeHydrogenTankSmall8x.dds" />
     <Content Include="Textures\Large_AtmosphericThrusterLarge_SciFi2x.dds" />
     <Content Include="Textures\Large_AtmosphericThrusterLarge_SciFi4x.dds" />
     <Content Include="Textures\Large_AtmosphericThrusterLarge_SciFi8x.dds" />
@@ -182,9 +202,9 @@
     <Content Include="Textures\SafeZoneBlock2x.dds" />
     <Content Include="Textures\SafeZoneBlock4x.dds" />
     <Content Include="Textures\SafeZoneBlock8x.dds" />
-    <Content Include="Textures\SmallHydrogenTankSmall2x.DDS" />
-    <Content Include="Textures\SmallHydrogenTankSmall4x.DDS" />
-    <Content Include="Textures\SmallHydrogenTankSmall8x.DDS" />
+    <Content Include="Textures\SmallHydrogenTankSmall2x.dds" />
+    <Content Include="Textures\SmallHydrogenTankSmall4x.dds" />
+    <Content Include="Textures\SmallHydrogenTankSmall8x.dds" />
     <Content Include="Textures\Small_AtmosphericThrusterLarge_SciFi2x.dds" />
     <Content Include="Textures\Small_AtmosphericThrusterLarge_SciFi4x.dds" />
     <Content Include="Textures\Small_AtmosphericThrusterLarge_SciFi8x.dds" />

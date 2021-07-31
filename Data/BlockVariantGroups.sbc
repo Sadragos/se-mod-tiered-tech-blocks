@@ -12,9 +12,13 @@
             <Blocks>
                 <Block Type="MyObjectBuilder_Refinery" Subtype="LargeRefinery" />
                 <Block Type="MyObjectBuilder_Refinery" Subtype="Blast Furnace" />
+              <Block Type="MyObjectBuilder_Refinery" Subtype="LargeRefineryIndustrial" />
                 <Block Type="MyObjectBuilder_Refinery" Subtype="LargeRefinery2x" />
+              <Block Type="MyObjectBuilder_Refinery" Subtype="LargeRefineryIndustrial2x" />
                 <Block Type="MyObjectBuilder_Refinery" Subtype="LargeRefinery4x" />
+              <Block Type="MyObjectBuilder_Refinery" Subtype="LargeRefineryIndustrial4x" />
                 <Block Type="MyObjectBuilder_Refinery" Subtype="LargeRefinery8x" />
+            <Block Type="MyObjectBuilder_Refinery" Subtype="LargeRefineryIndustrial8x" />
             </Blocks>
         </BlockVariantGroup>
 
@@ -40,15 +44,19 @@
                 <Block Type="MyObjectBuilder_SurvivalKit" Subtype="SurvivalKit" />
                 <Block Type="MyObjectBuilder_Assembler" Subtype="BasicAssembler" />
                 <Block Type="MyObjectBuilder_Assembler" Subtype="LargeAssembler" />
+              <Block Type="MyObjectBuilder_Assembler" Subtype="LargeAssemblerIndustrial" />
                 <Block Type="MyObjectBuilder_SurvivalKit" Subtype="SurvivalKitLarge2x" />
                 <Block Type="MyObjectBuilder_SurvivalKit" Subtype="SurvivalKit2x" />
                 <Block Type="MyObjectBuilder_Assembler" Subtype="LargeAssembler2x" />
+              <Block Type="MyObjectBuilder_Assembler" Subtype="LargeAssemblerIndustrial2x" />
                 <Block Type="MyObjectBuilder_SurvivalKit" Subtype="SurvivalKitLarge4x" />
                 <Block Type="MyObjectBuilder_SurvivalKit" Subtype="SurvivalKit4x" />
                 <Block Type="MyObjectBuilder_Assembler" Subtype="LargeAssembler4x" />
+              <Block Type="MyObjectBuilder_Assembler" Subtype="LargeAssemblerIndustrial4x" />
                 <Block Type="MyObjectBuilder_SurvivalKit" Subtype="SurvivalKitLarge8x" />
                 <Block Type="MyObjectBuilder_SurvivalKit" Subtype="SurvivalKit8x" />
                 <Block Type="MyObjectBuilder_Assembler" Subtype="LargeAssembler8x" />
+            <Block Type="MyObjectBuilder_Assembler" Subtype="LargeAssemblerIndustrial8x" />
             </Blocks>
         </BlockVariantGroup>
 
@@ -163,6 +171,7 @@
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTank" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTankSmall" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTank" />
+                <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTankIndustrial" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankDefault2x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeOxygenTank2x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankSmall2x" />
@@ -171,6 +180,7 @@
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTank2x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTankSmall2x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTank2x" />
+              <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTankIndustrial2x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankDefault4x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeOxygenTank4x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankSmall4x" />
@@ -179,6 +189,7 @@
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTank4x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTankSmall4x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTank4x" />
+              <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTankIndustrial4x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankDefault8x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeOxygenTank8x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankSmall8x" />
@@ -187,6 +198,7 @@
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTank8x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTankSmall8x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTank8x" />
+            <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTankIndustrial8x" />
             </Blocks>
         </BlockVariantGroup>
 
@@ -206,34 +218,38 @@
 
         <!-- Logistics -->
 
-        <BlockVariantGroup>
-            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ContainerGroup" />
-            <Icon>Textures\GUI\Icons\Cubes\container_medium.dds</Icon>
-            <DisplayName>DisplayName_BlockGroup_ContainerGroup</DisplayName>
-            <Description>Description_BlockGroup_ContainerGroup</Description>
-            <Blocks>
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockSmallContainer" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeContainer" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockSmallContainer" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockMediumContainer" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockLargeContainer" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockSmallContainer2x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeContainer2x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockSmallContainer2x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockMediumContainer2x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockLargeContainer2x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockSmallContainer4x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeContainer4x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockSmallContainer4x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockMediumContainer4x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockLargeContainer4x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockSmallContainer8x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeContainer8x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockSmallContainer8x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockMediumContainer8x" />
-                <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockLargeContainer8x" />
-            </Blocks>
-        </BlockVariantGroup>
+      <BlockVariantGroup>
+        <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ContainerGroup" />
+        <Icon>Textures\GUI\Icons\Cubes\container_medium.dds</Icon>
+        <DisplayName>DisplayName_BlockGroup_ContainerGroup</DisplayName>
+        <Description>Description_BlockGroup_ContainerGroup</Description>
+        <Blocks>
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockSmallContainer" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeContainer" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockSmallContainer" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockMediumContainer" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockLargeContainer" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeIndustrialContainer" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockSmallContainer2x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeContainer2x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockSmallContainer2x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockMediumContainer2x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockLargeContainer2x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeIndustrialContainer2x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockSmallContainer4x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeContainer4x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockSmallContainer4x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockMediumContainer4x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockLargeContainer4x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeIndustrialContainer4x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockSmallContainer8x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeContainer8x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockSmallContainer8x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockMediumContainer8x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="SmallBlockLargeContainer8x" />
+          <Block Type="MyObjectBuilder_CargoContainer" Subtype="LargeBlockLargeIndustrialContainer8x" />
+        </Blocks>
+      </BlockVariantGroup>
 
 
         <!-- Control -->
@@ -380,6 +396,32 @@
                 <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallAtmosphericThrustSciFi8x" />
                 <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeAtmosphericThrustSciFi8x" />
                 <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallAtmosphericThrustSciFi8x" />
+            </Blocks>
+        </BlockVariantGroup>
+      
+      
+              <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ThrusterHydroGroupIndustrial" />
+            <Icon>Textures\GUI\Icons\Cubes\HydrogenThrusterIndustrialLarge.dds</Icon>
+            <DisplayName>DisplayName_Block_LargeHydrogenThrustIndustrial</DisplayName>
+            <Description>Description_HydrogenThrust</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeHydrogenThrustIndustrial" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallHydrogenThrustIndustrial" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeHydrogenThrustIndustrial" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallHydrogenThrustIndustrial" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeHydrogenThrustIndustrial2x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallHydrogenThrustIndustrial2x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeHydrogenThrustIndustrial2x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallHydrogenThrustIndustrial2x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeHydrogenThrustIndustrial4x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallHydrogenThrustIndustrial4x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeHydrogenThrustIndustrial4x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallHydrogenThrustIndustrial4x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeHydrogenThrustIndustrial8x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallHydrogenThrustIndustrial8x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeHydrogenThrustIndustrial8x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallHydrogenThrustIndustrial8x" />
             </Blocks>
         </BlockVariantGroup>
 
