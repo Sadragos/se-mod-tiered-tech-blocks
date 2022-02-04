@@ -69,18 +69,30 @@
             <DisplayName>DisplayName_Block_Battery</DisplayName>
             <Description>Description_Battery</Description>
             <Blocks>
-                <Block Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlock" />
-                <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlock" />
-                <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockSmallBatteryBlock" />
-                <Block Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlock2x" />
-                <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlock2x" />
-                <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockSmallBatteryBlock2x" />
-                <Block Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlock4x" />
-                <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlock4x" />
-                <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockSmallBatteryBlock4x" />
-                <Block Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlock8x" />
-                <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlock8x" />
-                <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockSmallBatteryBlock8x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlock" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlockWarfare2" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlock" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlockWarfare2" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockSmallBatteryBlock" />
+
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlock2x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlockWarfare22x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlock2x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlockWarfare22x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockSmallBatteryBlock2x" />
+
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlock4x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlockWarfare24x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlock4x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlockWarfare24x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockSmallBatteryBlock4x" />
+
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlock8x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="LargeBlockBatteryBlockWarfare28x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlock8x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockBatteryBlockWarfare28x" />
+              <Block Type="MyObjectBuilder_BatteryBlock" Subtype="SmallBlockSmallBatteryBlock8x" />
+
             </Blocks>
         </BlockVariantGroup>
 
@@ -111,30 +123,50 @@
             <DisplayName>DisplayName_BlockGroup_EnergyFueledGroup</DisplayName>
             <Description>Description_BlockGroup_EnergyFueledGroup</Description>
             <Blocks>
-                <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGenerator" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGenerator" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGenerator" />
-                <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="LargeHydrogenEngine" />
-                <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="SmallHydrogenEngine" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGenerator2x" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator2x" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGenerator2x" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGenerator2x" />
-                <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="LargeHydrogenEngine2x" />
-                <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="SmallHydrogenEngine2x" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGenerator4x" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator4x" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGenerator4x" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGenerator4x" />
-                <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="LargeHydrogenEngine4x" />
-                <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="SmallHydrogenEngine4x" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGenerator8x" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator8x" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGenerator8x" />
-                <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGenerator8x" />
-                <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="LargeHydrogenEngine8x" />
-                <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="SmallHydrogenEngine8x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGenerator" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGeneratorWarfare2" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGeneratorWarfare2" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGenerator" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGeneratorWarfare2" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGenerator" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGeneratorWarfare2" />
+              <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="LargeHydrogenEngine" />
+              <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="SmallHydrogenEngine" />
+
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGenerator2x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGeneratorWarfare22x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator2x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGeneratorWarfare22x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGenerator2x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGeneratorWarfare22x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGenerator2x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGeneratorWarfare22x" />
+              <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="LargeHydrogenEngine2x" />
+              <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="SmallHydrogenEngine2x" />
+
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGenerator4x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGeneratorWarfare24x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator4x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGeneratorWarfare24x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGenerator4x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGeneratorWarfare24x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGenerator4x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGeneratorWarfare24x" />
+              <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="LargeHydrogenEngine4x" />
+              <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="SmallHydrogenEngine4x" />
+
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGenerator8x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockSmallGeneratorWarfare28x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGenerator8x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="LargeBlockLargeGeneratorWarfare28x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGenerator8x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockSmallGeneratorWarfare28x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGenerator8x" />
+              <Block Type="MyObjectBuilder_Reactor" Subtype="SmallBlockLargeGeneratorWarfare28x" />
+              <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="LargeHydrogenEngine8x" />
+              <Block Type="MyObjectBuilder_HydrogenEngine" Subtype="SmallHydrogenEngine8x" />
+
             </Blocks>
         </BlockVariantGroup>
 
@@ -333,18 +365,7 @@
                 <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrust" />
                 <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrust" />
                 <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrust" />
-                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrust2x" />
-                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrust2x" />
-                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrust2x" />
-                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrust2x" />
-                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrust4x" />
-                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrust4x" />
-                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrust4x" />
-                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrust4x" />
-                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrust8x" />
-                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrust8x" />
-                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrust8x" />
-                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrust8x" />
+
             </Blocks>
         </BlockVariantGroup>
 
@@ -424,6 +445,34 @@
                 <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallHydrogenThrustIndustrial8x" />
             </Blocks>
         </BlockVariantGroup>
+
+      <BlockVariantGroup>
+        <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ModularThrusterGroup" />
+        <Icon>Textures\GUI\Icons\Cubes\LargeGridModularIonThrusterLarge.dds</Icon>
+        <DisplayName>DisplayName_Block_LargeModularThruster</DisplayName>
+        <Description>Description_IonThrust</Description>
+        <Blocks>
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeModularThruster" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallModularThruster" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeModularThruster" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallModularThruster" />
+
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeModularThruster2x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallModularThruster2x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeModularThruster2x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallModularThruster2x" />
+
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeModularThruster4x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallModularThruster4x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeModularThruster4x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallModularThruster4x" />
+
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeModularThruster8x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallModularThruster8x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeModularThruster8x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallModularThruster8x" />
+        </Blocks>
+      </BlockVariantGroup>
 
 
         <!-- Ship Tools-->

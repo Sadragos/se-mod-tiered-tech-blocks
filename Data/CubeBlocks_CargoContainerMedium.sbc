@@ -7,7 +7,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>SmallBlockMediumContainer2x</SubtypeId>
             </Id>
-            <DisplayName>Enhanced Medium Quantum Container</DisplayName>
+            <DisplayName>Enhanced Medium Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container_medium2x.dds</Icon>
             <Description>Description_MediumCargoContainer</Description>
@@ -63,7 +63,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>SmallBlockMediumContainer4x</SubtypeId>
             </Id>
-            <DisplayName>Proficient Medium Quantum Container</DisplayName>
+            <DisplayName>Proficient Medium Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container_medium4x.dds</Icon>
             <Description>Description_MediumCargoContainer</Description>
@@ -119,7 +119,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>SmallBlockMediumContainer8x</SubtypeId>
             </Id>
-            <DisplayName>Elite Medium Quantum Container</DisplayName>
+            <DisplayName>Elite Medium Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container_medium8x.dds</Icon>
             <Description>Description_MediumCargoContainer</Description>

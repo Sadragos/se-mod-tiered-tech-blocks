@@ -210,7 +210,7 @@
             <ResourceSinkGroup>Factory</ResourceSinkGroup>
             <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
             <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
-            <Capacity>740000</Capacity>
+            <Capacity>200000</Capacity>
             <InventoryMaxVolume>4</InventoryMaxVolume>
             <InventorySize>
                 <X>2</X>
@@ -357,7 +357,7 @@
             <EdgeType>Light</EdgeType>
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
             <ResourceSinkGroup>Factory</ResourceSinkGroup>
-            <Capacity>80000</Capacity>
+            <Capacity>100000</Capacity>
             <InventoryMaxVolume>4</InventoryMaxVolume>
             <InventorySize>
                 <X>2</X>
@@ -520,7 +520,7 @@
             <ResourceSinkGroup>Factory</ResourceSinkGroup>
             <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
             <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
-            <Capacity>1480000</Capacity>
+            <Capacity>400000</Capacity>
             <InventoryMaxVolume>4</InventoryMaxVolume>
             <InventorySize>
                 <X>2</X>
@@ -667,7 +667,7 @@
             <EdgeType>Light</EdgeType>
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
             <ResourceSinkGroup>Factory</ResourceSinkGroup>
-            <Capacity>160000</Capacity>
+            <Capacity>200000</Capacity>
             <InventoryMaxVolume>4</InventoryMaxVolume>
             <InventorySize>
                 <X>2</X>
@@ -830,7 +830,7 @@
             <ResourceSinkGroup>Factory</ResourceSinkGroup>
             <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
             <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
-            <Capacity>2960000</Capacity>
+            <Capacity>800000</Capacity>
             <InventoryMaxVolume>4</InventoryMaxVolume>
             <InventorySize>
                 <X>2</X>
@@ -977,7 +977,7 @@
             <EdgeType>Light</EdgeType>
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
             <ResourceSinkGroup>Factory</ResourceSinkGroup>
-            <Capacity>320000</Capacity>
+            <Capacity>400000</Capacity>
             <InventoryMaxVolume>4</InventoryMaxVolume>
             <InventorySize>
                 <X>2</X>

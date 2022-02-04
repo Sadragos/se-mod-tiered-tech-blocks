@@ -7,7 +7,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>LargeBlockSmallContainer2x</SubtypeId>
             </Id>
-            <DisplayName>Enhanced Small Quantum Container</DisplayName>
+            <DisplayName>Enhanced Small Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container2x.dds</Icon>
             <Description>Description_SmallCargoContainer</Description>
@@ -65,7 +65,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>SmallBlockSmallContainer2x</SubtypeId>
             </Id>
-            <DisplayName>Enhanced Small Quantum Container</DisplayName>
+            <DisplayName>Enhanced Small Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container2x.dds</Icon>
             <Description>Description_SmallCargoContainer</Description>
@@ -121,7 +121,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>LargeBlockSmallContainer4x</SubtypeId>
             </Id>
-            <DisplayName>Proficient Small Quantum Container</DisplayName>
+            <DisplayName>Proficient Small Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container4x.dds</Icon>
             <Description>Description_SmallCargoContainer</Description>
@@ -180,7 +180,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>SmallBlockSmallContainer4x</SubtypeId>
             </Id>
-            <DisplayName>Proficient Small Quantum Container</DisplayName>
+            <DisplayName>Proficient Small Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container4x.dds</Icon>
             <Description>Description_SmallCargoContainer</Description>
@@ -236,7 +236,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>LargeBlockSmallContainer8x</SubtypeId>
             </Id>
-            <DisplayName>Elite Small Quantum Container</DisplayName>
+            <DisplayName>Elite Small Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container8x.dds</Icon>
             <Description>Description_SmallCargoContainer</Description>
@@ -295,7 +295,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>SmallBlockSmallContainer8x</SubtypeId>
             </Id>
-            <DisplayName>Elite Small Quantum Container</DisplayName>
+            <DisplayName>Elite Small Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container8x.dds</Icon>
             <Description>Description_SmallCargoContainer</Description>

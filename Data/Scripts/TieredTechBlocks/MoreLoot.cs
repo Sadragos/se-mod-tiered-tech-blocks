@@ -68,11 +68,6 @@ namespace TieredTechBlocks
         private bool AddLoot(IMyCargoContainer container)
         {
             bool added = false;
-            var cubeOwner = container as MyCubeBlock;
-            if (cubeOwner != null)
-            {
-                cubeOwner.ChangeOwner(0, MyOwnershipShareModeEnum.All);
-            }
 
             bool isLarge = container.CubeGrid.GridSizeEnum == MyCubeSize.Large;
             IMyInventory inventory = container.GetInventory();

@@ -125,7 +125,7 @@
             <EdgeType>Light</EdgeType>
 
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-            <MaxPowerOutput>25.8125</MaxPowerOutput>
+          <MaxPowerOutput>25.8125</MaxPowerOutput>
 
             <InventorySize>
                 <X>1</X>
@@ -196,7 +196,9 @@
             <BuildTimeSeconds>60</BuildTimeSeconds>
 
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-            <MaxPowerOutput>26.2500</MaxPowerOutput>
+            
+          
+          <MaxPowerOutput>26.2500</MaxPowerOutput>
 
             <InventorySize>
                 <X>1</X>

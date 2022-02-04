@@ -7,7 +7,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>LargeBlockLargeContainer2x</SubtypeId>
             </Id>
-            <DisplayName>Enhanced Large Quantum Container</DisplayName>
+            <DisplayName>Enhanced Large Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container_large2x.dds</Icon>
             <Description>Description_LargeCargoContainer</Description>
@@ -64,7 +64,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>SmallBlockLargeContainer2x</SubtypeId>
             </Id>
-            <DisplayName>Enhanced Large Quantum Container</DisplayName>
+            <DisplayName>Enhanced Large Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container_large2x.dds</Icon>
             <Description>Description_LargeCargoContainer</Description>
@@ -118,7 +118,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>LargeBlockLargeContainer4x</SubtypeId>
             </Id>
-            <DisplayName>Proficient Large Quantum Container</DisplayName>
+            <DisplayName>Proficient Large Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container_large4x.dds</Icon>
             <Description>Description_LargeCargoContainer</Description>
@@ -175,7 +175,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>SmallBlockLargeContainer4x</SubtypeId>
             </Id>
-            <DisplayName>Proficient Large Quantum Container</DisplayName>
+            <DisplayName>Proficient Large Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container_large4x.dds</Icon>
             <Description>Description_LargeCargoContainer</Description>
@@ -230,7 +230,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>LargeBlockLargeContainer8x</SubtypeId>
             </Id>
-            <DisplayName>Timelord Large Quantum Container</DisplayName>
+            <DisplayName>Timelord Large Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container_large8x.dds</Icon>
             <Description>Description_LargeCargoContainer</Description>
@@ -287,7 +287,7 @@
                 <TypeId>CargoContainer</TypeId>
                 <SubtypeId>SmallBlockLargeContainer8x</SubtypeId>
             </Id>
-            <DisplayName>Timelord Large Quantum Container</DisplayName>
+            <DisplayName>Timelord Large Cargo Container</DisplayName>
             <GuiVisible>false</GuiVisible>
             <Icon>Textures\container_large8x.dds</Icon>
             <Description>Description_LargeCargoContainer</Description>

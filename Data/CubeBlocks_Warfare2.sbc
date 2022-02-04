@@ -1,0 +1,2778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+    <!-- Tier 2 -->
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>LargeBlockSmallGeneratorWarfare22x</SubtypeId>
+      </Id>
+      <DisplayName>Enhanced Small Warfare Reactor</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\ReactorReskinSmall2x.dds</Icon>
+      <Description>Description_Reactor</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ReactorReskinSmall.mwm</Model>
+      <Components>
+        <Component Subtype="Tech2x" Count="22"/>
+        <Component Subtype="SteelPlate" Count="75"/>
+        <Component Subtype="Construction" Count="60"/>
+        <Component Subtype="MetalGrid" Count="6"/>
+        <Component Subtype="LargeTube" Count="12"/>
+        <Component Subtype="Reactor" Count="150"/>
+        <Component Subtype="Motor" Count="9"/>
+        <Component Subtype="Computer" Count="38"/>
+        <Component Subtype="SteelPlate" Count="45"/>
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="1" EndY="0.9" />
+        <MountPoint Side="Back" StartX="0.4" StartY="0" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Right" StartX="0.1" StartY="0" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="1" EndY="0.9" Default="true" />
+        <MountPoint Side="Front" StartX="0.1" StartY="0" EndX="0.6" EndY="0.9" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ReactorReskinSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ReactorReskinSmallConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ReactorReskinSmallConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>SmallReactorWarfare22x</BlockPairName>
+      <MirroringY>X</MirroringY>
+      <MirroringX>Y</MirroringX>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>60</BuildTimeSeconds>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <MaxPowerOutput>26.2500</MaxPowerOutput>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+      <InventoryFillFactorMin>0.0005</InventoryFillFactorMin>
+      <InventoryFillFactorMax>0.001</InventoryFillFactorMax>
+
+      <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+      <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+      <FuelInfos>
+        <FuelInfo>
+          <Id>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>Uranium</SubtypeId>
+          </Id>
+        </FuelInfo>
+      </FuelInfos>
+      <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+      <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+      <DamagedSound>ParticleReactor</DamagedSound>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>25</PCU>
+      <IsAirTight>false</IsAirTight>
+      <TieredUpdateTimes>
+        <unsignedInt>900</unsignedInt>
+        <unsignedInt>1800</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <DLC>Warfare2</DLC>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>LargeBlockLargeGeneratorWarfare22x</SubtypeId>
+      </Id>
+      <DisplayName>Enhanced Large Warfare Reactor</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\ReactorReskinLarge2x.dds</Icon>
+      <Description>Description_Reactor</Description>
+      <CubeSize>Large</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ReactorReskinLarge.mwm</Model>
+      <Components>
+        <Component Subtype="Tech2x" Count="130"/>
+        <Component Subtype="SteelPlate" Count="1200"/>
+        <Component Subtype="Construction" Count="105"/>
+        <Component Subtype="MetalGrid" Count="60"/>
+        <Component Subtype="LargeTube" Count="60"/>
+        <Component Subtype="Superconductor" Count="150"/>
+        <Component Subtype="Reactor" Count="3000"/>
+        <Component Subtype="Motor" Count="30"/>
+        <Component Subtype="Computer" Count="113"/>
+        <Component Subtype="SteelPlate" Count="300"/>
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Right" StartX="0.9" StartY="1.3" EndX="2.1" EndY="2.6" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2.5" EndY="0.5" />
+        <MountPoint Side="Top" StartX="0.9" StartY="0.9" EndX="2.6" EndY="2.1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0.6" EndX="2.5" EndY="2.4" Default="true" />
+        <MountPoint Side="Bottom" StartX="0.5" StartY="0" EndX="1.8" EndY="0.6" />
+        <MountPoint Side="Bottom" StartX="0.5" StartY="2.4" EndX="1.8" EndY="3" />
+        <MountPoint Side="Front" StartX="1.2" StartY="0" EndX="2.5" EndY="0.5" />
+        <MountPoint Side="Back" StartX="0.5" StartY="0" EndX="1.8" EndY="0.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ReactorReskinLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ReactorReskinLargeConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ReactorReskinLargeConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>LargeReactorWarfare22x</BlockPairName>
+      <MirroringY>X</MirroringY>
+      <MirroringX>Y</MirroringX>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>150</BuildTimeSeconds>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <MaxPowerOutput>525.0000</MaxPowerOutput>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+      <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
+      <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
+
+      <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+      <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+      <FuelInfos>
+        <FuelInfo>
+          <Id>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>Uranium</SubtypeId>
+          </Id>
+        </FuelInfo>
+      </FuelInfos>
+      <PrimarySound>ShipLrgNuclearLrg</PrimarySound>
+      <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+      <DamagedSound>ParticleReactor</DamagedSound>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+      <DestroySound>WepLrgWarheadExpl</DestroySound>
+      <PCU>25</PCU>
+      <IsAirTight>false</IsAirTight>
+      <TieredUpdateTimes>
+        <unsignedInt>900</unsignedInt>
+        <unsignedInt>1800</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <DLC>Warfare2</DLC>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>SmallBlockSmallGeneratorWarfare22x</SubtypeId>
+      </Id>
+      <DisplayName>Enhanced Small Warfare Reactor</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\SmallGridReactorReskinSmall2x.dds</Icon>
+      <Description>Description_Reactor</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ReactorReskinSmall.mwm</Model>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+        <Component Subtype="Tech2x" Count="7"/>
+        <Component Subtype="SteelPlate" Count="2"/>
+        <Component Subtype="Construction" Count="15"/>
+        <Component Subtype="MetalGrid" Count="3"/>
+        <Component Subtype="LargeTube" Count="2"/>
+        <Component Subtype="Reactor" Count="5"/>
+        <Component Subtype="Motor" Count="2"/>
+        <Component Subtype="Computer" Count="15"/>
+        <Component Subtype="SteelPlate" Count="3"/>
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Right" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
+        <MountPoint Side="Right" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+        <MountPoint Side="Left" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
+        <MountPoint Side="Left" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+        <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" Default="true" />
+        <MountPoint Side="Front" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
+        <MountPoint Side="Front" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+        <MountPoint Side="Back" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
+        <MountPoint Side="Back" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ReactorReskinSmallConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ReactorReskinSmallConstruction_1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>SmallReactorWarfare22x</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <MaxPowerOutput>0.875</MaxPowerOutput>
+      <InventorySize>
+        <X>0.5</X>
+        <Y>0.5</Y>
+        <Z>0.5</Z>
+      </InventorySize>
+      <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+      <InventoryFillFactorMin>0.0002</InventoryFillFactorMin>
+      <InventoryFillFactorMax>0.0004</InventoryFillFactorMax>
+
+      <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+      <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+      <FuelInfos>
+        <FuelInfo>
+          <Id>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>Uranium</SubtypeId>
+          </Id>
+        </FuelInfo>
+      </FuelInfos>
+      <PrimarySound>ShipSmNuclearSm</PrimarySound>
+      <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+      <DamagedSound>ParticleReactor</DamagedSound>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>25</PCU>
+      <IsAirTight>false</IsAirTight>
+      <TieredUpdateTimes>
+        <unsignedInt>900</unsignedInt>
+        <unsignedInt>1800</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <DLC>Warfare2</DLC>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>SmallBlockLargeGeneratorWarfare22x</SubtypeId>
+      </Id>
+      <DisplayName>Enhanced Large Warfare Reactor</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\SmallGridReactorReskinLarge2x.dds</Icon>
+      <Description>Description_Reactor</Description>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ReactorReskinLarge.mwm</Model>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+        <Component Subtype="Tech2x" Count="22"/>
+        <Component Subtype="SteelPlate" Count="60"/>
+        <Component Subtype="Construction" Count="14"/>
+        <Component Subtype="MetalGrid" Count="14"/>
+        <Component Subtype="LargeTube" Count="5"/>
+        <Component Subtype="Reactor" Count="143"/>
+        <Component Subtype="Motor" Count="8"/>
+        <Component Subtype="Computer" Count="38"/>
+        <Component Subtype="SteelPlate" Count="30"/>
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Right" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
+        <MountPoint Side="Right" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+        <MountPoint Side="Left" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
+        <MountPoint Side="Left" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+        <MountPoint Side="Top" StartX="0.2" StartY="0.2" EndX="2.8" EndY="2.8" />
+        <MountPoint Side="Bottom" StartX="0.2" StartY="0.2" EndX="2.8" EndY="2.8" Default="true" />
+        <MountPoint Side="Front" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
+        <MountPoint Side="Front" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+        <MountPoint Side="Back" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
+        <MountPoint Side="Back" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ReactorReskinLargeConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ReactorReskinLargeConstruction_1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>LargeReactorWarfare22x</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <MaxPowerOutput>25.8125</MaxPowerOutput>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+      <InventoryFillFactorMin>0.0005</InventoryFillFactorMin>
+      <InventoryFillFactorMax>0.001</InventoryFillFactorMax>
+
+      <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+      <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+      <FuelInfos>
+        <FuelInfo>
+          <Id>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>Uranium</SubtypeId>
+          </Id>
+        </FuelInfo>
+      </FuelInfos>
+      <PrimarySound>ShipSmNuclearLrg</PrimarySound>
+      <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+      <DamagedSound>ParticleReactor</DamagedSound>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>25</PCU>
+      <TieredUpdateTimes>
+        <unsignedInt>900</unsignedInt>
+        <unsignedInt>1800</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <DLC>Warfare2</DLC>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>LargeBlockBatteryBlockWarfare22x</SubtypeId>
+      </Id>
+      <DisplayName>Enhanced Warfare Battery</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\BatteryReskin2x.dds</Icon>
+      <Description>Description_Battery</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\BatteryReskin.mwm</Model>
+      <Components>
+        <Component Subtype="Tech2x" Count="20"/>
+        <Component Subtype="SteelPlate" Count="30"/>
+        <Component Subtype="Construction" Count="15"/>
+        <Component Subtype="PowerCell" Count="120">
+          <DeconstructId>
+            <TypeId>Ore</TypeId>
+            <SubtypeId>Scrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="Computer" Count="38"/>
+        <Component Subtype="Construction" Count="30"/>
+        <Component Subtype="SteelPlate" Count="90"/>
+      </Components>
+      <CriticalComponent Subtype="PowerCell" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\BatteryReskinConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\BatteryReskinConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\BatteryReskinConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>BatteryBlockWarfare22x</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>60</BuildTimeSeconds>
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>24</MaxPowerOutput>
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>24</RequiredPowerInput>
+      <AdaptibleInput>true</AdaptibleInput>
+      <MaxStoredPower>6</MaxStoredPower>
+      <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+      <RechargeMultiplier>0.8</RechargeMultiplier>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>true</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <IsAirTight>true</IsAirTight>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <DLC>Warfare2</DLC>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>SmallBlockBatteryBlockWarfare22x</SubtypeId>
+      </Id>
+      <DisplayName>Enhanced Warfare Battery</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\BatteryReskin_Small2x.dds</Icon>
+      <Description>Description_Battery</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\BatteryReskin.mwm</Model>
+      <Components>
+        <Component Subtype="Tech2x" Count="8"/>
+        <Component Subtype="SteelPlate" Count="8"/>
+        <Component Subtype="Construction" Count="3"/>
+        <Component Subtype="PowerCell" Count="30">
+          <DeconstructId>
+            <TypeId>Ore</TypeId>
+            <SubtypeId>Scrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="Computer" Count="3"/>
+        <Component Subtype="Construction" Count="5"/>
+        <Component Subtype="SteelPlate" Count="30"/>
+      </Components>
+      <CriticalComponent Subtype="PowerCell" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Top" StartX="0.5" StartY="0" EndX="2.5" EndY="3" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" Default="true"/>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="3" EndY="1.5" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="3" EndY="1.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\BatteryReskinConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\BatteryReskinConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>BatteryBlockWarfare22x</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>8</MaxPowerOutput>
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>8</RequiredPowerInput>
+      <MaxStoredPower>2</MaxStoredPower>
+      <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+      <RechargeMultiplier>0.8</RechargeMultiplier>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>true</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <DLC>Warfare2</DLC>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockSmallModularThruster2x</SubtypeId>
+      </Id>
+      <DisplayName>Enhanced Warfare Ion Thruster</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\SmallGridModularIonThrusterSmall2x.dds</Icon>
+      <Description>Description_IonThrust</Description>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ModularIonThrusterSmall.mwm</Model>
+      <ThrusterType>Ion</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+        <Component Subtype="Tech2x" Count="3"/>
+        <Component Subtype="SteelPlate" Count="2"/>
+        <Component Subtype="Construction" Count="2"/>
+        <Component Subtype="LargeTube" Count="2"/>
+        <Component Subtype="Thrust" Count="2"/>
+        <Component Subtype="Construction" Count="2"/>
+        <Component Subtype="SteelPlate" Count="2"/>
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1.5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="1" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.5" EndY="1" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ModularIonThrusterSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ModularIonThrusterSmallConstruction_2.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <StaticMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>SmallModularThruster2x</BlockPairName>
+      <Center x="0" y="0" z="1" />
+      <MirroringX>Z</MirroringX>
+      <MirroringZ>X</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>28800</ForceMagnitude>
+      <MaxPowerConsumption>0.35</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.25</EffectivenessAtMaxInfluence>
+
+      <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>1.6</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.1</X>
+        <Y>0.5</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.1</X>
+        <Y>0.8</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>ModularEngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>SmallGridSmallThruster</FlameFlare>
+      <FlameVisibilityDistance>200</FlameVisibilityDistance>
+      <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+      <PrimarySound>SmShipSmJet</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <DLC>Warfare2</DLC>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockLargeModularThruster2x</SubtypeId>
+      </Id>
+      <DisplayName>Enhanced Large Warfare Ion Thruster</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\SmallGridModularIonThrusterLarge2x.dds</Icon>
+      <Description>Description_IonThrust</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="2" y="3" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ModularIonThrusterLarge.mwm</Model>
+      <ThrusterType>Ion</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+        <Component Subtype="Tech2x" Count="7"/>
+        <Component Subtype="SteelPlate" Count="2"/>
+        <Component Subtype="Construction" Count="2"/>
+        <Component Subtype="LargeTube" Count="8"/>
+        <Component Subtype="Thrust" Count="18"/>
+        <Component Subtype="Construction" Count="2"/>
+        <Component Subtype="SteelPlate" Count="6"/>
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="3" Default="true" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Top" StartX="0.5" StartY="2" EndX="1.5" EndY="3.5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="2" EndY="4" />
+        <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="1.5" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="3" />
+        <MountPoint Side="Right" StartX="2" StartY="0.5" EndX="3.5" EndY="2.5" />
+        <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="3" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0.5" EndX="2" EndY="2.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ModularIonThrusterLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ModularIonThrusterLargeConstruction_2.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <StaticMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>LargeModularThruster2x</BlockPairName>
+      <Center x="0" y="1" z="2" />
+      <MirroringX>Z</MirroringX>
+      <MirroringZ>X</MirroringZ>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>345600</ForceMagnitude>
+      <MaxPowerConsumption>4.2</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.25</EffectivenessAtMaxInfluence>
+
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameDamage>0.2</FlameDamage>
+      <FlameLengthScale>1.1</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.1</X>
+        <Y>0.5</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.1</X>
+        <Y>0.8</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>ModularEngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>SmallGridLargeThruster</FlameFlare>
+      <FlameVisibilityDistance>300</FlameVisibilityDistance>
+      <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+      <PrimarySound>SmShipLrgJet</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <DLC>Warfare2</DLC>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockSmallModularThruster2x</SubtypeId>
+      </Id>
+      <DisplayName>Enhanced Warfare Ion Thruster</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\LargeGridModularIonThrusterSmall2x.dds</Icon>
+      <Description>Description_IonThrust</Description>
+      <CubeSize>Large</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ModularIonThrusterSmall.mwm</Model>
+      <ThrusterType>Ion</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+        <Component Subtype="Tech2x" Count="10"/>
+        <Component Subtype="SteelPlate" Count="23"/>
+        <Component Subtype="Construction" Count="60"/>
+        <Component Subtype="LargeTube" Count="12"/>
+        <Component Subtype="Thrust" Count="120"/>
+        <Component Subtype="Construction" Count="30"/>
+        <Component Subtype="SteelPlate" Count="15"/>
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1.5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="1" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.5" EndY="1" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_3.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <StaticMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>SmallModularThruster2x</BlockPairName>
+      <Center x="0" y="0" z="1" />
+      <MirroringX>Z</MirroringX>
+      <MirroringZ>X</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>60</BuildTimeSeconds>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>691200</ForceMagnitude>
+      <MaxPowerConsumption>5.8800</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.25</EffectivenessAtMaxInfluence>
+
+      <FlameDamageLengthScale>0.61</FlameDamageLengthScale>
+      <FlameLengthScale>1.5</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.1</X>
+        <Y>0.5</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.1</X>
+        <Y>0.8</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>ModularEngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>LargeGridSmallThruster</FlameFlare>
+      <FlameVisibilityDistance>500</FlameVisibilityDistance>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>LrgShipSmJet</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <DLC>Warfare2</DLC>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockLargeModularThruster2x</SubtypeId>
+      </Id>
+      <DisplayName>Enhanced Large Warfare Ion Thruster</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\LargeGridModularIonThrusterLarge2x.dds</Icon>
+      <Description>Description_IonThrust</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="2" y="3" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ModularIonThrusterLarge.mwm</Model>
+      <ThrusterType>Ion</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+        <Component Subtype="Tech2x" Count="50"/>
+        <Component Subtype="SteelPlate" Count="150"/>
+        <Component Subtype="Construction" Count="105"/>
+        <Component Subtype="LargeTube" Count="60"/>
+        <Component Subtype="Thrust" Count="1440"/>
+        <Component Subtype="Construction" Count="45"/>
+        <Component Subtype="SteelPlate" Count="75"/>
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="3" Default="true" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Top" StartX="0.5" StartY="2" EndX="1.5" EndY="3.5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="2" EndY="4" />
+        <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="1.5" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="3" />
+        <MountPoint Side="Right" StartX="2" StartY="0.5" EndX="3.5" EndY="2.5" />
+        <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="3" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0.5" EndX="2" EndY="2.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_3.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <StaticMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>LargeModularThruster2x</BlockPairName>
+      <Center x="0" y="1" z="2" />
+      <MirroringX>Z</MirroringX>
+      <MirroringZ>X</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>135</BuildTimeSeconds>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>8640000</ForceMagnitude>
+      <MaxPowerConsumption>58.8000</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.25</EffectivenessAtMaxInfluence>
+
+      <FlameDamageLengthScale>0.8</FlameDamageLengthScale>
+      <FlameLengthScale>1.15</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.1</X>
+        <Y>0.5</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.1</X>
+        <Y>0.8</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>ModularEngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>LargeGridLargeThruster</FlameFlare>
+      <FlameVisibilityDistance>700</FlameVisibilityDistance>
+      <FlameGlareQuerySize>1.5</FlameGlareQuerySize>
+      <PrimarySound>LrgShipLrgJet</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <DLC>Warfare2</DLC>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+    </Definition>
+
+    
+    <!-- Tier 4 -->
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>LargeBlockSmallGeneratorWarfare24x</SubtypeId>
+      </Id>
+      <DisplayName>Proficient Small Warfare Reactor</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\ReactorReskinSmall4x.dds</Icon>
+      <Description>Description_Reactor</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ReactorReskinSmall.mwm</Model>
+      <Components>
+        <Component Subtype="Tech4x" Count="22"/>
+        <Component Subtype="SteelPlate" Count="113"/>
+        <Component Subtype="Construction" Count="90"/>
+        <Component Subtype="MetalGrid" Count="9"/>
+        <Component Subtype="LargeTube" Count="18"/>
+        <Component Subtype="Reactor" Count="225"/>
+        <Component Subtype="Motor" Count="14"/>
+        <Component Subtype="Computer" Count="57"/>
+        <Component Subtype="SteelPlate" Count="68"/>
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="1" EndY="0.9" />
+        <MountPoint Side="Back" StartX="0.4" StartY="0" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Right" StartX="0.1" StartY="0" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="1" EndY="0.9" Default="true" />
+        <MountPoint Side="Front" StartX="0.1" StartY="0" EndX="0.6" EndY="0.9" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ReactorReskinSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ReactorReskinSmallConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ReactorReskinSmallConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>SmallReactorWarfare24x</BlockPairName>
+      <MirroringY>X</MirroringY>
+      <MirroringX>Y</MirroringX>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>90</BuildTimeSeconds>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <MaxPowerOutput>45.9375</MaxPowerOutput>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+      <InventoryFillFactorMin>0.0005</InventoryFillFactorMin>
+      <InventoryFillFactorMax>0.001</InventoryFillFactorMax>
+
+      <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+      <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+      <FuelInfos>
+        <FuelInfo>
+          <Id>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>Uranium</SubtypeId>
+          </Id>
+        </FuelInfo>
+      </FuelInfos>
+      <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+      <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+      <DamagedSound>ParticleReactor</DamagedSound>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>25</PCU>
+      <IsAirTight>false</IsAirTight>
+      <TieredUpdateTimes>
+        <unsignedInt>900</unsignedInt>
+        <unsignedInt>1800</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <DLC>Warfare2</DLC>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>LargeBlockLargeGeneratorWarfare24x</SubtypeId>
+      </Id>
+      <DisplayName>Proficient Large Warfare Reactor</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\ReactorReskinLarge4x.dds</Icon>
+      <Description>Description_Reactor</Description>
+      <CubeSize>Large</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ReactorReskinLarge.mwm</Model>
+      <Components>
+        <Component Subtype="Tech4x" Count="130"/>
+        <Component Subtype="SteelPlate" Count="1800"/>
+        <Component Subtype="Construction" Count="158"/>
+        <Component Subtype="MetalGrid" Count="90"/>
+        <Component Subtype="LargeTube" Count="90"/>
+        <Component Subtype="Superconductor" Count="225"/>
+        <Component Subtype="Reactor" Count="4500"/>
+        <Component Subtype="Motor" Count="45"/>
+        <Component Subtype="Computer" Count="169"/>
+        <Component Subtype="SteelPlate" Count="450"/>
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Right" StartX="0.9" StartY="1.3" EndX="2.1" EndY="2.6" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2.5" EndY="0.5" />
+        <MountPoint Side="Top" StartX="0.9" StartY="0.9" EndX="2.6" EndY="2.1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0.6" EndX="2.5" EndY="2.4" Default="true" />
+        <MountPoint Side="Bottom" StartX="0.5" StartY="0" EndX="1.8" EndY="0.6" />
+        <MountPoint Side="Bottom" StartX="0.5" StartY="2.4" EndX="1.8" EndY="3" />
+        <MountPoint Side="Front" StartX="1.2" StartY="0" EndX="2.5" EndY="0.5" />
+        <MountPoint Side="Back" StartX="0.5" StartY="0" EndX="1.8" EndY="0.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ReactorReskinLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ReactorReskinLargeConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ReactorReskinLargeConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>LargeReactorWarfare24x</BlockPairName>
+      <MirroringY>X</MirroringY>
+      <MirroringX>Y</MirroringX>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>225</BuildTimeSeconds>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <MaxPowerOutput>918.7500</MaxPowerOutput>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+      <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
+      <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
+
+      <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+      <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+      <FuelInfos>
+        <FuelInfo>
+          <Id>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>Uranium</SubtypeId>
+          </Id>
+        </FuelInfo>
+      </FuelInfos>
+      <PrimarySound>ShipLrgNuclearLrg</PrimarySound>
+      <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+      <DamagedSound>ParticleReactor</DamagedSound>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+      <DestroySound>WepLrgWarheadExpl</DestroySound>
+      <PCU>25</PCU>
+      <IsAirTight>false</IsAirTight>
+      <TieredUpdateTimes>
+        <unsignedInt>900</unsignedInt>
+        <unsignedInt>1800</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <DLC>Warfare2</DLC>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>SmallBlockSmallGeneratorWarfare24x</SubtypeId>
+      </Id>
+      <DisplayName>Proficient Small Warfare Reactor</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\SmallGridReactorReskinSmall4x.dds</Icon>
+      <Description>Description_Reactor</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ReactorReskinSmall.mwm</Model>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+        <Component Subtype="Tech4x" Count="7"/>
+        <Component Subtype="SteelPlate" Count="3"/>
+        <Component Subtype="Construction" Count="23"/>
+        <Component Subtype="MetalGrid" Count="5"/>
+        <Component Subtype="LargeTube" Count="3"/>
+        <Component Subtype="Reactor" Count="7"/>
+        <Component Subtype="Motor" Count="3"/>
+        <Component Subtype="Computer" Count="23"/>
+        <Component Subtype="SteelPlate" Count="5"/>
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Right" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
+        <MountPoint Side="Right" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+        <MountPoint Side="Left" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
+        <MountPoint Side="Left" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+        <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" Default="true" />
+        <MountPoint Side="Front" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
+        <MountPoint Side="Front" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+        <MountPoint Side="Back" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
+        <MountPoint Side="Back" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ReactorReskinSmallConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ReactorReskinSmallConstruction_1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>SmallReactorWarfare24x</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <MaxPowerOutput>1.5313</MaxPowerOutput>
+      <InventorySize>
+        <X>0.5</X>
+        <Y>0.5</Y>
+        <Z>0.5</Z>
+      </InventorySize>
+      <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+      <InventoryFillFactorMin>0.0002</InventoryFillFactorMin>
+      <InventoryFillFactorMax>0.0004</InventoryFillFactorMax>
+
+      <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+      <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+      <FuelInfos>
+        <FuelInfo>
+          <Id>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>Uranium</SubtypeId>
+          </Id>
+        </FuelInfo>
+      </FuelInfos>
+      <PrimarySound>ShipSmNuclearSm</PrimarySound>
+      <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+      <DamagedSound>ParticleReactor</DamagedSound>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>25</PCU>
+      <IsAirTight>false</IsAirTight>
+      <TieredUpdateTimes>
+        <unsignedInt>900</unsignedInt>
+        <unsignedInt>1800</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <DLC>Warfare2</DLC>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>SmallBlockLargeGeneratorWarfare24x</SubtypeId>
+      </Id>
+      <DisplayName>Proficient Large Warfare Reactor</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\SmallGridReactorReskinLarge4x.dds</Icon>
+      <Description>Description_Reactor</Description>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ReactorReskinLarge.mwm</Model>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+        <Component Subtype="Tech4x" Count="22"/>
+        <Component Subtype="SteelPlate" Count="90"/>
+        <Component Subtype="Construction" Count="21"/>
+        <Component Subtype="MetalGrid" Count="21"/>
+        <Component Subtype="LargeTube" Count="7"/>
+        <Component Subtype="Reactor" Count="214"/>
+        <Component Subtype="Motor" Count="12"/>
+        <Component Subtype="Computer" Count="57"/>
+        <Component Subtype="SteelPlate" Count="45"/>
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Right" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
+        <MountPoint Side="Right" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+        <MountPoint Side="Left" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
+        <MountPoint Side="Left" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+        <MountPoint Side="Top" StartX="0.2" StartY="0.2" EndX="2.8" EndY="2.8" />
+        <MountPoint Side="Bottom" StartX="0.2" StartY="0.2" EndX="2.8" EndY="2.8" Default="true" />
+        <MountPoint Side="Front" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
+        <MountPoint Side="Front" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+        <MountPoint Side="Back" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
+        <MountPoint Side="Back" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ReactorReskinLargeConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ReactorReskinLargeConstruction_1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>LargeReactorWarfare24x</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>68</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <MaxPowerOutput>45.1719</MaxPowerOutput>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+      <InventoryFillFactorMin>0.0005</InventoryFillFactorMin>
+      <InventoryFillFactorMax>0.001</InventoryFillFactorMax>
+
+      <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+      <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+      <FuelInfos>
+        <FuelInfo>
+          <Id>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>Uranium</SubtypeId>
+          </Id>
+        </FuelInfo>
+      </FuelInfos>
+      <PrimarySound>ShipSmNuclearLrg</PrimarySound>
+      <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+      <DamagedSound>ParticleReactor</DamagedSound>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>25</PCU>
+      <TieredUpdateTimes>
+        <unsignedInt>900</unsignedInt>
+        <unsignedInt>1800</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <DLC>Warfare2</DLC>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>LargeBlockBatteryBlockWarfare24x</SubtypeId>
+      </Id>
+      <DisplayName>Proficient Warfare Battery</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\BatteryReskin4x.dds</Icon>
+      <Description>Description_Battery</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\BatteryReskin.mwm</Model>
+      <Components>
+        <Component Subtype="Tech4x" Count="20"/>
+        <Component Subtype="SteelPlate" Count="45"/>
+        <Component Subtype="Construction" Count="23"/>
+        <Component Subtype="PowerCell" Count="180">
+          <DeconstructId>
+            <TypeId>Ore</TypeId>
+            <SubtypeId>Scrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="Computer" Count="57"/>
+        <Component Subtype="Construction" Count="45"/>
+        <Component Subtype="SteelPlate" Count="135"/>
+      </Components>
+      <CriticalComponent Subtype="PowerCell" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\BatteryReskinConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\BatteryReskinConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\BatteryReskinConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>BatteryBlockWarfare24x</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>90</BuildTimeSeconds>
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>48</MaxPowerOutput>
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>48</RequiredPowerInput>
+      <AdaptibleInput>true</AdaptibleInput>
+      <MaxStoredPower>12</MaxStoredPower>
+      <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+      <RechargeMultiplier>0.8</RechargeMultiplier>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>true</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <IsAirTight>true</IsAirTight>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <DLC>Warfare2</DLC>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+      <Id>
+        <TypeId>BatteryBlock</TypeId>
+        <SubtypeId>SmallBlockBatteryBlockWarfare24x</SubtypeId>
+      </Id>
+      <DisplayName>Proficient Warfare Battery</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\BatteryReskin_Small4x.dds</Icon>
+      <Description>Description_Battery</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\BatteryReskin.mwm</Model>
+      <Components>
+        <Component Subtype="Tech4x" Count="8"/>
+        <Component Subtype="SteelPlate" Count="12"/>
+        <Component Subtype="Construction" Count="5"/>
+        <Component Subtype="PowerCell" Count="45">
+          <DeconstructId>
+            <TypeId>Ore</TypeId>
+            <SubtypeId>Scrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="Computer" Count="5"/>
+        <Component Subtype="Construction" Count="7"/>
+        <Component Subtype="SteelPlate" Count="45"/>
+      </Components>
+      <CriticalComponent Subtype="PowerCell" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Top" StartX="0.5" StartY="0" EndX="2.5" EndY="3" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" Default="true"/>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="3" EndY="1.5" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="3" EndY="1.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\BatteryReskinConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\BatteryReskinConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>BatteryBlockWarfare24x</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MaxPowerOutput>16</MaxPowerOutput>
+      <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+      <RequiredPowerInput>16</RequiredPowerInput>
+      <MaxStoredPower>4</MaxStoredPower>
+      <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+      <RechargeMultiplier>0.8</RechargeMultiplier>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <Public>true</Public>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <DLC>Warfare2</DLC>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockSmallModularThruster4x</SubtypeId>
+      </Id>
+      <DisplayName>Proficient Warfare Ion Thruster</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\SmallGridModularIonThrusterSmall4x.dds</Icon>
+      <Description>Description_IonThrust</Description>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ModularIonThrusterSmall.mwm</Model>
+      <ThrusterType>Ion</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+        <Component Subtype="Tech4x" Count="3"/>
+        <Component Subtype="SteelPlate" Count="3"/>
+        <Component Subtype="Construction" Count="3"/>
+        <Component Subtype="LargeTube" Count="3"/>
+        <Component Subtype="Thrust" Count="3"/>
+        <Component Subtype="Construction" Count="3"/>
+        <Component Subtype="SteelPlate" Count="3"/>
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1.5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="1" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.5" EndY="1" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ModularIonThrusterSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ModularIonThrusterSmallConstruction_2.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <StaticMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>SmallModularThruster4x</BlockPairName>
+      <Center x="0" y="0" z="1" />
+      <MirroringX>Z</MirroringX>
+      <MirroringZ>X</MirroringZ>
+      <BuildTimeSeconds>23</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>57600</ForceMagnitude>
+      <MaxPowerConsumption>0.6125</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+
+      <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>1.6</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.1</X>
+        <Y>0.5</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.1</X>
+        <Y>0.8</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>ModularEngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>SmallGridSmallThruster</FlameFlare>
+      <FlameVisibilityDistance>200</FlameVisibilityDistance>
+      <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+      <PrimarySound>SmShipSmJet</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <DLC>Warfare2</DLC>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockLargeModularThruster4x</SubtypeId>
+      </Id>
+      <DisplayName>Proficient Large Warfare Ion Thruster</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\SmallGridModularIonThrusterLarge4x.dds</Icon>
+      <Description>Description_IonThrust</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="2" y="3" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ModularIonThrusterLarge.mwm</Model>
+      <ThrusterType>Ion</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+        <Component Subtype="Tech4x" Count="7"/>
+        <Component Subtype="SteelPlate" Count="3"/>
+        <Component Subtype="Construction" Count="3"/>
+        <Component Subtype="LargeTube" Count="12"/>
+        <Component Subtype="Thrust" Count="27"/>
+        <Component Subtype="Construction" Count="3"/>
+        <Component Subtype="SteelPlate" Count="9"/>
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="3" Default="true" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Top" StartX="0.5" StartY="2" EndX="1.5" EndY="3.5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="2" EndY="4" />
+        <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="1.5" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="3" />
+        <MountPoint Side="Right" StartX="2" StartY="0.5" EndX="3.5" EndY="2.5" />
+        <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="3" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0.5" EndX="2" EndY="2.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ModularIonThrusterLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ModularIonThrusterLargeConstruction_2.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <StaticMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>LargeModularThruster4x</BlockPairName>
+      <Center x="0" y="1" z="2" />
+      <MirroringX>Z</MirroringX>
+      <MirroringZ>X</MirroringZ>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>691200</ForceMagnitude>
+      <MaxPowerConsumption>7.35</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameDamage>0.2</FlameDamage>
+      <FlameLengthScale>1.1</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.1</X>
+        <Y>0.5</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.1</X>
+        <Y>0.8</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>ModularEngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>SmallGridLargeThruster</FlameFlare>
+      <FlameVisibilityDistance>300</FlameVisibilityDistance>
+      <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+      <PrimarySound>SmShipLrgJet</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <DLC>Warfare2</DLC>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockSmallModularThruster4x</SubtypeId>
+      </Id>
+      <DisplayName>Proficient Warfare Ion Thruster</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\LargeGridModularIonThrusterSmall4x.dds</Icon>
+      <Description>Description_IonThrust</Description>
+      <CubeSize>Large</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ModularIonThrusterSmall.mwm</Model>
+      <ThrusterType>Ion</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+        <Component Subtype="Tech4x" Count="10"/>
+        <Component Subtype="SteelPlate" Count="34"/>
+        <Component Subtype="Construction" Count="90"/>
+        <Component Subtype="LargeTube" Count="18"/>
+        <Component Subtype="Thrust" Count="180"/>
+        <Component Subtype="Construction" Count="45"/>
+        <Component Subtype="SteelPlate" Count="23"/>
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1.5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="1" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.5" EndY="1" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_3.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <StaticMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>SmallModularThruster4x</BlockPairName>
+      <Center x="0" y="0" z="1" />
+      <MirroringX>Z</MirroringX>
+      <MirroringZ>X</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>90</BuildTimeSeconds>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>1382400</ForceMagnitude>
+      <MaxPowerConsumption>10.2900</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+
+      <FlameDamageLengthScale>0.61</FlameDamageLengthScale>
+      <FlameLengthScale>1.5</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.1</X>
+        <Y>0.5</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.1</X>
+        <Y>0.8</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>ModularEngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>LargeGridSmallThruster</FlameFlare>
+      <FlameVisibilityDistance>500</FlameVisibilityDistance>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>LrgShipSmJet</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <DLC>Warfare2</DLC>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockLargeModularThruster4x</SubtypeId>
+      </Id>
+      <DisplayName>Proficient Large Warfare Ion Thruster</DisplayName>
+      <GuiVisible>false</GuiVisible>
+      <Icon>Textures\LargeGridModularIonThrusterLarge4x.dds</Icon>
+      <Description>Description_IonThrust</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="2" y="3" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ModularIonThrusterLarge.mwm</Model>
+      <ThrusterType>Ion</ThrusterType>
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <Components>
+        <Component Subtype="Tech4x" Count="50"/>
+        <Component Subtype="SteelPlate" Count="225"/>
+        <Component Subtype="Construction" Count="158"/>
+        <Component Subtype="LargeTube" Count="90"/>
+        <Component Subtype="Thrust" Count="2160"/>
+        <Component Subtype="Construction" Count="68"/>
+        <Component Subtype="SteelPlate" Count="113"/>
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="3" Default="true" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Top" StartX="0.5" StartY="2" EndX="1.5" EndY="3.5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="2" EndY="4" />
+        <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="1.5" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="3" />
+        <MountPoint Side="Right" StartX="2" StartY="0.5" EndX="3.5" EndY="2.5" />
+        <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="3" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0.5" EndX="2" EndY="2.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_3.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <StaticMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>Volumetric</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>LargeModularThruster4x</BlockPairName>
+      <Center x="0" y="1" z="2" />
+      <MirroringX>Z</MirroringX>
+      <MirroringZ>X</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>203</BuildTimeSeconds>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>17280000</ForceMagnitude>
+      <MaxPowerConsumption>102.9000</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <SlowdownFactor>1</SlowdownFactor>
+
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+
+      <FlameDamageLengthScale>0.8</FlameDamageLengthScale>
+      <FlameLengthScale>1.15</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.1</X>
+        <Y>0.5</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.1</X>
+        <Y>0.8</Y>
+        <Z>0.8</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>ModularEngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>LargeGridLargeThruster</FlameFlare>
+      <FlameVisibilityDistance>700</FlameVisibilityDistance>
+      <FlameGlareQuerySize>1.5</FlameGlareQuerySize>
+      <PrimarySound>LrgShipLrgJet</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>15</PCU>
+      <DLC>Warfare2</DLC>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+    </Definition>
+    
+    
+    <!-- Tier 8 -->
+    
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>LargeBlockSmallGeneratorWarfare28x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Small Warfare Reactor</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\ReactorReskinSmall8x.dds</Icon>
+            <Description>Description_Reactor</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\ReactorReskinSmall.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="22"/>
+                <Component Subtype="SteelPlate" Count="169"/>
+                <Component Subtype="Construction" Count="135"/>
+                <Component Subtype="MetalGrid" Count="14"/>
+                <Component Subtype="LargeTube" Count="27"/>
+                <Component Subtype="Reactor" Count="338"/>
+                <Component Subtype="Motor" Count="21"/>
+                <Component Subtype="Computer" Count="85"/>
+                <Component Subtype="SteelPlate" Count="102"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="1" EndY="0.9" />
+                <MountPoint Side="Back" StartX="0.4" StartY="0" EndX="0.9" EndY="0.9" />
+                <MountPoint Side="Right" StartX="0.1" StartY="0" EndX="0.9" EndY="0.9" />
+                <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="1" EndY="0.9" Default="true" />
+                <MountPoint Side="Front" StartX="0.1" StartY="0" EndX="0.6" EndY="0.9" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ReactorReskinSmallConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ReactorReskinSmallConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ReactorReskinSmallConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>SmallReactorWarfare28x</BlockPairName>
+            <MirroringY>X</MirroringY>
+            <MirroringX>Y</MirroringX>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>135</BuildTimeSeconds>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>80.3906</MaxPowerOutput>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+            <InventoryFillFactorMin>0.0005</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.001</InventoryFillFactorMax>
+
+            <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>Uranium</SubtypeId>
+                    </Id>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <TieredUpdateTimes>
+                <unsignedInt>900</unsignedInt>
+                <unsignedInt>1800</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+            </TieredUpdateTimes>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
+            <DLC>Warfare2</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>LargeBlockLargeGeneratorWarfare28x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Large Warfare Reactor</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\ReactorReskinLarge8x.dds</Icon>
+            <Description>Description_Reactor</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\ReactorReskinLarge.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="130"/>
+                <Component Subtype="SteelPlate" Count="2700"/>
+                <Component Subtype="Construction" Count="237"/>
+                <Component Subtype="MetalGrid" Count="135"/>
+                <Component Subtype="LargeTube" Count="135"/>
+                <Component Subtype="Superconductor" Count="338"/>
+                <Component Subtype="Reactor" Count="6750"/>
+                <Component Subtype="Motor" Count="68"/>
+                <Component Subtype="Computer" Count="254"/>
+                <Component Subtype="SteelPlate" Count="675"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Right" StartX="0.9" StartY="1.3" EndX="2.1" EndY="2.6" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2.5" EndY="0.5" />
+                <MountPoint Side="Top" StartX="0.9" StartY="0.9" EndX="2.6" EndY="2.1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0.6" EndX="2.5" EndY="2.4" Default="true" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0" EndX="1.8" EndY="0.6" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="2.4" EndX="1.8" EndY="3" />
+                <MountPoint Side="Front" StartX="1.2" StartY="0" EndX="2.5" EndY="0.5" />
+                <MountPoint Side="Back" StartX="0.5" StartY="0" EndX="1.8" EndY="0.5" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ReactorReskinLargeConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ReactorReskinLargeConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ReactorReskinLargeConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>LargeReactorWarfare28x</BlockPairName>
+            <MirroringY>X</MirroringY>
+            <MirroringX>Y</MirroringX>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>338</BuildTimeSeconds>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>1607.8125</MaxPowerOutput>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+            <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
+
+            <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>Uranium</SubtypeId>
+                    </Id>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipLrgNuclearLrg</PrimarySound>
+            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+            <DestroySound>WepLrgWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <TieredUpdateTimes>
+                <unsignedInt>900</unsignedInt>
+                <unsignedInt>1800</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+            </TieredUpdateTimes>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
+            <DLC>Warfare2</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>SmallBlockSmallGeneratorWarfare28x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Small Warfare Reactor</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\SmallGridReactorReskinSmall8x.dds</Icon>
+            <Description>Description_Reactor</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\ReactorReskinSmall.mwm</Model>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech8x" Count="7"/>
+                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="Construction" Count="34"/>
+                <Component Subtype="MetalGrid" Count="7"/>
+                <Component Subtype="LargeTube" Count="4"/>
+                <Component Subtype="Reactor" Count="11"/>
+                <Component Subtype="Motor" Count="4"/>
+                <Component Subtype="Computer" Count="34"/>
+                <Component Subtype="SteelPlate" Count="7"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Right" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
+                <MountPoint Side="Right" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+                <MountPoint Side="Left" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
+                <MountPoint Side="Left" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+                <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+                <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" Default="true" />
+                <MountPoint Side="Front" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
+                <MountPoint Side="Front" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+                <MountPoint Side="Back" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
+                <MountPoint Side="Back" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ReactorReskinSmallConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ReactorReskinSmallConstruction_1.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>SmallReactorWarfare28x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>68</BuildTimeSeconds>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>2.6797</MaxPowerOutput>
+            <InventorySize>
+                <X>0.5</X>
+                <Y>0.5</Y>
+                <Z>0.5</Z>
+            </InventorySize>
+            <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+            <InventoryFillFactorMin>0.0002</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.0004</InventoryFillFactorMax>
+
+            <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>Uranium</SubtypeId>
+                    </Id>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipSmNuclearSm</PrimarySound>
+            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+            <TieredUpdateTimes>
+                <unsignedInt>900</unsignedInt>
+                <unsignedInt>1800</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+            </TieredUpdateTimes>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
+            <DLC>Warfare2</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+            <Id>
+                <TypeId>Reactor</TypeId>
+                <SubtypeId>SmallBlockLargeGeneratorWarfare28x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Large Warfare Reactor</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\SmallGridReactorReskinLarge8x.dds</Icon>
+            <Description>Description_Reactor</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\ReactorReskinLarge.mwm</Model>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech8x" Count="22"/>
+                <Component Subtype="SteelPlate" Count="135"/>
+                <Component Subtype="Construction" Count="31"/>
+                <Component Subtype="MetalGrid" Count="31"/>
+                <Component Subtype="LargeTube" Count="11"/>
+                <Component Subtype="Reactor" Count="321"/>
+                <Component Subtype="Motor" Count="17"/>
+                <Component Subtype="Computer" Count="85"/>
+                <Component Subtype="SteelPlate" Count="68"/>
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Right" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
+                <MountPoint Side="Right" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+                <MountPoint Side="Left" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
+                <MountPoint Side="Left" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+                <MountPoint Side="Top" StartX="0.2" StartY="0.2" EndX="2.8" EndY="2.8" />
+                <MountPoint Side="Bottom" StartX="0.2" StartY="0.2" EndX="2.8" EndY="2.8" Default="true" />
+                <MountPoint Side="Front" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
+                <MountPoint Side="Front" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+                <MountPoint Side="Back" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
+                <MountPoint Side="Back" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ReactorReskinLargeConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ReactorReskinLargeConstruction_1.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>LargeReactorWarfare28x</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>102</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>79.0508</MaxPowerOutput>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <!-- 
+                Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
+                If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
+                Warning: Changing these values will affect performance.
+            -->
+            <InventoryFillFactorMin>0.0005</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.001</InventoryFillFactorMax>
+
+            <!-- 
+                This is how much of fuel is pulled from conveyor system in one tick.
+                It's in minutes, means that it will pull X minutes of fuel in one tick.
+                Warning: Changing this value will affect performance.
+            -->
+            <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>Uranium</SubtypeId>
+                    </Id>
+                </FuelInfo>
+            </FuelInfos>
+            <PrimarySound>ShipSmNuclearLrg</PrimarySound>
+            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>900</unsignedInt>
+                <unsignedInt>1800</unsignedInt>
+                <unsignedInt>3600</unsignedInt>
+            </TieredUpdateTimes>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
+            <DLC>Warfare2</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+            <Id>
+                <TypeId>BatteryBlock</TypeId>
+                <SubtypeId>LargeBlockBatteryBlockWarfare28x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Warfare Battery</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\BatteryReskin8x.dds</Icon>
+            <Description>Description_Battery</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\BatteryReskin.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="20"/>
+                <Component Subtype="SteelPlate" Count="68"/>
+                <Component Subtype="Construction" Count="34"/>
+                <Component Subtype="PowerCell" Count="270">
+                    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Computer" Count="85"/>
+                <Component Subtype="Construction" Count="68"/>
+                <Component Subtype="SteelPlate" Count="203"/>
+            </Components>
+            <CriticalComponent Subtype="PowerCell" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\BatteryReskinConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\BatteryReskinConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\BatteryReskinConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>BatteryBlockWarfare28x</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>135</BuildTimeSeconds>
+            <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <MaxPowerOutput>96</MaxPowerOutput>
+            <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+            <RequiredPowerInput>96</RequiredPowerInput>
+            <AdaptibleInput>true</AdaptibleInput>
+            <MaxStoredPower>24</MaxStoredPower>
+            <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+            <RechargeMultiplier>0.8</RechargeMultiplier>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <Public>true</Public>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <IsAirTight>true</IsAirTight>
+            <MirroringZ>Y</MirroringZ>
+            <MirroringY>Z</MirroringY>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
+            <DLC>Warfare2</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+            <Id>
+                <TypeId>BatteryBlock</TypeId>
+                <SubtypeId>SmallBlockBatteryBlockWarfare28x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Warfare Battery</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\BatteryReskin_Small8x.dds</Icon>
+            <Description>Description_Battery</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\BatteryReskin.mwm</Model>
+            <Components>
+                <Component Subtype="Tech8x" Count="8"/>
+                <Component Subtype="SteelPlate" Count="17"/>
+                <Component Subtype="Construction" Count="7"/>
+                <Component Subtype="PowerCell" Count="68">
+                    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Computer" Count="7"/>
+                <Component Subtype="Construction" Count="11"/>
+                <Component Subtype="SteelPlate" Count="68"/>
+            </Components>
+            <CriticalComponent Subtype="PowerCell" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="2" />
+                <MountPoint Side="Top" StartX="0.5" StartY="0" EndX="2.5" EndY="3" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" Default="true"/>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="3" EndY="1.5" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="3" EndY="1.5" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\BatteryReskinConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\BatteryReskinConstruction_2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>BatteryBlockWarfare28x</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>68</BuildTimeSeconds>
+            <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <MaxPowerOutput>32</MaxPowerOutput>
+            <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+            <RequiredPowerInput>32</RequiredPowerInput>
+            <MaxStoredPower>8</MaxStoredPower>
+            <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
+            <RechargeMultiplier>0.8</RechargeMultiplier>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <Public>true</Public>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <MirroringZ>Y</MirroringZ>
+            <MirroringY>Z</MirroringY>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>
+            <DLC>Warfare2</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>SmallBlockSmallModularThruster8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Warfare Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\SmallGridModularIonThrusterSmall8x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Small</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\ModularIonThrusterSmall.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech8x" Count="3"/>
+                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="LargeTube" Count="4"/>
+                <Component Subtype="Thrust" Count="4"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="SteelPlate" Count="4"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1.5" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="1" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.5" EndY="1" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2" EndY="1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ModularIonThrusterSmallConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ModularIonThrusterSmallConstruction_2.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>SmallModularThruster8x</BlockPairName>
+            <Center x="0" y="0" z="1" />
+            <MirroringX>Z</MirroringX>
+            <MirroringZ>X</MirroringZ>
+            <BuildTimeSeconds>34</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>115200</ForceMagnitude>
+            <MaxPowerConsumption>1.0719</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.35</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
+            <FlameDamage>0.1</FlameDamage>
+            <FlameLengthScale>1.6</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>ModularEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>SmallGridSmallThruster</FlameFlare>
+            <FlameVisibilityDistance>200</FlameVisibilityDistance>
+            <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+            <PrimarySound>SmShipSmJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>Warfare2</DLC>
+            <TargetingGroups>
+                <string>Propulsion</string>
+            </TargetingGroups>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>SmallBlockLargeModularThruster8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Large Warfare Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\SmallGridModularIonThrusterLarge8x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="2" y="3" z="4" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Small\ModularIonThrusterLarge.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech8x" Count="7"/>
+                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="LargeTube" Count="17"/>
+                <Component Subtype="Thrust" Count="41"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="SteelPlate" Count="14"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="3" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="2" />
+                <MountPoint Side="Top" StartX="0.5" StartY="2" EndX="1.5" EndY="3.5" />
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="2" EndY="4" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="1.5" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="3" />
+                <MountPoint Side="Right" StartX="2" StartY="0.5" EndX="3.5" EndY="2.5" />
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="3" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0.5" EndX="2" EndY="2.5" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ModularIonThrusterLargeConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ModularIonThrusterLargeConstruction_2.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>LargeModularThruster8x</BlockPairName>
+            <Center x="0" y="1" z="2" />
+            <MirroringX>Z</MirroringX>
+            <MirroringZ>X</MirroringZ>
+            <BuildTimeSeconds>68</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>1382400</ForceMagnitude>
+            <MaxPowerConsumption>12.8625</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.35</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+            <FlameDamage>0.2</FlameDamage>
+            <FlameLengthScale>1.1</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>ModularEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>SmallGridLargeThruster</FlameFlare>
+            <FlameVisibilityDistance>300</FlameVisibilityDistance>
+            <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+            <PrimarySound>SmShipLrgJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>Warfare2</DLC>
+            <TargetingGroups>
+                <string>Propulsion</string>
+            </TargetingGroups>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>LargeBlockSmallModularThruster8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Warfare Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\LargeGridModularIonThrusterSmall8x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\ModularIonThrusterSmall.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech8x" Count="10"/>
+                <Component Subtype="SteelPlate" Count="51"/>
+                <Component Subtype="Construction" Count="135"/>
+                <Component Subtype="LargeTube" Count="27"/>
+                <Component Subtype="Thrust" Count="270"/>
+                <Component Subtype="Construction" Count="68"/>
+                <Component Subtype="SteelPlate" Count="34"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1.5" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="1" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.5" EndY="1" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2" EndY="1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_3.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>SmallModularThruster8x</BlockPairName>
+            <Center x="0" y="0" z="1" />
+            <MirroringX>Z</MirroringX>
+            <MirroringZ>X</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>135</BuildTimeSeconds>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>2764800</ForceMagnitude>
+            <MaxPowerConsumption>18.0075</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.35</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.61</FlameDamageLengthScale>
+            <FlameLengthScale>1.5</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>ModularEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>LargeGridSmallThruster</FlameFlare>
+            <FlameVisibilityDistance>500</FlameVisibilityDistance>
+            <FlameGlareQuerySize>1</FlameGlareQuerySize>
+            <PrimarySound>LrgShipSmJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>Warfare2</DLC>
+            <TargetingGroups>
+                <string>Propulsion</string>
+            </TargetingGroups>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>LargeBlockLargeModularThruster8x</SubtypeId>
+            </Id>
+            <DisplayName>Elite Large Warfare Ion Thruster</DisplayName>
+            <GuiVisible>false</GuiVisible>
+            <Icon>Textures\LargeGridModularIonThrusterLarge8x.dds</Icon>
+            <Description>Description_IonThrust</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="2" y="3" z="4" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\ModularIonThrusterLarge.mwm</Model>
+            <ThrusterType>Ion</ThrusterType>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="Tech8x" Count="50"/>
+                <Component Subtype="SteelPlate" Count="338"/>
+                <Component Subtype="Construction" Count="237"/>
+                <Component Subtype="LargeTube" Count="135"/>
+                <Component Subtype="Thrust" Count="3240"/>
+                <Component Subtype="Construction" Count="102"/>
+                <Component Subtype="SteelPlate" Count="169"/>
+            </Components>
+            <CriticalComponent Subtype="Thrust" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="3" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="2" />
+                <MountPoint Side="Top" StartX="0.5" StartY="2" EndX="1.5" EndY="3.5" />
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="2" EndY="4" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="1.5" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="3" />
+                <MountPoint Side="Right" StartX="2" StartY="0.5" EndX="3.5" EndY="2.5" />
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="3" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0.5" EndX="2" EndY="2.5" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_3.mwm" />
+            </BuildProgressModels>
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>Volumetric</PlacementMode>
+                    <MaxAllowed>0.2</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>
+            <BlockPairName>LargeModularThruster8x</BlockPairName>
+            <Center x="0" y="1" z="2" />
+            <MirroringX>Z</MirroringX>
+            <MirroringZ>X</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>304</BuildTimeSeconds>
+
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>34560000</ForceMagnitude>
+            <MaxPowerConsumption>180.0750</MaxPowerConsumption>
+            <MinPowerConsumption>0.000002</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+
+            <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+            <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+            <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+            <EffectivenessAtMaxInfluence>0.35</EffectivenessAtMaxInfluence>
+
+            <FlameDamageLengthScale>0.8</FlameDamageLengthScale>
+            <FlameLengthScale>1.15</FlameLengthScale>
+            <FlameIdleColor>
+                <X>0.1</X>
+                <Y>0.5</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>0.1</X>
+                <Y>0.8</Y>
+                <Z>0.8</Z>
+                <W>0.75</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>ModularEngineThrustMiddle</FlameLengthMaterial>
+            <FlameFlare>LargeGridLargeThruster</FlameFlare>
+            <FlameVisibilityDistance>700</FlameVisibilityDistance>
+            <FlameGlareQuerySize>1.5</FlameGlareQuerySize>
+            <PrimarySound>LrgShipLrgJet</PrimarySound>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <DLC>Warfare2</DLC>
+            <TargetingGroups>
+                <string>Propulsion</string>
+            </TargetingGroups>
+        </Definition>
+
+  </CubeBlocks>
+</Definitions>
