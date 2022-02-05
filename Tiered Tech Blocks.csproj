@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Data\Scripts\TieredTechBlocks\Core.cs" />
     <Compile Include="Data\Scripts\TieredTechBlocks\UpgradeHandler.cs" />
     <None Include="App.config" />
     <None Include="CubeBlocks_IndustrialPack.sbc" />

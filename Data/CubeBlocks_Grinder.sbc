@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <CubeBlocks>
+    <CubeBlocks>      
         <!--        Tier 2-->
         <!--Small Grinder-->
         <Definition xsi:type="MyObjectBuilder_ShipGrinderDefinition">
@@ -68,7 +68,7 @@
             <Flare></Flare>
             <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
-            <SensorRadius>2.6250</SensorRadius>
+            <SensorRadius>3</SensorRadius>
             <PCU>100</PCU>
             <IsAirTight>false</IsAirTight>
 
@@ -137,7 +137,7 @@
             <Flare></Flare>
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
-            <SensorRadius>3.5000</SensorRadius>
+            <SensorRadius>4</SensorRadius>
             <PCU>100</PCU>
 
         </Definition>
@@ -209,7 +209,7 @@
             <Flare></Flare>
             <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
-            <SensorRadius>4.5938</SensorRadius>
+            <SensorRadius>6</SensorRadius>
             <PCU>100</PCU>
             <IsAirTight>false</IsAirTight>
 
@@ -278,7 +278,7 @@
             <Flare></Flare>
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
-            <SensorRadius>6.1250</SensorRadius>
+            <SensorRadius>8</SensorRadius>
             <PCU>100</PCU>
 
         </Definition>
@@ -350,7 +350,7 @@
             <Flare></Flare>
             <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
-            <SensorRadius>8.0391</SensorRadius>
+            <SensorRadius>12</SensorRadius>
             <PCU>100</PCU>
             <IsAirTight>false</IsAirTight>
 
@@ -419,7 +419,7 @@
             <Flare></Flare>
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
-            <SensorRadius>10.7188</SensorRadius>
+            <SensorRadius>16</SensorRadius>
             <PCU>100</PCU>
 
         </Definition>
