@@ -178,7 +178,6 @@ namespace TieredTechBlocks
         protected override void UnloadData()
         {
             MyVisualScriptLogicProvider.PrefabSpawnedDetailed -= NewSpawn; //Make sure to unregister
-            MyLog.Default.Close();
         }
 
         protected struct Item

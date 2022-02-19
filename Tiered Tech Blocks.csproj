@@ -36,7 +36,6 @@
     <Compile Include="Data\Scripts\TieredTechBlocks\Core.cs" />
     <Compile Include="Data\Scripts\TieredTechBlocks\UpgradeHandler.cs" />
     <None Include="App.config" />
-    <None Include="CubeBlocks_IndustrialPack.sbc" />
     <None Include="Data\BlockCategories.sbc" />
     <None Include="Data\BlockVariantGroups.sbc" />
     <None Include="Data\BlueprintClasses.sbc" />
