@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.IO;
 using System.Text;
 using Sandbox.Game;
@@ -51,6 +51,7 @@ namespace TieredTechBlocks
                     LargeGridRare = new Item() { Chance = 0.07f, MinAmount = 3, MaxAmount = 20 },
                     SmallGridExotic = new Item() { Chance = 0.05f, MinAmount = 1, MaxAmount = 3 },
                     LargeGridExotic = new Item() { Chance = 0.04f, MinAmount = 2, MaxAmount = 10 },
+                    DisableGrindSubgridDamage = true,
                     ExcludeGrids = new List<string>() { "respawn" }
                 };
             }
@@ -60,6 +61,10 @@ namespace TieredTechBlocks
             if(Instance.ExcludeGrids == null)
             {
                 Instance.ExcludeGrids = new List<string>() { "respawn" };
+            }
+            if(Instance.DisableGrindSubgridDamage == null)
+            {
+                Instance.DisableGrindSubgridDamage = true;
             }
 
             Write();

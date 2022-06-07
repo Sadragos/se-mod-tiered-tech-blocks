@@ -74,6 +74,17 @@
             <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
             <DestroySound>WepLrgWarheadExpl</DestroySound>
             <PCU>25</PCU>
+			<LeakPercent>0.0025</LeakPercent>
+			<GasExplosionMaxRadius>30</GasExplosionMaxRadius>
+			<GasExplosionNeededVolumeToReachMaxRadius>30000000</GasExplosionNeededVolumeToReachMaxRadius>
+			<GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+			<GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+			<GasExplosionEffect>Explosion_Warhead_30</GasExplosionEffect>
+			<TieredUpdateTimes>
+				<unsignedInt>100</unsignedInt>
+				<unsignedInt>300</unsignedInt>
+				<unsignedInt>600</unsignedInt>
+			</TieredUpdateTimes>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
             <Id>
@@ -142,6 +153,17 @@
             <DestroyEffect>Explosion_Missile</DestroyEffect>
             <DestroySound>WepSmallMissileExpl</DestroySound>
             <PCU>25</PCU>
+			<LeakPercent>0.0025</LeakPercent>
+			<GasExplosionMaxRadius>5</GasExplosionMaxRadius>
+			<GasExplosionNeededVolumeToReachMaxRadius>2000000</GasExplosionNeededVolumeToReachMaxRadius>
+			<GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+			<GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+			<GasExplosionEffect>Explosion_Warhead_30</GasExplosionEffect>
+			<TieredUpdateTimes>
+				<unsignedInt>100</unsignedInt>
+				<unsignedInt>300</unsignedInt>
+				<unsignedInt>600</unsignedInt>
+			</TieredUpdateTimes>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
             <Id>
@@ -227,6 +249,17 @@
             <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>25</PCU>
+			<LeakPercent>0.0025</LeakPercent>
+			<GasExplosionMaxRadius>3</GasExplosionMaxRadius>
+			<GasExplosionNeededVolumeToReachMaxRadius>1000000</GasExplosionNeededVolumeToReachMaxRadius>
+			<GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+			<GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+			<GasExplosionEffect>Explosion_Warhead_30</GasExplosionEffect>
+			<TieredUpdateTimes>
+				<unsignedInt>100</unsignedInt>
+				<unsignedInt>300</unsignedInt>
+				<unsignedInt>600</unsignedInt>
+			</TieredUpdateTimes>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
             <Id>
@@ -295,6 +328,17 @@
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepLrgWarheadExpl</DestroySound>
             <PCU>25</PCU>
+			<LeakPercent>0.0025</LeakPercent>
+			<GasExplosionMaxRadius>1</GasExplosionMaxRadius>
+			<GasExplosionNeededVolumeToReachMaxRadius>30000</GasExplosionNeededVolumeToReachMaxRadius>
+			<GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+			<GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+			<GasExplosionEffect>Explosion_Warhead_30</GasExplosionEffect>
+			<TieredUpdateTimes>
+				<unsignedInt>100</unsignedInt>
+				<unsignedInt>300</unsignedInt>
+				<unsignedInt>600</unsignedInt>
+			</TieredUpdateTimes>
         </Definition>
 
 
@@ -371,6 +415,17 @@
             <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
             <DestroySound>WepLrgWarheadExpl</DestroySound>
             <PCU>25</PCU>
+			<LeakPercent>0.0025</LeakPercent>
+			<GasExplosionMaxRadius>30</GasExplosionMaxRadius>
+			<GasExplosionNeededVolumeToReachMaxRadius>60000000</GasExplosionNeededVolumeToReachMaxRadius>
+			<GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+			<GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+			<GasExplosionEffect>Explosion_Warhead_30</GasExplosionEffect>
+			<TieredUpdateTimes>
+				<unsignedInt>100</unsignedInt>
+				<unsignedInt>300</unsignedInt>
+				<unsignedInt>600</unsignedInt>
+			</TieredUpdateTimes>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
             <Id>
@@ -439,6 +494,17 @@
             <DestroyEffect>Explosion_Missile</DestroyEffect>
             <DestroySound>WepSmallMissileExpl</DestroySound>
             <PCU>25</PCU>
+			<LeakPercent>0.0025</LeakPercent>
+			<GasExplosionMaxRadius>8</GasExplosionMaxRadius>
+			<GasExplosionNeededVolumeToReachMaxRadius>4000000</GasExplosionNeededVolumeToReachMaxRadius>
+			<GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+			<GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+			<GasExplosionEffect>Explosion_Warhead_30</GasExplosionEffect>
+			<TieredUpdateTimes>
+				<unsignedInt>100</unsignedInt>
+				<unsignedInt>300</unsignedInt>
+				<unsignedInt>600</unsignedInt>
+			</TieredUpdateTimes>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
             <Id>
@@ -524,6 +590,17 @@
             <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>25</PCU>
+			<LeakPercent>0.0025</LeakPercent>
+			<GasExplosionMaxRadius>4</GasExplosionMaxRadius>
+			<GasExplosionNeededVolumeToReachMaxRadius>2000000</GasExplosionNeededVolumeToReachMaxRadius>
+			<GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+			<GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+			<GasExplosionEffect>Explosion_Warhead_30</GasExplosionEffect>
+			<TieredUpdateTimes>
+				<unsignedInt>100</unsignedInt>
+				<unsignedInt>300</unsignedInt>
+				<unsignedInt>600</unsignedInt>
+			</TieredUpdateTimes>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
             <Id>
@@ -592,6 +669,17 @@
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepLrgWarheadExpl</DestroySound>
             <PCU>25</PCU>
+			<LeakPercent>0.0025</LeakPercent>
+			<GasExplosionMaxRadius>2</GasExplosionMaxRadius>
+			<GasExplosionNeededVolumeToReachMaxRadius>60000</GasExplosionNeededVolumeToReachMaxRadius>
+			<GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+			<GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+			<GasExplosionEffect>Explosion_Warhead_30</GasExplosionEffect>
+			<TieredUpdateTimes>
+				<unsignedInt>100</unsignedInt>
+				<unsignedInt>300</unsignedInt>
+				<unsignedInt>600</unsignedInt>
+			</TieredUpdateTimes>
         </Definition>
 
 
@@ -668,6 +756,17 @@
             <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
             <DestroySound>WepLrgWarheadExpl</DestroySound>
             <PCU>25</PCU>
+			<LeakPercent>0.0025</LeakPercent>
+			<GasExplosionMaxRadius>40</GasExplosionMaxRadius>
+			<GasExplosionNeededVolumeToReachMaxRadius>120000000</GasExplosionNeededVolumeToReachMaxRadius>
+			<GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+			<GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+			<GasExplosionEffect>Explosion_Warhead_30</GasExplosionEffect>
+			<TieredUpdateTimes>
+				<unsignedInt>100</unsignedInt>
+				<unsignedInt>300</unsignedInt>
+				<unsignedInt>600</unsignedInt>
+			</TieredUpdateTimes>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
             <Id>
@@ -736,6 +835,17 @@
             <DestroyEffect>Explosion_Missile</DestroyEffect>
             <DestroySound>WepSmallMissileExpl</DestroySound>
             <PCU>25</PCU>
+			<LeakPercent>0.0025</LeakPercent>
+			<GasExplosionMaxRadius>12</GasExplosionMaxRadius>
+			<GasExplosionNeededVolumeToReachMaxRadius>8000000</GasExplosionNeededVolumeToReachMaxRadius>
+			<GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+			<GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+			<GasExplosionEffect>Explosion_Warhead_30</GasExplosionEffect>
+			<TieredUpdateTimes>
+				<unsignedInt>100</unsignedInt>
+				<unsignedInt>300</unsignedInt>
+				<unsignedInt>600</unsignedInt>
+			</TieredUpdateTimes>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
             <Id>
@@ -821,6 +931,17 @@
             <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
             <PCU>25</PCU>
+			<LeakPercent>0.0025</LeakPercent>
+			<GasExplosionMaxRadius>10</GasExplosionMaxRadius>
+			<GasExplosionNeededVolumeToReachMaxRadius>1280000</GasExplosionNeededVolumeToReachMaxRadius>
+			<GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+			<GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+			<GasExplosionEffect>Explosion_Warhead_30</GasExplosionEffect>
+			<TieredUpdateTimes>
+				<unsignedInt>100</unsignedInt>
+				<unsignedInt>300</unsignedInt>
+				<unsignedInt>600</unsignedInt>
+			</TieredUpdateTimes>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
             <Id>
@@ -889,6 +1010,17 @@
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepLrgWarheadExpl</DestroySound>
             <PCU>25</PCU>
+			<LeakPercent>0.0025</LeakPercent>
+			<GasExplosionMaxRadius>3</GasExplosionMaxRadius>
+			<GasExplosionNeededVolumeToReachMaxRadius>120000</GasExplosionNeededVolumeToReachMaxRadius>
+			<GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+			<GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+			<GasExplosionEffect>Explosion_Warhead_30</GasExplosionEffect>
+			<TieredUpdateTimes>
+				<unsignedInt>100</unsignedInt>
+				<unsignedInt>300</unsignedInt>
+				<unsignedInt>600</unsignedInt>
+			</TieredUpdateTimes>
         </Definition>
     </CubeBlocks>
 </Definitions>

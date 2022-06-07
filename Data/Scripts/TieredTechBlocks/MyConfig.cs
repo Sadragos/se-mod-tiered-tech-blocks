@@ -23,9 +23,11 @@ namespace TieredTechBlocks
         [ProtoMember(5)]
         public Item SmallGridExotic;
         [ProtoMember(6)]
-        public Item LargeGridExotic;
+        public Item LargeGridExotic;    
         [ProtoMember(7)]
         public List<string> ExcludeGrids;
+        [ProtoMember(8)]
+        public Boolean DisableGrindSubgridDamage = true;
 
     }
 

@@ -24,7 +24,7 @@ namespace TieredTechBlocks
             var slim = target as IMySlimBlock;
             if (slim == null || slim.CubeGrid == null) return;
             
-            if (!MyAPIGateway.Entities.TryGetEntityById(info.AttackerId, out Entity)) return;
+            if (!MyAPIGateway.Entities.TryGetEntityById(info.AttackerId, out Entity) || !info.Type.ToString().Equals("Grind")) return;
 
             var attacker = Entity as MyCubeBlock;
             if (attacker != null && attacker.CubeGrid.IsSameConstructAs(slim.CubeGrid))
@@ -55,8 +55,12 @@ namespace TieredTechBlocks
         {
             if (MyAPIGateway.Multiplayer.IsServer)
             {
-                MyLog.Default.WriteLine("Registered Damage Handler!");
-                MyAPIGateway.Session.DamageSystem.RegisterBeforeDamageHandler(0, BeforeDamage);
+                Config.Load();
+                if (Config.Instance.DisableGrindSubgridDamage)
+                {
+                    MyLog.Default.WriteLine("Registered Damage Handler!");
+                    MyAPIGateway.Session.DamageSystem.RegisterBeforeDamageHandler(0, BeforeDamage);
+                }
             }
         }
     }
