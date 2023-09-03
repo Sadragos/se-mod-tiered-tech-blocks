@@ -103,17 +103,50 @@
             <Description>Description_BlockGroup_EnergyRenewableGroup</Description>
             <Blocks>
                 <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockSolarPanel" />
-                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockSolarPanel" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockColorableSolarPanel" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockColorableSolarPanelCorner" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockColorableSolarPanelCornerInverted" />
                 <Block Type="MyObjectBuilder_WindTurbine" Subtype="LargeBlockWindTurbine" />
+                <Block Type="MyObjectBuilder_WindTurbine" Subtype="LargeBlockWindTurbineReskin" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockSolarPanel" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockColorableSolarPanel" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockColorableSolarPanelCorner" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockColorableSolarPanelCornerInverted" />
+
                 <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockSolarPanel2x" />
-                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockSolarPanel2x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockColorableSolarPanel2x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockColorableSolarPanelCorner2x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockColorableSolarPanelCornerInverted2x" />
                 <Block Type="MyObjectBuilder_WindTurbine" Subtype="LargeBlockWindTurbine2x" />
+                <Block Type="MyObjectBuilder_WindTurbine" Subtype="LargeBlockWindTurbineReskin2x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockSolarPanel2x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockColorableSolarPanel2x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockColorableSolarPanelCorner2x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockColorableSolarPanelCornerInverted2x" />
+
                 <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockSolarPanel4x" />
-                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockSolarPanel4x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockColorableSolarPanel4x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockColorableSolarPanelCorner4x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockColorableSolarPanelCornerInverted4x" />
                 <Block Type="MyObjectBuilder_WindTurbine" Subtype="LargeBlockWindTurbine4x" />
+                <Block Type="MyObjectBuilder_WindTurbine" Subtype="LargeBlockWindTurbineReskin4x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockSolarPanel4x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockColorableSolarPanel4x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockColorableSolarPanelCorner4x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockColorableSolarPanelCornerInverted4x" />
+
                 <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockSolarPanel8x" />
-                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockSolarPanel8x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockColorableSolarPanel8x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockColorableSolarPanelCorner8x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="LargeBlockColorableSolarPanelCornerInverted8x" />
                 <Block Type="MyObjectBuilder_WindTurbine" Subtype="LargeBlockWindTurbine8x" />
+                <Block Type="MyObjectBuilder_WindTurbine" Subtype="LargeBlockWindTurbineReskin8x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockSolarPanel8x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockColorableSolarPanel8x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockColorableSolarPanelCorner8x" />
+                <Block Type="MyObjectBuilder_SolarPanel" Subtype="SmallBlockColorableSolarPanelCornerInverted8x" />
+
+
             </Blocks>
         </BlockVariantGroup>
 
@@ -212,7 +245,7 @@
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTank2x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTankSmall2x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTank2x" />
-              <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTankIndustrial2x" />
+                <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTankIndustrial2x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankDefault4x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeOxygenTank4x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankSmall4x" />
@@ -221,7 +254,7 @@
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTank4x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTankSmall4x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="SmallHydrogenTank4x" />
-              <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTankIndustrial4x" />
+                <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeHydrogenTankIndustrial4x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankDefault8x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="LargeOxygenTank8x" />
                 <Block Type="MyObjectBuilder_OxygenTank" Subtype="OxygenTankSmall8x" />
@@ -366,6 +399,21 @@
                 <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrust" />
                 <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrust" />
 
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrust2x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrust2x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrust2x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrust2x" />
+
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrust4x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrust4x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrust4x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrust4x" />
+
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrust8x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrust8x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrust8x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrust8x" />
+
             </Blocks>
         </BlockVariantGroup>
 
@@ -448,31 +496,72 @@
 
       <BlockVariantGroup>
         <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ModularThrusterGroup" />
-        <Icon>Textures\GUI\Icons\Cubes\LargeGridModularIonThrusterLarge.dds</Icon>
+        <Icon>Textures\GUI\Icons\Cubes\LargeFlatAtmosphericThrusterLarge.dds</Icon>
         <DisplayName>DisplayName_Block_LargeModularThruster</DisplayName>
-        <Description>Description_IonThrust</Description>
+        <Description>Description_AtmosphericThrust</Description>
         <Blocks>
-          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeModularThruster" />
-          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallModularThruster" />
-          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeModularThruster" />
-          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallModularThruster" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeFlatAtmosphericThrust" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeFlatAtmosphericThrustDShape" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallFlatAtmosphericThrust" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallFlatAtmosphericThrustDShape" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeFlatAtmosphericThrust" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeFlatAtmosphericThrustDShape" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallFlatAtmosphericThrust" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallFlatAtmosphericThrustDShape" />
 
-          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeModularThruster2x" />
-          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallModularThruster2x" />
-          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeModularThruster2x" />
-          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallModularThruster2x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeFlatAtmosphericThrust2x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeFlatAtmosphericThrustDShape2x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallFlatAtmosphericThrust2x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallFlatAtmosphericThrustDShape2x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeFlatAtmosphericThrust2x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeFlatAtmosphericThrustDShape2x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallFlatAtmosphericThrust2x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallFlatAtmosphericThrustDShape2x" />
 
-          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeModularThruster4x" />
-          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallModularThruster4x" />
-          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeModularThruster4x" />
-          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallModularThruster4x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeFlatAtmosphericThrust4x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeFlatAtmosphericThrustDShape4x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallFlatAtmosphericThrust4x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallFlatAtmosphericThrustDShape4x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeFlatAtmosphericThrust4x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeFlatAtmosphericThrustDShape4x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallFlatAtmosphericThrust4x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallFlatAtmosphericThrustDShape4x" />
 
-          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeModularThruster8x" />
-          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallModularThruster8x" />
-          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeModularThruster8x" />
-          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallModularThruster8x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeFlatAtmosphericThrust8x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeFlatAtmosphericThrustDShape8x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallFlatAtmosphericThrust8x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallFlatAtmosphericThrustDShape8x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeFlatAtmosphericThrust8x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeFlatAtmosphericThrustDShape8x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallFlatAtmosphericThrust8x" />
+          <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallFlatAtmosphericThrustDShape8x" />
         </Blocks>
       </BlockVariantGroup>
+
+      <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ThrusterSciFiIonGroup" />
+            <Icon>Textures\GUI\Icons\Cubes\LargeBlockLargeFlatAtmosphericThrust.dds</Icon>
+            <DisplayName>Flat Atmospheric Thruster</DisplayName>
+            <Description>Description_IonThrust</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrustSciFi" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrustSciFi" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrustSciFi" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrustSciFi" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrustSciFi2x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrustSciFi2x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrustSciFi2x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrustSciFi2x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrustSciFi4x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrustSciFi4x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrustSciFi4x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrustSciFi4x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrustSciFi8x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrustSciFi8x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrustSciFi8x" />
+                <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrustSciFi8x" />
+            </Blocks>
+        </BlockVariantGroup>
 
 
         <!-- Ship Tools-->
